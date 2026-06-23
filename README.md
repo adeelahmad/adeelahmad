@@ -23,7 +23,7 @@ I started in security early — performing remote vulnerability assessments and 
 
 Over 13 years I founded and led a technology consultancy that grew to ~40 people, delivering secure platforms and infrastructure for universities, public institutions, and enterprise clients. I built and ran private cloud from bare metal — multi-site clusters, encrypted replication, container hardening, zero-trust networking, kernel-level tuning — which is where the deep expertise in infrastructure security, identity, and compliance-driven engineering came from.
 
-Today, at CBA, I focus on platform engineering for AI/ML workloads: hardening deployment pipelines with integrity verification and rollback, advancing DevSecOps maturity past target, and serving as **Security Champion** for my squad.
+Today, I focus on platform engineering for AI/ML workloads: hardening deployment pipelines with integrity verification and rollback, advancing DevSecOps maturity past target, and serving as **Security Champion** for my squad.
 
 <details>
 <summary><b>The longer arc</b></summary>
