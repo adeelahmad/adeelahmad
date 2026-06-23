@@ -2,9 +2,11 @@
 
 # Adeel Ahmad
 
-**Bare metal → Containers → AI/ML**
+**Infrastructure security · Cloud architecture · AI/ML**
 
-I've been building infrastructure from the ground up for a long time — routers, hypervisor clusters, distributed storage, PBX systems, the whole stack. Now I train reasoning models on Apple Silicon. The constant: making powerful tools run on hardware you own.
+Staff Platform Engineer (MLOps) at the Commonwealth Bank of Australia. Twenty years building from bare metal up — routers, hypervisor clusters, distributed storage, identity stacks — now working at the intersection of **AI and security**: model supply-chain integrity, adversarial fine-tuning detection, and the tooling that makes AI systems trustworthy at enterprise scale.
+
+The constant across every layer: making powerful systems run on hardware you own — and can trust.
 
 [![Blog](https://img.shields.io/badge/Blog-adeelahmad.net-0A0A0A?style=flat-square&logo=hashnode&logoColor=white)](https://blog.adeelahmad.net/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-adeelahmadch-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adeelahmadch/)
@@ -15,13 +17,45 @@ I've been building infrastructure from the ground up for a long time — routers
 
 ---
 
+### The short version
+
+I started in security early — performing remote vulnerability assessments and penetration testing as a teenager, with a formal recommendation from a US healthcare company's CEO at 16 for finding and remediating production web-app vulnerabilities. That security-first mindset has been the constant through every role since.
+
+Over 13 years I founded and led a technology consultancy that grew to ~40 people, delivering secure platforms and infrastructure for universities, public institutions, and enterprise clients. I built and ran private cloud from bare metal — multi-site clusters, encrypted replication, container hardening, zero-trust networking, kernel-level tuning — which is where the deep expertise in infrastructure security, identity, and compliance-driven engineering came from.
+
+Today, at CBA, I focus on platform engineering for AI/ML workloads: hardening deployment pipelines with integrity verification and rollback, advancing DevSecOps maturity past target, and serving as **Security Champion** for my squad.
+
+<details>
+<summary><b>The longer arc</b></summary>
+<br/>
+
+- **Now — CBA.** Staff Platform Engineer (MLOps) on the AI acceleration team. Platform and CI/CD for AI/ML, supply-chain integrity, Security Champion.
+- **Founder/CTO — 13 years.** Built a cross-border consultancy to ~40 people across two countries, delivering 80+ engagements: secure platforms, digital-preservation systems, and private cloud built from the metal up. Wore every hat from lead architect to QA.
+- **Before that.** White-hat security from age 14 — ISP vuln-hunting and patching in Lahore; a formal remote vulnerability assessment for a US healthcare company at 16, with a CEO recommendation letter.
+- **The thread.** Infrastructure security architecture · identity & access management · compliance-driven engineering — now pointed at AI systems.
+
+</details>
+
+---
+
 ### Now — AI/ML on Apple Silicon
 
 🧠 **[mlx-grpo-trainer](https://github.com/adeelahmad/mlx-grpo-trainer)** — First MLX implementation of GRPO. Train DeepSeek-R1-style reasoning models entirely on your Mac. No cloud GPUs.
 
-🎯 **[mlx-guided-grpo](https://github.com/adeelahmad/mlx-guided-grpo)** — Curriculum learning + GRPO training on Apple Silicon. Structured reasoning model development, locally.
+🎯 **[mlx-guided-grpo](https://github.com/adeelahmad/mlx-guided-grpo)** — Curriculum learning + GRPO on Apple Silicon. Structured reasoning-model development, locally.
 
 🤖 **[MacPilot](https://github.com/adeelahmad/MacPilot)** — Control your Mac with natural language. Plain English in, macOS automation out.
+
+---
+
+### AI security & research — the current focus
+
+The work I care most about right now sits where AI meets security:
+
+- **Adversarial fine-tuning detection (paper in prep).** Independent research in mechanistic interpretability — detecting subtle behavioral changes in fine-tuned language models that standard verification methods miss. Geometric metrics over weight space surface what cosine/CKA auditing leaves invisible.
+- **Agentic AI attack surface.** Demonstrated, in an enterprise context, how multi-agent systems can be turned into autonomous offensive tools via prompt injection — running reconnaissance and generating payloads with no further human input. The point: agentic systems need a threat model, not just guardrails.
+- **Responsible disclosure.** In 2024 I reported a vulnerability in OpenAI's GPT Creator platform through their Bugcrowd program — unauthorized model access and system-message tampering via API request manipulation.
+- **The interest.** Model supply-chain integrity, adversarial fine-tuning detection, and building the tooling that makes AI systems trustworthy at enterprise scale.
 
 ---
 
@@ -33,7 +67,7 @@ I've been building infrastructure from the ground up for a long time — routers
 
 ### The road here
 
-The ML work is built on top of years of doing everything below. All of this informs how I think about AI infrastructure, tooling, and what "running locally" actually means.
+The ML and AI-security work is built on top of years of doing everything below. All of it informs how I think about AI infrastructure, trust boundaries, and what "running locally" actually means.
 
 <details>
 <summary><b>🔧 Bare metal & virtualization</b></summary>
@@ -127,13 +161,13 @@ Svelte (big fan), React, TypeScript, Prisma, Node.js, Deno. Ruby on Rails, Dry-r
 
 ### What connects it all
 
-Every phase has been about the same thing: **owning your compute.** Building hypervisor clusters instead of renting instances. Running your own DNS instead of using managed services. Standing up your own PBX instead of paying per-seat. Training reasoning models on a Mac Studio instead of paying for GPU hours. The platform keeps changing. The principle doesn't.
+Every phase has been about the same two things: **owning your compute, and trusting it.** Building hypervisor clusters instead of renting instances. Running your own DNS instead of using managed services. Standing up your own PBX instead of paying per-seat. Training reasoning models on a Mac Studio instead of paying for GPU hours — and now, making sure the models you run are the models you think you're running. The platform keeps changing. The principle doesn't.
 
 ### Tech
 
 ```
 AI/ML         MLX · PyTorch · GRPO/RLHF · HuggingFace · LLMs · Bedrock · SageMaker
-              Kaldi ASR · Deep Speech · Tesseract OCR · Face Recognition
+              Mechanistic interpretability · LoRA · Kaldi ASR · Tesseract OCR
 Languages     Python · TypeScript · Ruby · Go · Rust · C++ · Swift · Bash
               PHP · Java · Perl · Lua · AppleScript
 Cloud         AWS (SA Pro) · Azure · Snowflake · OpenStack · OpenNebula
@@ -148,7 +182,6 @@ Storage       Ceph · GlusterFS · ZFS · BtrFS · MinIO/S3 · NFS · iSCSI
               rclone · JuiceFS · mergerfs
 Data          Postgres · MySQL · MongoDB · Redis · InfluxDB · Elasticsearch
               Snowflake · DBT · Airflow · Spark · Solr · MQTT
-Caching       Redis · Memcache · Varnish · FlashCache · Squid
 Security      CIS · lynis · Snort IDS · Frida · mitmproxy · rustscan
               HIPAA/GDPR · KMS · CloudHSM · Zero Trust · GRR Forensics
 Identity      LDAP/AD · Kerberos · SAML · FreeRADIUS · Keycloak · SSO
