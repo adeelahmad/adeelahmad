@@ -4,7 +4,7 @@
 
 **Infrastructure security · Cloud architecture · AI/ML**
 
-Staff Platform Engineer (MLOps) at the Commonwealth Bank of Australia. Twenty years building from bare metal up — routers, hypervisor clusters, distributed storage, identity stacks — now working at the intersection of **AI and security**: model supply-chain integrity, adversarial fine-tuning detection, and the tooling that makes AI systems trustworthy at enterprise scale.
+Twenty years building from bare metal up — routers, hypervisor clusters, distributed storage, identity stacks — now working at the intersection of **AI and security**: model supply-chain integrity, adversarial fine-tuning detection, and the tooling that makes AI systems trustworthy at enterprise scale.
 
 The constant across every layer: making powerful systems run on hardware you own — and can trust.
 
