@@ -2,162 +2,162 @@
 
 # Adeel Ahmad
 
-**First-principles engineering · Applied AI · Security**
+**Systems engineering · Applied AI · Security**
 
-Two decades of hands-on engineering, from software and bare-metal infrastructure to agentic AI and model behaviour. I build systems, investigate the assumptions they depend on, and turn what I learn into reusable tools.
+Nearly two decades of professional engineering — software, networks, virtualization, distributed storage, identity, cloud and AI.
 
-**Own your compute. Understand your systems. Verify what you trust.**
+I approach them as **one connected system**: understand the constraints, find the right abstraction, and build something that works beyond the diagram.
+
+**Melbourne, Australia · Hands-on engineer · Founder background**
 
 [![Blog](https://img.shields.io/badge/Blog-adeelahmad.net-0A0A0A?style=flat-square&logo=hashnode&logoColor=white)](https://blog.adeelahmad.net/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-adeelahmadch-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adeelahmadch/)
-[![X](https://img.shields.io/badge/X-adeelahmad-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/adeelahmad)
-[![Hugging Face](https://img.shields.io/badge/Hugging_Face-adeelahmad-FFD21E?style=flat-square)](https://huggingface.co/adeelahmad)
+[![Twitter](https://img.shields.io/badge/𝕏-@adeelahmad-000000?style=flat-square&logo=x&logoColor=white)](https://www.twitter.com/adeelahmad)
+[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/adeelahmad)
 
 </div>
 
 ---
 
-### What I do
+## What I do
 
-I'm based in **Melbourne, Australia**, working in **Commonwealth Bank's AI Centre of Excellence, within the AI Acceleration squad**. My role is Staff Platform Engineer (MLOps); my work centres on **applied AI/GenAI engineering, experimentation, and hands-on technical leadership**. I also serve as a **Security Champion**.
+I'm part of **Commonwealth Bank of Australia's AI Centre of Excellence, in the AI Acceleration squad**. My formal title is **Staff Platform Engineer (MLOps)**; my work centres on **applied AI, technical leadership and turning emerging AI capabilities into usable enterprise solutions**. I'm also the squad's Security Champion.
 
-Before that, I worked in AWS consulting at **Cevo** and on the GenAI application architecture at **Lyrebird Health**. Earlier, I founded and led **Xoho Tech** for 13 years, growing it to around 40 people. I stayed hands-on while owning architecture, delivery, infrastructure, security, and the customer relationship.
+Before CBA, I worked on GenAI engineering at **Lyrebird Health** and AWS cloud consulting at **Cevo**. Earlier, I founded and led **Xoho Tech** for 13 years, growing the consultancy to around 40 people and delivering software, digital-preservation systems and infrastructure for universities, public institutions and enterprise clients.
 
-That is where my range comes from: writing the application, operating the systems beneath it, and being accountable for whether it solved the customer's problem.
+Founder did not mean stepping away from implementation. I wrote software, designed systems, ran networks, handled security, worked with customers and led delivery. That is where the range comes from: **cloud learned on top of on-premises systems; AI learned on top of software, infrastructure and security.**
 
-Alongside my day job, I build open-source agent tooling, experiment with language-model training and interpretability on Apple Silicon, and continue working on filesystems, storage, and networking.
+My independent work now focuses on **agent infrastructure, model behaviour and integrity, local ML, and the systems underneath them**. The personal projects below are separate from my employer's work.
 
-### How I approach a problem
+## Selected work
 
-I don't experience software, networking, identity, storage, and AI as disconnected specialties. I follow the dependencies through one system: what must stay true, where that guarantee belongs, and how to test it.
+### Agents, controls and continuity
 
-When I don't understand something, I tend to build or inspect what sits underneath it. That has taken me from private-cloud clusters and packet paths to model-training loops and agent execution contracts.
+| Project | What I'm building |
+|---|---|
+| **[AgentRC](https://github.com/adeelahmad/agentrc)** · [agentrc.ai](https://agentrc.ai) | A **working-draft specification** and Go/BuildKit reference tooling for portable agent declarations. A Dockerfile-shaped `Agentfile` describes identity, capabilities, instructions and typed policy requests through OCI metadata. The platform decides what to grant, narrow or reject; declaration is separate from enforcement. |
+| **[agent-handoff](https://github.com/adeelahmad/package)** | Portable, versioned handoffs between agent sessions: settled decisions, open questions, ordered tasks and selectively queried history. A self-contained Go binary handles packaging and structural validation; the agent supplies the content. Built after a useful phone conversation needed to continue in another AI environment the next morning. |
+| **[agentic-agile](https://github.com/adeelahmad/agentic-agile)** | Human-gated planning followed by coding-agent execution with hook-enforced TDD checks and worktree isolation. Explicit controls around probabilistic agents, rather than relying on instructions alone. |
 
-A recurring design choice is to **separate the lasting asset from the implementation**: an agent's definition from its runtime, a decision from its chat session, or a storage capability from its backend. The aim is not another abstraction for its own sake. It is less duplication, clearer boundaries, and something other people can use.
+### Models on hardware I own
 
----
+**[mlx-grpo-trainer](https://github.com/adeelahmad/mlx-grpo-trainer)** and **[mlx-guided-grpo](https://github.com/adeelahmad/mlx-guided-grpo)** — MLX-based reinforcement-learning and fine-tuning work on Apple Silicon, including GRPO, curriculum-guided training and configurable rewards.
 
-### Agent infrastructure
+**[mlx-lm-lens](https://github.com/adeelahmad/mlx-lm-lens)** — tooling for inspecting transformer behaviour: per-layer predictions, activation drift and comparisons between base and adapted models. Part of my independent exploration of how fine-tuning changes behaviour and how those changes can be measured.
 
-**[AgentRC](https://agentrc.ai/) · [source](https://github.com/adeelahmad/agentrc)**  
-An open, Dockerfile-shaped specification for declaring and packaging portable agents. An `Agentfile` captures identity, capabilities, instructions, and typed policy requests; OCI labels carry those declarations for the platform to grant, narrow, or reject. Includes Go reference tooling and a BuildKit frontend. **Working draft—not a runtime, sandbox, or finished standard.**
+**[MacPilot](https://github.com/adeelahmad/MacPilot)** — macOS automation combining natural-language instructions with native accessibility, screen-analysis and operating-system APIs.
 
-**[agent-handoff](https://github.com/adeelahmad/package)**  
-“Git for agents”: a Go tool that packages selected context, settled decisions, open questions, and ordered tasks into a self-contained, versioned handoff. The working tree shows the current version; agents query history instead of browsing stale copies. One static binary per platform, with no runtime dependencies. Built because useful work from one AI session should not need to be reconstructed in the next.
+### Filesystems and networking — still hands-on
 
-**[agentic-agile](https://github.com/adeelahmad/agentic-agile)**  
-A Claude Code plugin for human-approved planning and agent-driven implementation, with Git-worktree isolation and hook-enforced TDD and review gates. Workflow checks live outside the model rather than relying only on instructions in a prompt.
+**[JuiceFS fork](https://github.com/adeelahmad/juicefs)** — development across ZFS-style dataset management, content-addressed storage, snapshots, replication, cache hierarchies, object-storage adapters and NBD/iSCSI block access. The work spans storage interfaces, protocol behaviour, integrity checks and deployment across a mixed homelab. This is **fork development, not an upstream JuiceFS release**; implementation and release status vary by feature and branch.
 
-### Language-model training and inspection
+**[OpenWrt traffic control — merged upstream](https://github.com/YusDyr/luci-app-trafficctl/pull/27)** — corrected bidirectional limiting and shaping by tracing Linux bridge hooks, conntrack/NAT ordering and IFB/HTB behaviour on a live router. Added routed-subnet visibility, port-forward controls and supporting tests. Merged in **August 2026**.
 
-**[mlx-grpo-trainer](https://github.com/adeelahmad/mlx-grpo-trainer)** and **[mlx-guided-grpo](https://github.com/adeelahmad/mlx-guided-grpo)**  
-MLX-based reinforcement-learning and GRPO training tools for Apple Silicon, including configurable rewards, supervised fine-tuning, and curriculum-guided experimentation.
+**[YouTube filesystem for rclone](https://github.com/adeelahmad/rclone/tree/feat/ytfs)** — built for **parental control**, not as a filesystem exercise: expose parent-selected channels and playlists as read-only media that Emby can consume alongside local content. Includes metadata and manifest-driven selection. Personal-fork work; the [upstream proposal](https://github.com/rclone/rclone/pull/9657) was closed without merging.
 
-**[mlx-lm-lens](https://github.com/adeelahmad/mlx-lm-lens)**  
-Mechanistic-interpretability tooling for inspecting transformer predictions and activations, comparing adapted models with references, and investigating changes in model behaviour on Apple Silicon.
+## How I tend to build
 
-**[MacPilot](https://github.com/adeelahmad/MacPilot)**  
-Natural-language macOS automation combining language models with native accessibility, screen analysis, and AppleScript integration.
+When I don't understand how something works, I tend to build the piece underneath it.
 
-My independent AI-security interests include **agent identity and authorization, model supply-chain integrity, behavioural changes after fine-tuning, and evaluation of agentic systems**. The public tools above support that investigation; research findings remain separate from established security guarantees.
+That is why wanting to understand Kubernetes led me to build a three-host Proxmox/Ceph/ZFS cluster at home, with more than 150 TB of storage and a 25 GbE fabric. It is also why a parental-control problem became a filesystem adapter, and a lost conversation became a versioned handoff tool.
 
----
+A recurring design choice is to **separate what should survive from what should be replaceable**. Agent declarations should not be tied to one runtime. Useful decisions should not disappear with a chat session. Storage capabilities should not depend unnecessarily on one backend.
 
-### Systems work you can inspect
+The abstraction still has to respect reality: a read-only source stays read-only; declaring a permission does not grant it; passing a unit test does not replace testing the real system.
 
-**[OpenWrt traffic control — merged upstream contribution](https://github.com/YusDyr/luci-app-trafficctl/pull/27)**  
-Fixed bidirectional traffic enforcement by following the actual bridge, conntrack, and NAT packet paths, including IFB-based upload shaping. Added routed-subnet monitoring, port-forward controls, device naming, and optional DPI integration, with regression tests. Developed against my GL-MT3000 and downstream MikroTik network; merged in August 2026.
+## AI before it was my job title
 
-**[JuiceFS — my development fork](https://github.com/adeelahmad/juicefs)**  
-Work on ZFS-inspired dataset management, content-addressed storage, tiered caching, integrity verification, snapshots and replication, additional object backends, and NBD/iSCSI block access. Features are at different stages of integration and validation. These are changes in my fork, not upstream JuiceFS releases.
+| When | What I was doing |
+|---|---|
+| **4 June 2021** | **Received access to OpenAI's private API beta**, while running Xoho Tech in Pakistan. This is the access-granted date, not the application date. |
+| **24 October 2023** | Shared an [AutoGen prototype modelling an AWS customer team](https://colab.research.google.com/gist/adeelahmad/e26b3e6888fe2066d2ac8ea7911e4f07/iterative-approach-to-discovering-gen-ai-opportunities-for-business-impact-aws-cloud-professionals-as-autoagents.ipynb): role-specific agents, human oversight, critique and approval, code execution, and generation of another team of specialist agents. |
+| **2024** | [Presented a serverless second-brain architecture](https://www.youtube.com/watch?v=pR-Z0Q0i4AI): personal knowledge, semantic retrieval, source metadata, small/local models and asynchronous processing. The principle was to use models to reason over selected knowledge, rather than rely only on their training data. |
+| **2025–26** | Applied AI at CBA, alongside independent work in MLX/GRPO, model inspection, agent controls, portable agent definitions and versioned work handoffs. |
 
-**[YouTube filesystem for rclone — parental-control prototype](https://github.com/adeelahmad/rclone/tree/feat/ytfs)**  
-Built around a family problem: present parent-selected YouTube channels and playlists through **Emby**, alongside local media, rather than expose unrestricted YouTube browsing. The adapter represents videos and metadata as read-only filesystem objects so existing media software can consume them. The [upstream proposal](https://github.com/rclone/rclone/pull/9657) was closed without merging; this remains work in my fork. Curation controls the available sources, not the suitability of every future upload.
+## The engineering underneath
 
-These projects are also how I keep my systems experience current: not just technologies I used years ago, but problems I still build, test, and debug today.
-
----
-
-### A few points on the timeline
-
-**4 June 2021 — OpenAI API private-beta access.**  
-Received access while running **Xoho Tech in Pakistan**. This is the access-granted date, not the application date—approximately 18 months before [ChatGPT's public introduction](https://openai.com/index/chatgpt/).
-
-**24 October 2023 — Multi-agent customer-engineering prototype.**  
-Shared an [AutoGen notebook](https://colab.research.google.com/gist/adeelahmad/e26b3e6888fe2066d2ac8ea7911e4f07/iterative-approach-to-discovering-gen-ai-opportunities-for-business-impact-aws-cloud-professionals-as-autoagents.ipynb) modelling an AWS-style customer team: account manager, solutions architect, critic, engineer, and executor, with human oversight and generation of additional role-specific agents.
-
-**2024 — Public second-brain architecture talk.**  
-[Presented at Melbourne Serverless](https://www.youtube.com/watch?v=pR-Z0Q0i4AI) on personal knowledge systems using serverless infrastructure, semantic retrieval, small/local models, asynchronous processing, and source-grounded generation. I also described my existing workflow for turning articles into conversational audio. The central principle: use the model to reason over selected knowledge rather than treating its training data as the source of truth.
-
-**March 2025 — Joined CBA's AI Acceleration squad.**  
-Continued the move from AWS consulting and healthcare GenAI into enterprise applied AI and technical leadership.
-
-**2026 — Portable agents, persistent context, and systems work.**  
-AgentRC, agent-handoff, and agentic-agile alongside MLX experimentation, storage-system development, and upstream networking contributions.
+These are not all equal-depth specialisms, and they are not just a list of technologies I've encountered. They are areas I've worked in over time; the projects above show where that experience is still being exercised.
 
 <details>
-<summary><b>Earlier foundations — software, security, infrastructure, and communications</b></summary>
+<summary><b>💻 Software engineering and the web</b></summary>
 <br/>
 
-My security experience began with vulnerability assessment and penetration testing as a teenager, including a formal engagement for a US healthcare company at 16 and a recommendation from its CEO.
-
-Early professional work at APTLOGIX and PureLogics combined application development with systems administration and network security. My first hypervisor experience was with VMware during the PureLogics period, followed by Citrix XenServer and later Proxmox. Asterisk PBX work began in that early period too, with 3CX following later.
-
-The networking foundation included Cisco PIX firewalls, Catalyst switches, and routers, later expanding into Vyatta, pfSense, OPNsense, MikroTik, and OpenWrt.
-
-At Xoho Tech, the work included digital-preservation and archival-metadata systems, media platforms, enterprise applications, and the infrastructure needed to deliver and operate them. Running the consultancy meant working directly with customers as well as leading engineers.
-
-In my homelab, I built a three-host Proxmox/Ceph/ZFS cluster with more than 150 TB of storage and a 25 GbE fabric, and assembled Kubernetes from scratch. Understanding the machinery beneath an abstraction has been a practical learning method throughout my career.
+Application development from table-layout web pages, jQuery and CoffeeScript through Angular, React, Svelte and TypeScript. Backend work in Python, Ruby/Rails, PHP, Go and Java; systems work with C/C++ and Rust; automation with Bash, Perl, Lua and AppleScript, plus Swift work on Apple platforms. PHP frameworks and extension development, service workers, browser extensions, APIs, databases and deployment — not just the application code in isolation.
 
 </details>
 
----
-
 <details>
-<summary><b>Hands-on engineering background</b></summary>
+<summary><b>🔧 Virtualization, Linux and private infrastructure</b></summary>
 <br/>
 
-**Software and web**  
-C, C++, Rust, Go, Python, Ruby, PHP, JavaScript/TypeScript, Java, Swift, Perl, Bash, Lua, and AppleScript. Web work spans table-based HTML layouts, jQuery and CoffeeScript, through React, Angular, Svelte, Rails, Node.js, Symfony, Laravel, and Spring. Browser extensions, service workers, automation, and backend services.
-
-**Virtualization and operating systems**  
-VMware, Citrix XenServer, Proxmox, KVM/QEMU, Libvirt, Firecracker, rust-vmm, Cloud Hypervisor, OpenStack, and OpenNebula. Linux administration, kernel and network tuning, PXE/iPXE boot, device passthrough, and private-cloud operations.
-
-**Networking and identity**  
-Cisco PIX/Catalyst, MikroTik, OpenWrt, Vyatta, pfSense, and OPNsense. VLANs, routing, NAT, OSPF/BGP, FRRouting, Open vSwitch, VXLAN, nftables/iptables, and traffic shaping. WireGuard, IPsec, Nebula, Tailscale, ZeroTier, and Cloudflare Tunnel/Zero Trust. LDAP/AD, Kerberos, SAML, FreeRADIUS, Keycloak, OAuth, and workload-identity patterns.
-
-**Storage and filesystems**  
-Ceph/RADOS/CephFS, ZFS, GlusterFS, Btrfs, ext4, XFS, NFS, iSCSI, SMB, MinIO/S3, rclone, JuiceFS, mergerfs, and FUSE. Snapshotting, replication, backup and recovery, cache design, content integrity, and NAS integration.
-
-**Security engineering**  
-Threat modelling, vulnerability assessment, identity and access control, network security, hardening, and forensic investigation. CIS automation, Snort, Nmap/Rustscan, mitmproxy, Frida, OpenSSL, gitleaks, KMS, and security-aware delivery pipelines. Experience building for regulated environments.
-
-**Cloud, containers, and delivery**  
-AWS, Azure, serverless architectures, Lambda, ECS/EKS, Kubernetes, Docker/Swarm, Podman, and Kata Containers. Container networking and volume plugins, AppArmor, infrastructure as code, GitHub Actions, GitLab CI, CircleCI, and AWS CodeBuild/CodePipeline.
-
-**Data, search, and observability**  
-PostgreSQL, MySQL/MariaDB, MongoDB, Redis, InfluxDB, Snowflake, dbt, Solr, and Elasticsearch. Data integration, metadata, lineage, retrieval, and caching. Prometheus/Grafana, ELK, Nagios, OpenNMS, Cacti, SmokePing, Netdata, SNMP, and network-performance tooling.
-
-**AI and machine learning**  
-MLX, PyTorch, LoRA, GRPO, reinforcement learning, model evaluation, and mechanistic interpretability. Bedrock/AgentCore, Amazon Q Business, multi-provider orchestration, RAG, FAISS/Qdrant/pgvector, AutoGen, LangChain, and MCP. Earlier work includes Kaldi/DeepSpeech speech recognition, Tesseract OCR, face recognition, and searchable video pipelines.
-
-**Telephony and IoT**  
-Asterisk/FreePBX, 3CX, SIP, Opus, WebRTC/STUN/ICE, GSM integration with `chan_dongle`, SMS gateways, and call-recording/transcription workflows. IoT integration with Zigbee, Z-Wave, and MQTT.
+My hypervisor experience started with VMware around the PureLogics period, followed by Citrix XenServer 5/6/7 and later Proxmox/KVM/QEMU. It grew into hyper-converged Ceph/ZFS clusters, live migration, OpenStack, OpenNebula, netboot and device passthrough. Later work includes Firecracker, rust-vmm, Cloud Hypervisor and container isolation. Proxmox was an evolution of that experience, not the beginning of it.
 
 </details>
 
-### Certifications earned
+<details>
+<summary><b>🌐 Networks, routing and observability</b></summary>
+<br/>
 
-AWS Solutions Architect — Professional and Associate · Snowflake SnowPro Core · ITIL v3
+Cisco PIX firewalls, Catalyst switches and routers; later Vyatta, pfSense, OPNsense, MikroTik and OpenWrt. VLANs, L2/L3 switching, OSPF/BGP, FRRouting, Open vSwitch/VXLAN, NAT, multi-WAN routing and fibre networks. WireGuard, IPsec, Nebula, Tailscale and ZeroTier; self-hosted DNS, HTTP proxies and TLS inspection. Monitoring with Prometheus/Grafana, ELK, Nagios, OpenNMS, Cacti, SmokePing, Netdata, SNMP and packet-level diagnostics. Recent OpenWrt work connects that background directly to Linux traffic-control implementation.
+
+</details>
+
+<details>
+<summary><b>💾 Storage, filesystems and data services</b></summary>
+<br/>
+
+ZFS, Ceph/RADOS/CephFS, GlusterFS, Btrfs, ext4 and XFS; block and object storage, NFS, iSCSI, Samba and FUSE. MinIO/S3, rclone, mergerfs and JuiceFS; snapshots, replication, backups and NAS integration. Application and metadata stores include PostgreSQL, MySQL/MariaDB, MongoDB, Redis and InfluxDB, with Solr/Elasticsearch for search. My JuiceFS fork takes this from operating storage into implementing cache, dataset, integrity and block-protocol behaviour.
+
+</details>
+
+<details>
+<summary><b>🔐 Security and identity</b></summary>
+<br/>
+
+Security work began in my teens, including a formal vulnerability assessment for a US healthcare company at 16 and a recommendation from its CEO. Later work spans application testing, infrastructure hardening, packet and API analysis, identity federation and responsible disclosure. LDAP/Active Directory, Kerberos, SAML, FreeRADIUS, Keycloak, OAuth/OIDC, Cloudflare access/tunnel tooling, workload identity and least-privilege design. Tooling includes Nmap, mitmproxy, Frida, Snort, CIS automation and gitleaks. My current interests include agent authorization, isolation, prompt-injection boundaries and model integrity.
+
+</details>
+
+<details>
+<summary><b>☁️ Cloud, containers and delivery</b></summary>
+<br/>
+
+AWS, Azure and private cloud; Docker/Compose/Swarm, container plugin development, AppArmor, Kubernetes, ECS/EKS, Podman and Kata. Infrastructure as code, CI/CD, observability and operational tooling, including GitHub Actions, GitLab CI, CircleCI and CodeBuild/CodePipeline. AWS work includes Bedrock, SageMaker, Lambda, Glue, Textract, Comprehend and Transcribe; data-integration work includes Snowflake and dbt. Cloud is another implementation choice, not a replacement for understanding the system beneath it.
+
+</details>
+
+<details>
+<summary><b>🧠 ML, media and digital preservation</b></summary>
+<br/>
+
+Before GenAI: searchable audiovisual archives, FFmpeg pipelines, OCR with Tesseract, speech recognition with Kaldi and DeepSpeech, face recognition and metadata systems. Later: retrieval-augmented applications, vector search, multi-provider LLM orchestration, agent workflows, evaluation, synthetic data, quantization, LoRA and GRPO on MLX. Digital-preservation work connected media, metadata, storage and search long before those became inputs to my AI work.
+
+</details>
+
+<details>
+<summary><b>📞 Telephony and connected devices</b></summary>
+<br/>
+
+Asterisk PBX work began around the same early-career period as VMware, with FreePBX and later 3CX. SIP, Opus tuning, GSM integration with chan_dongle, SMS gateways, call recording, transcription and WebRTC/STUN/ICE. Also hands-on with IoT integrations, Zigbee and Z-Wave.
+
+</details>
+
+## Certifications earned
+
+AWS Solutions Architect — Professional · AWS Solutions Architect — Associate · Snowflake SnowPro Core · ITIL v3 Foundation
 
 ---
+
+### What connects it all
+
+**Owning your compute, and trusting it.**
+
+For me, that means understanding what a system depends on, who controls it, what it is allowed to do, and how to verify its behaviour. Sometimes the right answer is a managed cloud service. Sometimes it is a small model on my Mac, a self-hosted service or a change to the storage system itself.
+
+The common thread is practical: **understand the mechanism, make the important state explicit, and verify the result.**
 
 <div align="center">
 
-**Make the useful thing reusable. Make the trust boundary explicit.**
-
-Arctic Code Vault Contributor · Based in Melbourne, Australia
-
-<sub>Personal projects and views; not statements on behalf of my employer.</sub>
+**Arctic Code Vault Contributor**
 
 </div>
