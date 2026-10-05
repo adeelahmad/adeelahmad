@@ -50,8 +50,8 @@ const THEME = "try{var t=localStorage.getItem('adeel-theme');if(t==='light'||t==
 const hash = s => "'sha256-" + crypto.createHash('sha256').update(s).digest('base64') + "'";
 export const MEDIUM_IMG_HOSTS = ['miro.medium.com', 'cdn-images-1.medium.com'];
 
-function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false }) {
-  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
+function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false, frames = false }) {
+  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; " + (frames ? "frame-src 'self'; " : '') + "img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -313,6 +313,10 @@ export function renderCV({ timeline: D, cv: C, cvPdf }) {
 <main id="main">
   <h1 class="h2 page-title">Curriculum vitae</h1>
   <p class="lede page-lede">${esc(C.headline)} ${esc(C.location)}.${cvPdf ? ` <a href="${cvPdf}">Download PDF</a>.` : ''} The <a href="${root}#journey">journey</a> explains how the pieces connect.</p>
+  ${cvPdf ? `<section class="cv__pdf" id="pdf" aria-label="CV as PDF">
+    <iframe class="cv__frame" src="${cvPdf}" title="${esc(SITE.name)} CV (PDF)" loading="lazy"></iframe>
+    <p class="more more--small"><a href="${cvPdf}">Open the PDF</a> if it doesn't show here.</p>
+  </section>` : ''}
   ${C.summary.map(t => `<p>${esc(t)}</p>`).join('\n')}
   <section class="section" id="experience" aria-labelledby="experience-title">
     <h2 class="h2" id="experience-title">Experience</h2>
@@ -334,7 +338,7 @@ export function renderCV({ timeline: D, cv: C, cvPdf }) {
   <div class="hair"></div>
 </main>
 ${siteFooter(D, root)}`;
-  return layout({ title: 'CV · ' + SITE.name, description: 'Curriculum vitae of ' + SITE.name + ', ' + C.headline, body, root, label: '<span>CV</span>', canonical: SITE.url + 'cv/' });
+  return layout({ title: 'CV · ' + SITE.name, description: 'Curriculum vitae of ' + SITE.name + ', ' + C.headline, body, root, label: '<span>CV</span>', canonical: SITE.url + 'cv/', frames: !!cvPdf });
 }
 
 /* ---------- everything ---------- */
