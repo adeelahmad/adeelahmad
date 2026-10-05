@@ -172,24 +172,6 @@
    "featured": false
   },
   {
-   "id": "milestone-009",
-   "date": "Consultancy years; exact date unrecorded",
-   "period": "2007–2012",
-   "title": "Enterprise workflow automation",
-   "body": "Built tools to automate quality-assurance workflows for a business.",
-   "skills": [
-    "Workflow automation",
-    "Enterprise integration",
-    "Software engineering"
-   ],
-   "kind": "Built",
-   "track": "Products",
-   "evidence": "From my own notes",
-   "note": "",
-   "links": [],
-   "featured": false
-  },
-  {
    "id": "milestone-010",
    "date": "2012–2013",
    "period": "2007–2012",
@@ -315,6 +297,24 @@
     "E-signature workflows",
     "Web applications",
     "Enterprise integration"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "From my own notes",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-009",
+   "date": "Xoho years",
+   "period": "2013–2022",
+   "title": "Enterprise workflow automation",
+   "body": "Built tools to automate quality-assurance workflows for a business.",
+   "skills": [
+    "Workflow automation",
+    "Enterprise integration",
+    "Software engineering"
    ],
    "kind": "Built",
    "track": "Products",
