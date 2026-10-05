@@ -1991,12 +1991,7 @@
    "track": "Systems",
    "evidence": "From a public post",
    "note": "This is work in my fork, not an upstream JuiceFS release.",
-   "links": [
-    {
-     "label": "Project fork",
-     "url": "https://github.com/adeelahmad/juicefs"
-    }
-   ],
+   "links": [],
    "featured": true
   },
   {
@@ -2914,12 +2909,7 @@
     "Encryption",
     "iSCSI"
    ],
-   "links": [
-    {
-     "label": "Project fork",
-     "url": "https://github.com/adeelahmad/juicefs"
-    }
-   ]
+   "links": []
   },
   {
    "name": "OpenWrt trafficctl",
