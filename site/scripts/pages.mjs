@@ -1,8 +1,9 @@
 // Extra static pages: one page per saved Medium post, a blog index,
-// sitemap.xml, robots.txt and llms.txt. Post pages carry no JavaScript.
+// sitemap.xml, robots.txt and llms.txt. Post pages run no script except Google Analytics.
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import {gaHead,gaCsp} from './analytics.mjs';
 
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ALLOWED=new Set(['p','h1','h2','h3','h4','blockquote','pre','code','em','strong','b','i','a','ul','ol','li','figure','figcaption','img','br','hr']);
@@ -37,8 +38,8 @@ export function sanitize(html,title){
 
 const hash=s=>"'sha256-"+crypto.createHash('sha256').update(s).digest('base64')+"'";
 function page({title,description,canonical,css,body,favicon,imgs}){
-  const csp="default-src 'none'; style-src "+hash(css)+"; img-src data:"+(imgs?' '+IMG_HOSTS.map(h=>'https://'+h).join(' '):'')+"; base-uri 'none'; form-action 'none';";
-  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="'+esc(csp)+'"><title>'+esc(title)+'</title><meta name="description" content="'+esc(description)+'"><meta name="author" content="Adeel Ahmad"><link rel="canonical" href="'+esc(canonical)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(description)+'"><meta property="og:type" content="article"><link rel="icon" href="'+favicon+'"><style>'+css+'</style></head><body>'+body+'</body></html>';
+  const csp="default-src 'none'; script-src "+gaCsp.script+"; style-src "+hash(css)+"; img-src data: "+gaCsp.img+(imgs?' '+IMG_HOSTS.map(h=>'https://'+h).join(' '):'')+"; connect-src "+gaCsp.connect+"; base-uri 'none'; form-action 'none';";
+  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="'+esc(csp)+'">'+gaHead+'<title>'+esc(title)+'</title><meta name="description" content="'+esc(description)+'"><meta name="author" content="Adeel Ahmad"><link rel="canonical" href="'+esc(canonical)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(description)+'"><meta property="og:type" content="article"><link rel="icon" href="'+favicon+'"><style>'+css+'</style></head><body>'+body+'</body></html>';
 }
 const topbar=site=>'<header class="topbar"><div class="container topbar-inner"><a class="wordmark" href="/"><span class="monogram">aa</span>Adeel Ahmad</a><nav class="post-nav"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/blog/">Writing</a></nav></div></header>';
 

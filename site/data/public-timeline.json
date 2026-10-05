@@ -23,10 +23,10 @@
  "events": [
   {
    "id": "milestone-001",
-   "date": "Teenage years",
+   "date": "Grade 8",
    "period": "Foundations",
    "title": "Getting into security",
-   "body": "I got into computers through networks and security in Lahore, before my first software job.",
+   "body": "I started poking at networks and security in grade 8 in Lahore, long before my first software job.",
    "skills": [
     "Network security",
     "Security testing"
@@ -34,7 +34,7 @@
    "kind": "Experience",
    "track": "Security",
    "evidence": "From my own notes",
-   "note": "I don't know the exact year.",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -42,8 +42,8 @@
    "id": "milestone-002",
    "date": "2006",
    "period": "Foundations",
-   "title": "A first vulnerability assessment",
-   "body": "While still at school I did a vulnerability assessment of a company's website and found issues that would have let attackers in. The company's CEO later wrote me a recommendation letter.",
+   "title": "First formal vulnerability assessment",
+   "body": "In 2006, while still at school, I did my first formal vulnerability assessment, on a company's website, and found issues that would have let attackers in. The company's CEO later wrote me a recommendation letter.",
    "skills": [
     "Vulnerability assessment",
     "Security reporting",

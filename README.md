@@ -6,7 +6,7 @@ If you've read my CV and wondered how one person ended up working across softwar
 
 #### How it happened
 
-**Security first.** I got into computers as a teenager in Lahore by poking at networks. Seeing where systems break was how I learned how they were put together.
+**Security first.** I got into computers in grade 8 in Lahore by poking at networks, and did my first formal security assessment in 2006 while still at school. Seeing where systems break was how I learned how they were put together.
 
 **Small companies, every job.** My first jobs (2007 to 2012) were at small companies where the developer also looked after the servers, the network and the phone system. So I learned VMware, Asterisk and Cisco alongside .NET and PHP, because that was what it took to keep things running.
 

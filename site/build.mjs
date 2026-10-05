@@ -6,6 +6,7 @@ import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {phraseHashes} from './scripts/terms.mjs';
 import {buildPages,sanitize} from './scripts/pages.mjs';
+import {gaHead,gaCsp} from './scripts/analytics.mjs';
 const ROOT=path.dirname(fileURLToPath(import.meta.url));
 const read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const D=JSON.parse(read('data/public-timeline.json'));
@@ -69,10 +70,10 @@ function staticBody(){
 const scripts=[read('vendor/react.production.min.js'),read('vendor/react-dom.production.min.js'),'window.PUBLIC_TIMELINE='+json(D)+';window.SITE_EXTRAS='+json({journey:J,writing,links:{blog:BLOG_URL,linkedin:LINKEDIN_URL}})+';',read('src/app.js')].map(s=>s.replace(/<\/script/gi,'<\\/script'));
 const css=read('src/styles.css');
 const hash=s=>"'sha256-"+crypto.createHash('sha256').update(s).digest('base64')+"'";
-const csp="default-src 'none'; script-src "+scripts.map(hash).join(' ')+"; style-src "+hash(css)+"; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none';";
+const csp="default-src 'none'; script-src "+scripts.map(hash).join(' ')+" "+gaCsp.script+"; style-src "+hash(css)+"; img-src data: "+gaCsp.img+"; connect-src "+gaCsp.connect+"; object-src 'none'; base-uri 'none'; form-action 'none';";
 const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="#18312d"/><text x="32" y="42" font-family="Arial,sans-serif" text-anchor="middle" font-size="32" fill="#f7f7f2" letter-spacing="-3">aa</text></svg>';
 const metaTitle='Adeel Ahmad';
-const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="'+esc(csp)+'"><meta name="robots" content="index,follow"><meta name="author" content="Adeel Ahmad"><meta name="description" content="'+esc(D.description)+'"><link rel="canonical" href="'+SITE_URL+'"><meta property="og:url" content="'+SITE_URL+'"><meta property="og:type" content="website"><meta property="og:title" content="'+esc(metaTitle)+'"><meta property="og:description" content="'+esc(D.description)+'"><meta name="twitter:card" content="summary"><meta name="color-scheme" content="light"><title>'+esc(metaTitle)+'</title><link rel="icon" href="data:image/svg+xml,'+encodeURIComponent(svg)+'"><style>'+css+'</style></head><body id="top"><div id="root">'+staticBody()+'</div>'+scripts.map(s=>'<script>'+s+'</script>').join('')+'<!-- '+read('vendor/NOTICE.txt').replace(/--/g,'—')+' -->'+'</body></html>';
+const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="'+esc(csp)+'">'+gaHead+'<meta name="robots" content="index,follow"><meta name="author" content="Adeel Ahmad"><meta name="description" content="'+esc(D.description)+'"><link rel="canonical" href="'+SITE_URL+'"><meta property="og:url" content="'+SITE_URL+'"><meta property="og:type" content="website"><meta property="og:title" content="'+esc(metaTitle)+'"><meta property="og:description" content="'+esc(D.description)+'"><meta name="twitter:card" content="summary"><meta name="color-scheme" content="light"><title>'+esc(metaTitle)+'</title><link rel="icon" href="data:image/svg+xml,'+encodeURIComponent(svg)+'"><style>'+css+'</style></head><body id="top"><div id="root">'+staticBody()+'</div>'+scripts.map(s=>'<script>'+s+'</script>').join('')+'<!-- '+read('vendor/NOTICE.txt').replace(/--/g,'—')+' -->'+'</body></html>';
 fs.mkdirSync(path.join(ROOT,'dist'),{recursive:true});
 fs.writeFileSync(path.join(ROOT,'dist/index.html'),html);
 fs.writeFileSync(path.join(ROOT,'index.html'),html);
@@ -87,4 +88,4 @@ md.push('## Everything I’ve used','',D.method.skills,'');for(const [k,skills] 
 md.push('## About this page','');Object.values(D.method).forEach(p=>md.push(p,''));
 fs.writeFileSync(path.join(ROOT,'PUBLIC-TIMELINE.md'),md.join('\n')+'\n');
 const pages=buildPages({root:ROOT,dist:path.join(ROOT,'dist'),site:SITE_URL,posts:writing,css:css+read('src/post.css'),favicon,intro:D.intro,journey:J,timelineMd:md.join('\n')+'\n',links:{blog:BLOG_URL,linkedin:LINKEDIN_URL}});
-console.log(JSON.stringify({chapters:J.chapters.length,milestones:D.events.length,projects:D.projects.length,posts:writing.length,postPages:pages.length,bytes:Buffer.byteLength(html),csp:'hashed scripts and stylesheet; no network connections',build:'complete'}));
+console.log(JSON.stringify({chapters:J.chapters.length,milestones:D.events.length,projects:D.projects.length,posts:writing.length,postPages:pages.length,bytes:Buffer.byteLength(html),csp:'hashed scripts and stylesheet; Google Analytics only',build:'complete'}));

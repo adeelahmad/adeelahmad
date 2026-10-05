@@ -34,4 +34,4 @@ One-time setup in the repository settings: **Pages → Source: GitHub Actions**,
 
 ## Runtime
 
-The page is self-contained: no analytics, remote fonts or automatic external requests, with a hashed Content Security Policy, and it stays readable with JavaScript disabled. It vendors React 16 (MIT notice in `vendor/NOTICE.txt`).
+Pages load Google Analytics (tag G-RKFB16BPXJ, in `scripts/analytics.mjs`) and nothing else from third parties: no remote fonts or CDNs. A hashed Content Security Policy allows only the analytics hosts, and the page stays readable with JavaScript disabled. It vendors React 16 (MIT notice in `vendor/NOTICE.txt`).
