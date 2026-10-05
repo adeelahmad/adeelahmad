@@ -93,7 +93,7 @@
     }
     hero() {
       return h('section',{className:'hero hero-plain container','aria-labelledby':'page-title'},
-        h('h1',{id:'page-title'},'Adeel Ahmad'),
+        h('div',{className:'hero-name'},h('img',{className:'portrait',src:'photo.webp',alt:'',width:88,height:88}),h('h1',{id:'page-title'},'Adeel Ahmad')),
         h('p',{className:'intro'},D.intro),
         h('p',{className:'hero-sub'},'Most of it comes from one habit: when something I depend on doesn\u2019t make sense to me, I go and learn the layer underneath it.'));
     }
