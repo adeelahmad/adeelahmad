@@ -51,7 +51,10 @@ function validate(){
   const blocked=new Set(read('data/private-terms.sha256').split('\n').map(s=>s.trim()).filter(Boolean));
   const found=[...phraseHashes(text)].filter(h=>blocked.has(h));
   if(found.length)throw Error('Private term found in public content (hash '+found[0].slice(0,12)+'…). Remove it before publishing.');
-  for(const rx of [/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/,/\b[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}\b/i,/(?:\/Users\/|\/mnt\/|file:\/\/)/])if(rx.test(text))throw Error('Potential private data detected in publication model.');
+  // Name the pattern and the source (not the matched text) so a failure can be traced from CI logs.
+  const patterns={'email address':/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/,'UUID':/\b[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}\b/i,'local file path':/(?:\/Users\/|\/mnt\/|file:\/\/)/};
+  const sources=[['timeline',JSON.stringify(D)],['journey',JSON.stringify(J)],['writing index',JSON.stringify(writing)],...writing.filter(p=>p.local).map((p,i)=>['post '+p.id,postText[i]])];
+  for(const [kind,rx] of Object.entries(patterns))for(const [where,t] of sources)if(rx.test(t))throw Error('Potential private data detected in publication model: '+kind+' in '+where+'.');
 }
 validate();
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
