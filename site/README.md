@@ -1,6 +1,6 @@
 # adeelahmad.net
 
-Source for [adeelahmad.net](https://adeelahmad.net/): the journey, technology timeline, skills, projects and Medium writing on one static page.
+Source for [adeelahmad.net](https://adeelahmad.net/): the journey, technology timeline, skills, projects and Medium writing as plain static pages (the "Ledger" design from Claude Design).
 
 ## What goes in here
 
@@ -18,7 +18,14 @@ Only publication copy. The private working record (transcripts, exports, CV draf
 node build.mjs
 ```
 
-No install step. The build validates the data, refuses any hashed private term, and writes `dist/` (gitignored). To block a new term without writing it into the repo:
+No install step. The build validates the data, renders the pages with `src/render.mjs`, refuses any hashed private term in the data or the rendered pages, and writes `dist/` (gitignored): the home page, `blog/` with a page per saved post, `skills/<skill>/` (one page per skill, so skill links work without JavaScript), plus `timeline.md`, `llms.txt`, `sitemap.xml` and `robots.txt`.
+
+- `src/render.mjs`: page templates. `SITE`, `CHAPTER_FIGURES` and `PROJECT_AREAS` at the top hold the intro line, the chapter photo and the project groups.
+- `src/styles.css`: all styling, light and dark.
+- `src/site.js`: optional enhancements (theme toggle, timeline search and filters, skill filtering, old `#event=` links).
+- `static/`: copied as is (images, fonts, favicon, share image, CNAME).
+
+To block a new term without writing it into the repo:
 
 ```sh
 echo "Term to block" | node scripts/hash-terms.mjs >> data/private-terms.sha256
@@ -34,4 +41,4 @@ One-time setup in the repository settings: **Pages → Source: GitHub Actions**,
 
 ## Runtime
 
-Pages load Google Analytics (tag G-RKFB16BPXJ, in `scripts/analytics.mjs`) and nothing else from third parties: no remote fonts or CDNs. A hashed Content Security Policy allows only the analytics hosts, and the page stays readable with JavaScript disabled. It vendors React 16 (MIT notice in `vendor/NOTICE.txt`).
+Pages load Google Analytics (tag G-RKFB16BPXJ, in `scripts/analytics.mjs`) and nothing else from third parties; post pages may also show images from Medium's image hosts. Fonts are self-hosted (DM Sans and JetBrains Mono, OFL, see `static/fonts/LICENSE.txt`). A Content Security Policy with a hashed inline script allows only these, and every page is complete with JavaScript disabled.
