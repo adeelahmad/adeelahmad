@@ -138,7 +138,7 @@
    "date": "From the PureLogics years",
    "period": "2007–2012",
    "title": "Virtualization, networks and telephony",
-   "body": "Worked with VMware, Asterisk and Cisco networking. My later virtualization work progressed through XenServer and then Proxmox/KVM; these were successive stages, not one simultaneous deployment.",
+   "body": "Worked with VMware, Asterisk and Cisco networking. Later I moved from VMware to XenServer, and then to Proxmox/KVM.",
    "skills": [
     "VMware",
     "XenServer",
@@ -149,7 +149,7 @@
    "kind": "Experience",
    "track": "Systems",
    "evidence": "From my own notes",
-   "note": "These came one after another; I don't have exact start dates.",
+   "note": "I don’t have exact start dates for these.",
    "links": [],
    "featured": false
   },
@@ -230,10 +230,10 @@
   },
   {
    "id": "milestone-012",
-   "date": "2013; personal recollection",
+   "date": "Around 2013",
    "period": "2013–2022",
    "title": "Starting with AWS",
-   "body": "AWS became part of our client work early on, around 2013.",
+   "body": "AWS became part of our client work early on.",
    "skills": [
     "AWS",
     "Cloud architecture"
@@ -247,7 +247,7 @@
   },
   {
    "id": "milestone-013",
-   "date": "Xoho portfolio period",
+   "date": "Xoho years",
    "period": "2013–2022",
    "title": "Digital archives and video platforms",
    "body": "Worked on AWS-hosted archive and video-streaming systems with searchable collections.",
@@ -267,10 +267,10 @@
   },
   {
    "id": "milestone-014",
-   "date": "Xoho portfolio period",
+   "date": "Xoho years",
    "period": "2013–2022",
-   "title": "Institutional archival management",
-   "body": "Delivered archival-management and audiovisual-platform work involving data modeling, media integration, search and maintainable application architecture.",
+   "title": "Archive management",
+   "body": "Built archive-management and audiovisual systems: data models, media handling and search.",
    "skills": [
     "Data modeling",
     "Media integration",
@@ -287,10 +287,10 @@
   },
   {
    "id": "milestone-015",
-   "date": "Xoho portfolio period",
+   "date": "Xoho years",
    "period": "2013–2022",
    "title": "Tools for archival quality and integrity",
-   "body": "Worked on multiple applications for collection management, data quality and file integrity within an archival-software portfolio.",
+   "body": "Worked on several applications for managing archive collections and checking data quality and file integrity.",
    "skills": [
     "Data quality",
     "File integrity",
@@ -306,10 +306,10 @@
   },
   {
    "id": "milestone-016",
-   "date": "Xoho portfolio period",
+   "date": "Xoho years",
    "period": "2013–2022",
-   "title": "E-signature application engineering",
-   "body": "Contributed to an AWS-hosted e-signature application, including workflow design and enterprise integration.",
+   "title": "An e-signature application",
+   "body": "Worked on an e-signature application on AWS: the signing workflows and integration with other business systems.",
    "skills": [
     "AWS",
     "E-signature workflows",
@@ -325,7 +325,7 @@
   },
   {
    "id": "milestone-017",
-   "date": "Xoho portfolio period",
+   "date": "Xoho years",
    "period": "2013–2022",
    "title": "Writing down our engineering practices",
    "body": "Wrote the company's engineering guide: cloud practices, identity, secure coding, style and onboarding.",
@@ -384,7 +384,7 @@
    "date": "Late 2010s",
    "period": "2013–2022",
    "title": "Taking the browser IDE apart",
-   "body": "Investigated the separation between the editor interface, extension host and background services, then used browser-hosted VS Code tooling in later remote-development iterations.",
+   "body": "Looked at how VS Code separates the editor, the extension host and background services, then used browser-hosted VS Code in our later remote workspaces.",
    "skills": [
     "VS Code",
     "Browser IDEs",
@@ -421,7 +421,7 @@
   },
   {
    "id": "milestone-022",
-   "date": "Late 2010s; described by June 2023",
+   "date": "Late 2010s",
    "period": "2013–2022",
    "title": "Shared, template-based development environments",
    "body": "Built Linux-container templates with project dependencies and browser-based editing on a rented European server. Private networking, cloning and shared resources made the environment reusable across developers.",
@@ -444,10 +444,10 @@
   },
   {
    "id": "milestone-023",
-   "date": "Remote-workspace development period",
+   "date": "Xoho years",
    "period": "2013–2022",
-   "title": "Request-driven workspace shutdown and wake-up",
-   "body": "Used a web server and shell scripts to stop idle workspaces and restart them when a browser request arrived, rather than keeping every development environment running continuously.",
+   "title": "Stopping idle workspaces",
+   "body": "Used a web server and shell scripts to stop idle workspaces and start them again when a browser request came in, instead of keeping every environment running.",
    "skills": [
     "Bash",
     "Reverse proxies",
@@ -465,8 +465,8 @@
    "id": "milestone-024",
    "date": "Around 2019",
    "period": "2013–2022",
-   "title": "Experimented with Firecracker developer environments",
-   "body": "Moved from container-based workspace experiments toward Firecracker microVMs, exploring the balance between isolation, resource use and lightweight startup.",
+   "title": "Firecracker developer environments",
+   "body": "Moved the workspace experiments from containers toward Firecracker microVMs, weighing isolation against resource use and startup time.",
    "skills": [
     "Firecracker",
     "MicroVMs",
@@ -482,9 +482,9 @@
   },
   {
    "id": "milestone-025",
-   "date": "Late 2019; recollection",
+   "date": "Late 2019",
    "period": "2013–2022",
-   "title": "Teaching containers and systems thinking",
+   "title": "Teaching the team containers",
    "body": "Taught the team containers and some of the infrastructure under our applications.",
    "skills": [
     "Containers",
@@ -502,8 +502,8 @@
    "id": "milestone-026",
    "date": "Around 2019–2020",
    "period": "2013–2022",
-   "title": "Workspaces as an onboarding and continuity system",
-   "body": "Used persistent editor state, snapshots, cloneable environments and preinstalled dependencies to support handovers, onboarding and returning to an existing project.",
+   "title": "Workspaces for onboarding and handovers",
+   "body": "Used saved editor state, snapshots, cloneable environments and preinstalled dependencies so people could hand over work, get started on a project, or come back to an old one.",
    "skills": [
     "Snapshots",
     "Developer onboarding",
@@ -644,8 +644,8 @@
    "id": "milestone-032",
    "date": "Cevo period; exact date unrecorded",
    "period": "2021–2022",
-   "title": "Enterprise retrieval and permission-aware knowledge access",
-   "body": "Worked on enterprise retrieval involving Amazon Q Business and SharePoint, with attention to access-aware search rather than treating all content as equally available.",
+   "title": "Enterprise search that respects permissions",
+   "body": "Worked on enterprise search with Amazon Q Business and SharePoint, where results had to respect who is allowed to see each document.",
    "skills": [
     "Amazon Q Business",
     "SharePoint",
@@ -665,7 +665,7 @@
    "date": "Cevo period; exact date unrecorded",
    "period": "2021–2022",
    "title": "Document and email processing pipelines",
-   "body": "Worked with data transformation, machine learning and language-model components in document and email-processing workflows.",
+   "body": "Worked on pipelines that process documents and email, using dbt, machine learning and Amazon Bedrock.",
    "skills": [
     "dbt",
     "Document processing",
@@ -685,7 +685,7 @@
    "date": "By June 2023",
    "period": "2023",
    "title": "WebRTC beyond the browser IDE",
-   "body": "Experimented with browser-delivered desktops where an editor and shell were not enough for development or QA, considering bandwidth, frame rate, audio and client requirements.",
+   "body": "Tried streaming full desktops to the browser over WebRTC, for development and QA work that needed more than an editor and a shell. Looked at bandwidth, frame rate, audio and what the client device needed.",
    "skills": [
     "WebRTC",
     "Remote desktop delivery",
@@ -725,7 +725,7 @@
    "date": "6 June 2023",
    "period": "2023",
    "title": "Writing about open language models",
-   "body": "Discussed the possibilities of open LLMs and Falcon, reflecting an active interest in models that could be adapted and run beyond a single managed service.",
+   "body": "Wrote about open models like Falcon, which can be adapted and run outside a single vendor’s service.",
    "skills": [
     "Open LLMs",
     "Model evaluation"
@@ -747,7 +747,7 @@
    "date": "June 2023",
    "period": "2023",
    "title": "The development environment is part of DevOps",
-   "body": "Outlined development environments as versioned, reproducible artifacts: dependency definitions, prebuilds and consistent tooling belong in the delivery process, not in a separate manual setup guide.",
+   "body": "Wrote up the idea that development environments should be versioned and reproducible like any other build, with dependencies, prebuilds and tooling defined in the delivery process instead of a setup guide.",
    "skills": [
     "Environment-as-code",
     "CI/CD",
@@ -767,7 +767,7 @@
    "date": "June 2023",
    "period": "2023",
    "title": "Separate the IDE from the application runtime",
-   "body": "Explored a multi-container workspace design with separate responsibilities for the editor and the application, considering managed orchestration where appropriate.",
+   "body": "Sketched a workspace with separate containers for the editor and the application, possibly run on ECS or EKS.",
    "skills": [
     "Container architecture",
     "ECS",
@@ -823,8 +823,8 @@
    "id": "milestone-041",
    "date": "June 2023",
    "period": "2023",
-   "title": "Treating extension distribution as an architecture constraint",
-   "body": "Considered how custom IDE distributions, extension marketplaces and distribution terms affect the viability of a developer-platform design.",
+   "title": "Extension licensing as a design constraint",
+   "body": "Checked how custom IDE builds, extension marketplaces and their licence terms would affect the developer-platform design.",
    "skills": [
     "IDE extensibility",
     "Software distribution",
@@ -841,8 +841,8 @@
    "id": "milestone-042",
    "date": "June 2023",
    "period": "2023",
-   "title": "Managed workspaces, data locality and client independence",
-   "body": "Explored keeping development near shared services, controlling dependency access centrally and separating the developer’s access device from the hosted workspace.",
+   "title": "Keeping workspaces near shared services",
+   "body": "Looked at keeping development close to shared services, controlling package access in one place, and keeping the workspace separate from the device a developer uses to reach it.",
    "skills": [
     "Data locality",
     "Network security",
@@ -861,8 +861,8 @@
    "id": "milestone-043",
    "date": "June 2023",
    "period": "2023",
-   "title": "Private AI coding assistance and the adoption problem",
-   "body": "Proposed integrating privately hosted model endpoints into developer environments. The design considered both code confidentiality and the risk of useful tools being adopted outside sanctioned workflows.",
+   "title": "Private AI coding assistance",
+   "body": "Proposed connecting privately hosted models to the development environments, so code stayed private and people had less reason to use unapproved AI tools.",
    "skills": [
     "Private LLMs",
     "GPU inference",
@@ -881,8 +881,8 @@
    "id": "milestone-044",
    "date": "June 2023",
    "period": "2023",
-   "title": "Jira-triggered AI preparation before a developer starts",
-   "body": "Outlined a workflow in which a task triggers an ephemeral development environment and an AI system prepares a plan and carries out preliminary work before the engineer takes over.",
+   "title": "AI preparing a Jira task before a developer starts",
+   "body": "Sketched a workflow where a new Jira task starts a temporary development environment, and an AI prepares a plan and a first pass before the engineer takes over.",
    "skills": [
     "Agent workflows",
     "Task orchestration",
@@ -900,8 +900,8 @@
    "id": "milestone-045",
    "date": "June 2023",
    "period": "2023",
-   "title": "Visible plans, action records and human verification",
-   "body": "The engineer would see what the AI planned and what it actually did, verify the work and retain responsibility for the result. This put inspectability and handoff into the workflow design.",
+   "title": "Showing the plan and checking the result",
+   "body": "In the same design, the engineer could see what the AI planned and what it actually did, check the work, and stayed responsible for the result.",
    "skills": [
     "Human-in-the-loop design",
     "Agent observability",
@@ -920,7 +920,7 @@
    "date": "June 2023",
    "period": "2023",
    "title": "Runnable environments for pull-request review",
-   "body": "Proposed opening a pull request into a checked-out, running browser workspace so a reviewer could examine behavior as well as code before accepting a change.",
+   "body": "Proposed opening each pull request in a running browser workspace, so a reviewer could try the change as well as read the code.",
    "skills": [
     "Pull-request workflows",
     "Reproducible environments",
@@ -938,8 +938,8 @@
    "id": "milestone-047",
    "date": "June 2023",
    "period": "2023",
-   "title": "Scope, supportability and a runnable pilot",
-   "body": "Worked through the operational cost and training implications of a developer-platform proposal, favouring a small, understandable pilot with runnable examples over an all-at-once platform build.",
+   "title": "Starting with a small pilot",
+   "body": "Worked out what the developer platform would cost to run and to teach, and suggested a small pilot with runnable examples instead of building everything at once.",
    "skills": [
     "Architecture trade-offs",
     "Pilot scoping",
@@ -955,9 +955,9 @@
   },
   {
    "id": "milestone-048",
-   "date": "2023–2024; presentation date unrecorded",
+   "date": "2023–2024",
    "period": "2023",
-   "title": "Sharing the remote-development journey",
+   "title": "A talk on our remote-development setup",
    "body": "Gave a talk on how our setup went from hosted workspaces to containers, prebuilt environments and AI-assisted workflows.",
    "skills": [
     "Technical teaching",
@@ -979,7 +979,7 @@
    "date": "24 August 2023",
    "period": "2023",
    "title": "Small, domain-specific models on consumer hardware",
-   "body": "Reported experiments adapting small GPT-NeoX models for a focused task such as email drafting, with local execution on consumer hardware.",
+   "body": "Shared experiments fine-tuning small GPT-NeoX models for one task, such as drafting email, and running them on ordinary hardware.",
    "skills": [
     "GPT-NeoX",
     "Fine-tuning",
@@ -1003,7 +1003,7 @@
    "date": "20 September 2023",
    "period": "2023",
    "title": "Article-to-podcast workflow in Python",
-   "body": "Built a script that transformed source content into podcast-style text and used the macOS speech tooling to produce an audio output.",
+   "body": "Wrote a Python script that rewrites an article as a podcast script and reads it out with macOS text-to-speech.",
    "skills": [
     "Python",
     "Text-to-speech",
@@ -1027,7 +1027,7 @@
    "date": "21 September 2023",
    "period": "2023",
    "title": "Browser-to-podcast automation with Shortcuts",
-   "body": "Shared an iOS/macOS Shortcut for turning browser content into podcast-style output, making the workflow usable beyond a development shell.",
+   "body": "Shared an iOS/macOS Shortcut that does the same from the browser, without a terminal.",
    "skills": [
     "Shortcuts",
     "Workflow automation",
@@ -1050,7 +1050,7 @@
    "date": "12 October 2023",
    "period": "2023",
    "title": "Thinking about small-model serving economics",
-   "body": "Proposed serving approaches that account for idle workloads and the cost of keeping a model resident in memory.",
+   "body": "Wrote about serving small models that sit idle most of the time, and what it costs to keep a model loaded in memory.",
    "skills": [
     "Inference economics",
     "Resource scheduling",
@@ -1144,7 +1144,7 @@
    "date": "24 October 2023",
    "period": "2023",
    "title": "Prompt and SQL-injection risks in AI applications",
-   "body": "Raised injection concerns in an AI-assisted data-access approach, including the importance of how untrusted input reaches templates and tools.",
+   "body": "Pointed out injection risks in an approach that let a model query data, especially where untrusted input reaches templates and tools.",
    "skills": [
     "Prompt injection",
     "SQL injection",
@@ -1167,7 +1167,7 @@
    "date": "26 October 2023",
    "period": "2023",
    "title": "Private, multi-model agent orchestration",
-   "body": "Discussed AutoGen and Griptape as options for composing multi-model agents, including the use of private or open models.",
+   "body": "Wrote about AutoGen and Griptape as ways to combine several models in one agent system, including private or open models.",
    "skills": [
     "AutoGen",
     "Griptape",
@@ -1190,8 +1190,8 @@
    "id": "milestone-059",
    "date": "9 November 2023",
    "period": "2023",
-   "title": "Adaptive decoys as an AI-security idea",
-   "body": "Proposed investigating whether language models could make controlled decoy environments more realistic and useful for studying attacker behavior.",
+   "title": "Using language models in honeypots",
+   "body": "Suggested using language models to make honeypots more convincing and more useful for studying attackers.",
    "skills": [
     "Honeypots",
     "Adaptive security",
@@ -1214,7 +1214,7 @@
    "date": "12 December 2023",
    "period": "2023",
    "title": "Structured metadata for retrieval",
-   "body": "Wrote about RDF and metadata as part of the relationship between language models, data semantics and information retrieval.",
+   "body": "Wrote about how RDF and structured metadata can help language models find the right information.",
    "skills": [
     "RDF",
     "Metadata modeling",
@@ -1265,7 +1265,7 @@
    "date": "2024",
    "period": "2024",
    "title": "Local supervised fine-tuning",
-   "body": "Ran local fine-tuning experiments using llama.cpp and Llama/OpenChat-class models, working through training data, adaptation and evaluation.",
+   "body": "Fine-tuned Llama and OpenChat-class models locally with llama.cpp: preparing the training data, training, and checking the results.",
    "skills": [
     "llama.cpp",
     "SFT",
@@ -1285,7 +1285,7 @@
    "date": "19 March 2024",
    "period": "2024",
    "title": "Synthetic data, fine-tuning and quantization loops",
-   "body": "Explored a cyclic workflow in which models help generate and refine task-focused training data before further fine-tuning and quantization.",
+   "body": "Tried a loop where a model helps write and clean up training data for one task, then gets fine-tuned and quantized, and the cycle repeats.",
    "skills": [
     "Synthetic data",
     "Fine-tuning",
@@ -1309,7 +1309,7 @@
    "date": "21 March 2024",
    "period": "2024",
    "title": "Writing up AI-prepared developer workspaces",
-   "body": "Published a design for a model to plan and prepare isolated development work after requirements and Jira tasks are defined, leaving final code ownership and review with the engineer.",
+   "body": "Wrote up the 2023 idea publicly: once requirements and Jira tasks exist, a model plans and prepares the work in an isolated environment, and the engineer still owns and reviews the code.",
    "skills": [
     "Agent workflows",
     "Jira integration",
@@ -1333,7 +1333,7 @@
    "date": "23 March 2024",
    "period": "2024",
    "title": "Personal assistants and audio knowledge workflows",
-   "body": "Outlined personal-assistant workflows that combine open tooling, automation, knowledge distillation and customized written or audio briefings.",
+   "body": "Wrote about personal-assistant workflows built from open tools and automation that turn reading material into short written or audio briefings.",
    "skills": [
     "Personal AI",
     "Knowledge distillation",
@@ -1357,7 +1357,7 @@
    "date": "28 March 2024",
    "period": "2024",
    "title": "Structured reasoning with smaller models",
-   "body": "Experimented with situation, task, action and result structures to guide agent work and reflection with quantized models.",
+   "body": "Tried the situation, task, action, result (STAR) structure to guide small quantized models through a task and a review of their own work.",
    "skills": [
     "Structured prompting",
     "STAR reasoning",
@@ -1409,8 +1409,8 @@
    "id": "milestone-067",
    "date": "30 April 2024",
    "period": "2024",
-   "title": "Model behavior and serialization risk",
-   "body": "Raised questions about model interaction with serialized or binary representations as part of broader AI-security exploration.",
+   "title": "Models and serialized data",
+   "body": "Asked how models behave when given serialized or binary data, and what security risks that opens.",
    "skills": [
     "Serialization security",
     "Model evaluation"
@@ -1431,8 +1431,8 @@
    "id": "milestone-068",
    "date": "27 May 2024",
    "period": "2024",
-   "title": "Policy-as-code exploration with Cedar",
-   "body": "Discussed experiments with Cedar and the problem of managing security policy at scale.",
+   "title": "Trying Cedar for policy-as-code",
+   "body": "Wrote about experiments with Cedar and how hard it is to manage security policy at scale.",
    "skills": [
     "Cedar",
     "Policy-as-code",
@@ -1454,8 +1454,8 @@
    "id": "milestone-069",
    "date": "3 June 2024",
    "period": "2024",
-   "title": "Exploring smaller-model inference in serverless environments",
-   "body": "Discussed ONNX and the possibility of fitting small-model inference into serverless execution models.",
+   "title": "Small models in serverless functions",
+   "body": "Wrote about using ONNX to fit small-model inference into serverless functions such as Lambda.",
    "skills": [
     "ONNX",
     "AWS Lambda",
@@ -1477,8 +1477,8 @@
    "id": "milestone-070",
    "date": "1 July 2024",
    "period": "2024",
-   "title": "Separating cloud-platform security from AI-application security",
-   "body": "Wrote about security gaps that remain at the application layer even when the underlying AI platform provides security controls.",
+   "title": "AI platform security is not application security",
+   "body": "Wrote about the security gaps that stay in the application even when the AI platform underneath has good controls.",
    "skills": [
     "Application security",
     "GenAI security",
@@ -1558,8 +1558,8 @@
    "id": "milestone-074",
    "date": "2024",
    "period": "2024",
-   "title": "Clinical AI: evaluation, provenance and security",
-   "body": "Worked on clinical language-model applications with attention to structured extraction, evaluation, prompt versioning, provenance and protection of sensitive data.",
+   "title": "Clinical AI: evaluation and traceability",
+   "body": "On the clinical product I worked on structured extraction, evaluation (including LLM-as-judge), prompt versioning, tracing each statement back to its source, and protecting sensitive data.",
    "skills": [
     "Structured extraction",
     "LLM evaluation",
@@ -1577,7 +1577,7 @@
   },
   {
    "id": "milestone-075",
-   "date": "2024; exact test date unrecorded",
+   "date": "2024",
    "period": "2024",
    "title": "Early voice-AI evaluation",
    "body": "Took part in early testing of a voice AI product, which got me into realtime and streaming systems.",
@@ -1616,7 +1616,7 @@
    "date": "10 November 2024",
    "period": "2024",
    "title": "Prompt experiments with reasoning models",
-   "body": "Shared an observation from experimenting with reward-oriented wording in reasoning-model prompts.",
+   "body": "Shared what I noticed when testing reward-style wording in prompts for reasoning models.",
    "skills": [
     "Prompt experiments",
     "Reasoning-model evaluation"
@@ -1635,10 +1635,10 @@
   },
   {
    "id": "milestone-078",
-   "date": "March 2025 onward; record through October 2026",
+   "date": "Since March 2025",
    "period": "2025",
    "title": "Commonwealth Bank: Staff Platform Engineer",
-   "body": "Joined Commonwealth Bank's AI Acceleration squad, working on applied AI from design to production.",
+   "body": "Joined Commonwealth Bank’s AI Acceleration squad.",
    "skills": [
     "Applied AI",
     "Staff engineering",
@@ -1662,8 +1662,8 @@
    "id": "milestone-079",
    "date": "2025–2026",
    "period": "2025",
-   "title": "Applied-AI delivery from early design to production",
-   "body": "Work across development, data and infrastructure to get AI applications from design into production.",
+   "title": "Taking AI applications to production",
+   "body": "Work across development, data and infrastructure to take AI applications from early design into production.",
    "skills": [
     "Applied AI",
     "Data engineering",
@@ -1683,7 +1683,7 @@
    "date": "2025–2026",
    "period": "2025",
    "title": "Identity and authorization for AI applications",
-   "body": "Worked on identity and authorization patterns for service-to-service and agent-to-tool interactions, with attention to least privilege and avoiding shared secrets.",
+   "body": "Worked on identity and authorization between services, and between agents and their tools, using least privilege and avoiding shared secrets.",
    "skills": [
     "OAuth2",
     "OIDC",
@@ -1726,8 +1726,8 @@
    "id": "milestone-082",
    "date": "2025",
    "period": "2025",
-   "title": "AI-application security evaluation",
-   "body": "Carried out hands-on AI-application security evaluation, considering the boundary between language-model output and application behavior.",
+   "title": "Security testing of AI applications",
+   "body": "Tested AI applications for security problems, mainly where model output turns into application behaviour.",
    "skills": [
     "AI red teaming",
     "Application security",
@@ -1744,8 +1744,8 @@
    "id": "milestone-083",
    "date": "June 2025",
    "period": "2025",
-   "title": "Comparative audio-intelligence prototyping",
-   "body": "Built a prototype to compare audio-analysis approaches, exploring speaker separation, timestamps and contextual interaction.",
+   "title": "Comparing audio-analysis approaches",
+   "body": "Built a Gradio prototype to compare ways of analysing audio: telling speakers apart, timestamps, and interacting with what was said.",
    "skills": [
     "Gradio",
     "Audio AI",
@@ -1765,7 +1765,7 @@
    "date": "June–October 2025",
    "period": "2025",
    "title": "Writing about capability and agent risk",
-   "body": "Discussed the security implications of increasingly capable models and agents, including the trade-offs of smaller task-specific models.",
+   "body": "Wrote about the security risks that come with more capable models and agents, and the trade-offs of using smaller, task-specific models.",
    "skills": [
     "Agent security",
     "Risk analysis",
@@ -1816,7 +1816,7 @@
    "date": "2025–2026",
    "period": "2025",
    "title": "Mentoring, standards and engineering delivery",
-   "body": "Combined hands-on engineering with technical guidance, design discussions, mentoring and efforts to improve delivery practices.",
+   "body": "Besides hands-on engineering, I help with design discussions, mentor engineers and work on how the team delivers.",
    "skills": [
     "Mentoring",
     "Engineering standards",
@@ -1853,7 +1853,7 @@
    "date": "22–23 February 2026",
    "period": "2026 · January–June",
    "title": "Declarative agents and filesystem-native tools",
-   "body": "Proposed composing agents from explicit declarations and making tools discoverable through familiar filesystem and command-line interfaces.",
+   "body": "Suggested defining agents declaratively and exposing their tools as ordinary files and command-line programs.",
    "skills": [
     "Agent architecture",
     "MCP",
@@ -1885,8 +1885,8 @@
    "id": "milestone-089",
    "date": "February–March 2026",
    "period": "2026 · January–June",
-   "title": "Expert scaffolding and model adaptation",
-   "body": "Investigated how small models learn with reasoning scaffolds and examined internal differences between base and adapted models.",
+   "title": "Reasoning scaffolds for small models",
+   "body": "Studied how small models learn when given reasoning scaffolds, and compared the insides of base and fine-tuned models.",
    "skills": [
     "GRPO",
     "LoRA",
@@ -1911,7 +1911,7 @@
    "date": "March 2026",
    "period": "2026 · January–June",
    "title": "Testing what model adaptation preserves and changes",
-   "body": "Shared experimental observations about internal representations after fine-tuning and proposed testing whether those observations generalize across model families.",
+   "body": "Shared what I saw inside models after fine-tuning, and suggested checking whether it holds for other model families.",
    "skills": [
     "Activation analysis",
     "Model evaluation",
@@ -1955,10 +1955,10 @@
   },
   {
    "id": "milestone-092",
-   "date": "Recorded by April 2026",
+   "date": "By April 2026",
    "period": "2026 · January–June",
-   "title": "Completion proxy with an agent-tool runtime",
-   "body": "Developed a single-binary Go proxy concept that exposes a chat-completions-compatible interface and separates model backends from tool registry and execution responsibilities.",
+   "title": "A Go proxy for models and tools",
+   "body": "A single Go binary that offers an OpenAI-style chat API, routes to different model backends, and keeps tool registration and execution separate.",
    "skills": [
     "Go",
     "API compatibility",
@@ -2004,7 +2004,7 @@
    "date": "2026",
    "period": "2026 · January–June",
    "title": "MLX model-inspection and comparison tools",
-   "body": "Developed tooling for layer-wise predictions, activation comparisons, geometric drift, ablation-style investigation and inspectable CLI/TUI output.",
+   "body": "Built command-line tools that show a model’s predictions layer by layer, compare activations between models, measure drift and run ablations.",
    "skills": [
     "MLX",
     "Activation analysis",
@@ -2025,7 +2025,7 @@
    "date": "June 2026",
    "period": "2026 · January–June",
    "title": "A lesson in parallel-agent integration",
-   "body": "A multi-agent development effort exposed the cost of starting dependent implementation before the shared interface was settled. The resulting lesson was to establish and verify the common contract before composing dependent work.",
+   "body": "Running several coding agents in parallel, I let them build on a shared interface before it was settled, and had to redo work. Now I agree on and test the shared interface first.",
    "skills": [
     "Multi-agent orchestration",
     "Interface design",
@@ -2041,10 +2041,10 @@
   },
   {
    "id": "milestone-096",
-   "date": "Recorded by June 2026",
+   "date": "By June 2026",
    "period": "2026 · January–June",
    "title": "CTXConfig: choose context at the symbol level",
-   "body": "Explored AST-aware context selection and task planning around source symbols, rather than treating entire repositories as undifferentiated model input.",
+   "body": "Tried choosing context for coding agents by symbol, using the syntax tree, instead of feeding in whole files.",
    "skills": [
     "Rust",
     "Tree-sitter",
@@ -2064,7 +2064,7 @@
    "date": "12 June 2026",
    "period": "2026 · January–June",
    "title": "agentic-agile: test-driven agent workflows",
-   "body": "Published a Claude Code plugin organized around human-gated planning, test-first work, review stages and explicit completion checks.",
+   "body": "Published a Claude Code plugin where I approve the plan first, tests come before code, work goes through review, and a task is only done when its checks pass.",
    "skills": [
     "TDD",
     "Agent workflows",
@@ -2089,7 +2089,7 @@
    "date": "13 June 2026",
    "period": "2026 · January–June",
    "title": "Measuring agent-assisted development",
-   "body": "Reported on a development run using tokens, packages, tests, commits and sprint output to examine agent-assisted engineering beyond a simple completion claim.",
+   "body": "Reported the numbers from one agent-assisted development run (tokens, packages, tests, commits) instead of just saying it worked.",
    "skills": [
     "Agent evaluation",
     "Token accounting",
@@ -2112,8 +2112,8 @@
    "id": "milestone-100",
    "date": "2026",
    "period": "2026 · July–October",
-   "title": "Isolation as an explicit agent-runtime requirement",
-   "body": "Explored packaged agents running in microVMs and compared isolation approaches against a consistent set of requirements.",
+   "title": "Running agents in microVMs",
+   "body": "Ran packaged agents in microVMs with libkrun and compared isolation options against the same list of requirements.",
    "skills": [
     "MicroVMs",
     "libkrun",
@@ -2134,7 +2134,7 @@
    "date": "3 July 2026",
    "period": "2026 · July–October",
    "title": "AgentRC: writing down what an agent may do",
-   "body": "Published a working draft for packaging agents with explicit model, tool and network requests that a platform can grant, narrow or reject before execution.",
+   "body": "Published a draft spec: a packaged agent lists the models, tools and network access it needs, and the platform can allow, narrow or refuse each one before it runs.",
    "skills": [
     "AgentRC",
     "OCI",
@@ -2159,8 +2159,8 @@
    "id": "milestone-102",
    "date": "5 July 2026",
    "period": "2026 · July–October",
-   "title": "Reflecting on years of local-model experimentation",
-   "body": "Connected earlier fastText and local-inference work with later model adaptation and defensive tool-design concerns.",
+   "title": "Looking back at local-model work",
+   "body": "Wrote a look back from early fastText and local-model work to later fine-tuning and defensive tool design.",
    "skills": [
     "fastText",
     "Local inference",
@@ -2210,7 +2210,7 @@
    "date": "August 2026",
    "period": "2026 · July–October",
    "title": "Versioned work state, not just conversation history",
-   "body": "Designed a state-document approach for preserving decisions, versions and task state across agent work, including an interactive view of changes over time.",
+   "body": "Designed a state document that records decisions, versions and task status across agent sessions, with an interactive view of how it changed over time.",
    "skills": [
     "State modeling",
     "Python",
@@ -2228,10 +2228,10 @@
   },
   {
    "id": "milestone-105",
-   "date": "Recorded by August 2026",
+   "date": "By August 2026",
    "period": "2026 · July–October",
-   "title": "Conversation and artifact preservation",
-   "body": "Built browser-extension tooling aimed at preserving a user’s own conversations and generated artifacts as durable, inspectable records.",
+   "title": "Keeping my AI conversations",
+   "body": "Built browser extensions to save my own AI conversations, and what they produced, as files I keep.",
    "skills": [
     "Browser extensions",
     "Data preservation",
@@ -2246,7 +2246,7 @@
   },
   {
    "id": "milestone-106",
-   "date": "Recorded by August 2026",
+   "date": "By August 2026",
    "period": "2026 · July–October",
    "title": "Local Python execution inside a document editor",
    "body": "Prototyped a browser extension that runs Python locally with Pyodide, so code examples in a document can run where they are written.",
@@ -2293,7 +2293,7 @@
   },
   {
    "id": "milestone-108",
-   "date": "19–24 August 2026 (UTC)",
+   "date": "19–24 August 2026",
    "period": "2026 · July–October",
    "title": "OpenWrt traffic-control fix merged upstream",
    "body": "Fixed bidirectional traffic shaping in luci-app-trafficctl, with tests. The pull request was merged upstream.",
@@ -2319,10 +2319,10 @@
   },
   {
    "id": "milestone-109",
-   "date": "Recorded by August 2026",
+   "date": "By August 2026",
    "period": "2026 · July–October",
    "title": "Out-of-band automation through PiKVM",
-   "body": "Prototyped a hardware-control interface for recovery and machine administration when ordinary network access is unavailable.",
+   "body": "Prototyped a hardware-control interface for fixing and administering machines when the normal network is down.",
    "skills": [
     "PiKVM",
     "Hardware control",
@@ -2361,8 +2361,8 @@
    "id": "milestone-111",
    "date": "2026",
    "period": "2026 · July–October",
-   "title": "ReqWall: portable policies, replaceable enforcement",
-   "body": "Explored request-policy tooling in which the rules are durable and browser or router enforcement mechanisms can be replaced independently.",
+   "title": "ReqWall: request rules kept separate from enforcement",
+   "body": "Tried keeping request-blocking rules in one place, so whatever enforces them, the browser or the router, can be swapped.",
    "skills": [
     "Policy modeling",
     "HTTP analysis",
@@ -2379,10 +2379,10 @@
   },
   {
    "id": "milestone-112",
-   "date": "Recorded by September 2026",
+   "date": "By September 2026",
    "period": "2026 · July–October",
-   "title": "Reusable media-ingestion pipelines",
-   "body": "Developed the foundation of a reusable pipeline for audio, video and image ingestion, indexing and search.",
+   "title": "A media-ingestion pipeline",
+   "body": "Started a reusable pipeline that takes in audio, video and images and makes them searchable.",
    "skills": [
     "Media pipelines",
     "Search indexing",
@@ -2400,8 +2400,8 @@
    "id": "milestone-113",
    "date": "September 2026",
    "period": "2026 · July–October",
-   "title": "Android administration and feasibility testing",
-   "body": "Worked through device-management feasibility and repeatable ADB/Shizuku startup, distinguishing a practical administration path from unsupported assumptions about device access.",
+   "title": "Android device management",
+   "body": "Checked what Android device management is actually possible, and made ADB and Shizuku start reliably.",
    "skills": [
     "ADB",
     "Shizuku",
@@ -2420,7 +2420,7 @@
    "date": "16 September 2026",
    "period": "2026 · July–October",
    "title": "agent-handoff: durable decisions across sessions",
-   "body": "Published a tool for preserving settled decisions, open work and versioned handoff state between AI sessions rather than repeatedly reconstructing context.",
+   "body": "Published a Go tool that carries settled decisions, open tasks and versioned state from one AI session to the next, so I don’t rebuild context each time.",
    "skills": [
     "Go",
     "State versioning",
@@ -2444,7 +2444,7 @@
    "date": "19–22 September 2026",
    "period": "2026 · July–October",
    "title": "Snapback: browse backup history without replacing live data",
-   "body": "Defined a Linux/macOS tool for read-only, per-directory historical views and copy-back restoration, built around the constraint that the live filesystem must never be over-mounted.",
+   "body": "Designed a Linux/macOS tool to browse backup history read-only, folder by folder, and copy files back, without ever mounting over the live files.",
    "skills": [
     "Go",
     "FUSE",
@@ -2465,8 +2465,8 @@
    "id": "milestone-116",
    "date": "23 September 2026",
    "period": "2026 · July–October",
-   "title": "aloop: evolving the agentic-agile workflow",
-   "body": "Reframed the workflow around test-driven agents, review waves, a final gate and explicit handoff state between cleared contexts.",
+   "title": "aloop: the next version of agentic-agile",
+   "body": "Reworked agentic-agile into aloop: test-driven agents, rounds of review, a final check, and a handoff file carried between fresh sessions.",
    "skills": [
     "Agent engineering",
     "TDD",
@@ -2485,7 +2485,7 @@
    "date": "24–28 September 2026",
    "period": "2026 · July–October",
    "title": "Workstation recovery and GPU diagnostics",
-   "body": "Worked through memory compatibility, firmware settings, storage and network hardware, Linux drivers and GPU recovery on an older workstation platform.",
+   "body": "Worked through memory compatibility, firmware settings, storage and network hardware, Linux drivers and GPU recovery on an older workstation.",
    "skills": [
     "Hardware diagnostics",
     "Linux",
@@ -2505,8 +2505,8 @@
    "id": "milestone-118",
    "date": "25 September 2026",
    "period": "2026 · July–October",
-   "title": "Browser storage and execution-context debugging",
-   "body": "Worked on IndexedDB export and the differences between browser, extension and worker contexts when expected DOM or URL facilities were unavailable.",
+   "title": "Browser storage and extension debugging",
+   "body": "Exported data from IndexedDB and worked out why DOM and URL APIs behaved differently in page, extension and worker contexts.",
    "skills": [
     "JavaScript",
     "IndexedDB",
@@ -2564,7 +2564,7 @@
    "date": "30 September 2026",
    "period": "2026 · July–October",
    "title": "USB-device emulation on Raspberry Pi",
-   "body": "Explored a Raspberry Pi Zero starting point for a USB-device-emulation prototype and the possibility of later portability.",
+   "body": "Started a USB device-emulation prototype on a Raspberry Pi Zero, possibly moving to other hardware later.",
    "skills": [
     "USB OTG",
     "Linux gadget interfaces",
@@ -2583,7 +2583,7 @@
    "date": "2 October 2026",
    "period": "2026 · July–October",
    "title": "Privacy questions in voice-AI pipelines",
-   "body": "Examined voice-AI security questions including how personally identifiable information could be handled in streaming and voice-token pipelines.",
+   "body": "Looked at how voice-AI pipelines handle personal information in streaming audio and voice tokens.",
    "skills": [
     "Voice AI",
     "Privacy",
@@ -2601,8 +2601,8 @@
    "id": "milestone-123",
    "date": "3 October 2026",
    "period": "2026 · July–October",
-   "title": "anytopdf: an extensible path from media to searchable documents",
-   "body": "Designed an extensible document pipeline for files, images, audio and video, including transcripts, captions and keyframe metadata, with Python work and a longer-term Rust architecture.",
+   "title": "anytopdf: media to searchable documents",
+   "body": "Designed a pipeline that turns files, images, audio and video into searchable documents, with transcripts, captions and keyframe notes. The first version is in Python; a later one may move to Rust.",
    "skills": [
     "Python",
     "Rust",
@@ -2624,7 +2624,7 @@
    "id": "milestone-124",
    "date": "4 October 2026",
    "period": "2026 · July–October",
-   "title": "Lens product identity and interface design",
+   "title": "Lens: look and interface",
    "body": "Worked on the look and interface for Lens across web, app and command line.",
    "skills": [
     "Product design",
@@ -2643,7 +2643,7 @@
    "id": "milestone-125",
    "date": "4 October 2026",
    "period": "2026 · July–October",
-   "title": "Lens: a private, user-owned AI hub",
+   "title": "Lens: a private AI hub",
    "body": "Planned a private AI hub that runs on my own machines: my notes and files, searchable, with answers that cite sources and actions that need my approval.",
    "skills": [
     "Local AI",
@@ -2682,10 +2682,10 @@
   },
   {
    "id": "milestone-099",
-   "date": "Undated and 2026 investigations",
+   "date": "Various dates",
    "period": "Cross-period",
    "title": "Security research at execution boundaries",
-   "body": "Investigated AI execution environments and sandbox boundaries through protocol and systems analysis, while keeping target-specific and undisclosed research separate from the public record.",
+   "body": "Studied the sandbox boundaries of AI execution environments through protocol and systems analysis. Unpublished findings are not listed here.",
    "skills": [
     "Sandbox forensics",
     "Protocol analysis",
@@ -2701,7 +2701,7 @@
   },
   {
    "id": "milestone-127",
-   "date": "Earlier work; exact dates unrecorded",
+   "date": "Earlier years",
    "period": "Cross-period",
    "title": "Speech recognition, OCR and visual-media processing",
    "body": "Worked with speech-recognition, OCR and media-processing tools before the later LLM-focused projects.",
@@ -2745,10 +2745,10 @@
   },
   {
    "id": "milestone-129",
-   "date": "Across multiple projects",
+   "date": "Across many projects",
    "period": "Cross-period",
    "title": "Routing, VPNs and identity-aware access",
-   "body": "Built experience across switching, routing, firewalls, overlay networking, VPNs and identity-aware access. Tool adoption spans different periods rather than a single first-use date.",
+   "body": "Worked with switching, routing, firewalls, overlay networks, VPNs and identity-aware access, picked up over many years and projects.",
    "skills": [
     "Cisco",
     "MikroTik",
@@ -2770,7 +2770,7 @@
   },
   {
    "id": "milestone-130",
-   "date": "Local-AI period; exact date unrecorded",
+   "date": "Undated",
    "period": "Cross-period",
    "title": "MacPilot: natural-language desktop automation",
    "body": "Experimented with model-driven macOS control using accessibility interfaces, AppleScript, OCR and asynchronous orchestration.",
@@ -2793,7 +2793,7 @@
  "projects": [
   {
    "name": "AgentRC",
-   "description": "Declared agent capabilities and execution boundaries.",
+   "description": "Writing down what an agent needs, so a platform can decide what to allow.",
    "status": "Published working draft",
    "eventIds": [
     "milestone-101"
@@ -2900,7 +2900,7 @@
   },
   {
    "name": "JuiceFS fork",
-   "description": "Storage backends, caching, replication and interface engineering.",
+   "description": "Storage backends, caching, replication and block access.",
    "status": "Fork development",
    "eventIds": [
     "milestone-093"
@@ -3001,8 +3001,8 @@
   },
   {
    "name": "Lens",
-   "description": "User-owned memory, retrieval and approval-gated assistance.",
-   "status": "Product direction / in development",
+   "description": "My own notes and files, searchable, with answers that cite sources and actions that need my approval.",
+   "status": "In development",
    "eventIds": [
     "milestone-125"
    ],
@@ -3020,8 +3020,8 @@
   },
   {
    "name": "anytopdf",
-   "description": "Extensible media-to-searchable-document processing.",
-   "status": "Architecture / in development",
+   "description": "Turning media and files into searchable documents.",
+   "status": "In development",
    "eventIds": [
     "milestone-123"
    ],
@@ -3072,8 +3072,8 @@
   },
   {
    "name": "Developer workspaces",
-   "description": "Browser IDEs, environment images, microVMs and lifecycle automation.",
-   "status": "Implemented experiments",
+   "description": "Browser IDEs, environment images, microVMs and starting and stopping workspaces on demand.",
+   "status": "Experiments",
    "eventIds": [
     "milestone-022",
     "milestone-024",
@@ -3101,7 +3101,7 @@
   },
   {
    "name": "Versioned agent state",
-   "description": "Queryable work-state records rather than only transcripts.",
+   "description": "Records of decisions and task state, not just transcripts.",
    "status": "Design",
    "eventIds": [
     "milestone-104"
@@ -3448,7 +3448,6 @@
   "evidence": "Some entries link to public posts or code. The rest come from my own notes and records.",
   "dates": "Some dates are exact and some are approximate. Approximate ones say so.",
   "skills": "Skill tags show what a piece of work involved. They are not ratings.",
-  "research": "Experiments and proposals are labelled as such. Not everything here was finished or went into production.",
-  "personal": "These are my own views, not my employer's."
+  "research": "Experiments and proposals are labelled as such. Not everything here was finished or went into production."
  }
 }

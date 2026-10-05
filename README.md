@@ -14,7 +14,7 @@ If you've read my CV and wondered how one person ended up working across softwar
 
 **Cloud, then AI.** In 2022 I moved to Melbourne to work as an AWS consultant at Cevo. I'd been experimenting with OpenAI's API since 2021, so when clients started asking about generative AI I had some practice. In 2024 I gave a [public talk](https://www.youtube.com/watch?v=pR-Z0Q0i4AI) on building a personal "second brain" on AWS serverless, keeping costs low by using small models for the cheap steps. Later that year I was tech lead on a clinical AI product at Lyrebird Health, which taught me how much care sensitive data and model output need.
 
-**Now.** Since 2025 I've been at Commonwealth Bank working on AI applications and their security. Outside work I train small models on my own Mac to understand how they learn to reason, and I build tools for running AI agents with clear limits. I still do networking and storage work, because those layers still matter.
+**Now.** Since 2025 I've been at Commonwealth Bank working on AI applications and their security. Outside work I train small models on my own Mac to understand how they learn to reason, and I build tools for running AI agents with clear limits. I still do networking and storage work, because those layers matter.
 
 #### Personal projects
 
