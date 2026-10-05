@@ -31,7 +31,7 @@ function validate(){
     ids.add(e.id);
     if(!D.periods.includes(e.period)||!Array.isArray(e.skills)||!e.skills.length)throw Error('Invalid period or skills.');
     for(const l of e.links){
-      const u=new URL(l.url);if(u.protocol!=='https:'||!['github.com','www.linkedin.com'].includes(u.hostname)||u.username||u.password)throw Error('Unapproved public reference.');
+      const u=new URL(l.url);if(u.protocol!=='https:'||!['github.com','www.linkedin.com','www.youtube.com'].includes(u.hostname)||u.username||u.password)throw Error('Unapproved public reference.');
     }
   }
   for(const p of D.projects)if(!p.eventIds.length||p.eventIds.some(id=>!ids.has(id)))throw Error('Broken project reference.');

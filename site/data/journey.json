@@ -106,9 +106,10 @@
       "id": "chapter-5",
       "when": "2024",
       "title": "Sensitive data",
-      "story": "I kept experimenting with fine-tuning and small models at home. At work I became tech lead on a clinical AI product, where every statement in a generated note had to point back to the conversation it came from.",
+      "story": "I kept experimenting with fine-tuning and small models at home, and gave a public talk on building a personal \"second brain\" on AWS serverless, using small models for the cheap steps and a large one only when needed. At work I became tech lead on a clinical AI product, where every statement in a generated note had to point back to the conversation it came from.",
       "learned": "With sensitive data, being able to check where an answer came from matters more than how well it reads.",
       "skills": [
+        "RAG",
         "Fine-tuning",
         "Synthetic data",
         "Cedar",
@@ -116,6 +117,7 @@
         "Clinical AI"
       ],
       "eventIds": [
+        "milestone-049",
         "milestone-061",
         "milestone-062",
         "milestone-068",

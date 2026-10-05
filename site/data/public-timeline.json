@@ -975,27 +975,6 @@
    "featured": false
   },
   {
-   "id": "milestone-049",
-   "date": "2023–2024; talk date unresolved",
-   "period": "2023",
-   "title": "Second Brain: owned knowledge and adaptable consumption",
-   "body": "Explored a personal-knowledge system that retains source material, retrieves relevant context and adapts outputs to how a person consumes information, including audio.",
-   "skills": [
-    "RAG",
-    "Knowledge management",
-    "Embeddings",
-    "Hybrid retrieval",
-    "Text-to-speech",
-    "Cost-aware architecture"
-   ],
-   "kind": "Teaching",
-   "track": "AI & agents",
-   "evidence": "From my own notes",
-   "note": "I don't have the exact date of the talk.",
-   "links": [],
-   "featured": true
-  },
-  {
    "id": "milestone-050",
    "date": "24 August 2023",
    "period": "2023",
@@ -1252,6 +1231,34 @@
     }
    ],
    "featured": false
+  },
+  {
+   "id": "milestone-049",
+   "date": "2024",
+   "period": "2024",
+   "title": "Public talk: a generative AI second brain on AWS serverless",
+   "body": "Gave a talk on building a personal \"second brain\" on AWS serverless while keeping the cost low. Most of it does not need a large model or real-time answers, so documents are stored in S3, organised with small keyword and topic models, and searched with a vector database that sits on S3. Small quantized models handle the cheap steps, and retrieval with a larger model runs only for content I pick.",
+   "skills": [
+    "AWS Lambda",
+    "Step Functions",
+    "Amazon S3",
+    "LanceDB",
+    "RAG",
+    "Quantized models",
+    "Knowledge management",
+    "Cost-aware architecture"
+   ],
+   "kind": "Teaching",
+   "track": "AI & agents",
+   "evidence": "Public recording and my slides",
+   "note": "",
+   "links": [
+    {
+     "label": "Talk recording",
+     "url": "https://www.youtube.com/watch?v=pR-Z0Q0i4AI"
+    }
+   ],
+   "featured": true
   },
   {
    "id": "milestone-061",
