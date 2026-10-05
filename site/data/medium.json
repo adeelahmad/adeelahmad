@@ -13,7 +13,7 @@
     "deep-learning",
     "nlp"
    ],
-   "excerpt": ""
+   "excerpt": "Adeel Ahmad I trained a 4-billion-parameter language model on a laptop with 8 gigabytes of RAM. It took a few hours and produced an adapter file smaller than most photographs. Every standard evaluation metric — cosine similarity, CKA, benchmark scores, perplexity — says the model…"
   },
   {
    "id": "d43b47933162",
@@ -27,11 +27,11 @@
     "ai",
     "artificial-intelligence"
    ],
-   "excerpt": ""
+   "excerpt": "the wisdom required to cheat is the wisdom you were supposed to learn Think about how a person actually goes from knowing nothing to becoming an expert. As a young child, you learn everything in an unstructured way. You absorb language, shapes, colors, social cues…"
   },
   {
    "id": "19b63787ca65",
-   "title": "I Built a 4B Model That Thinks for 14 Minutes Before Admitting It Doesn't Know",
+   "title": "I Built a 4B Model That Thinks for 14 Minutes Before Admitting It Doesn’t Know",
    "url": "https://pub.towardsai.net/i-built-a-4b-model-that-thinks-for-14-minutes-before-admitting-it-doesnt-know-19b63787ca65",
    "date": "2025-11-20",
    "topics": [
@@ -41,7 +41,7 @@
     "software-development",
     "machine-learning"
    ],
-   "excerpt": ""
+   "excerpt": "After 18 months of engineering a 4B reasoning model, I ran a simple test: “Who was the starting shortstop for the 1974 Pittsburgh Pirates, and what was his batting average?” This is a factual question outside the training data. Most models would either: Hallucinate an…"
   },
   {
    "id": "836aa555b00e",
@@ -53,9 +53,9 @@
     "technology",
     "ai-technology",
     "creativity",
-    "innovation"
+    "i̇nnovation"
    ],
-   "excerpt": ""
+   "excerpt": "In a memorable interview, Steve Jobs once described the computer as a “bicycle for the mind.” He recalled an article from his youth that compared the energy efficiency of various species moving from point A to point B. The condor topped the list, with humans…"
   },
   {
    "id": "a7f032b637c7",
@@ -69,11 +69,11 @@
     "automation",
     "artificial-intelligence"
    ],
-   "excerpt": ""
+   "excerpt": "promising an unprecedented paradigm shift in how we interact with technology, envision possibilities, and solve complex problems. #GenerativeAI #QuantumComputing #TechInnovation #FutureOfAI #QuantumLeap Generative AI and the advancements in Large Language Models (LLMs) are not just technological marvels of our time; they are the harbinger of…"
   },
   {
    "id": "75c06f7d1371",
-   "title": "Corporate Australia's Eye-Opening Jolting Introduction with the Power of Open Source",
+   "title": "Corporate Australia’s Eye-Opening Jolting Introduction with the Power of Open Source",
    "url": "https://adeelahmadch.medium.com/corporate-australias-eye-opening-jolting-introduction-with-the-power-of-open-source-75c06f7d1371",
    "date": "2024-03-16",
    "topics": [
@@ -83,7 +83,7 @@
     "open",
     "tech"
    ],
-   "excerpt": ""
+   "excerpt": "The tech industry’s rapid evolution towards open-source is compelling, especially as major tech giants like Google, Apple, Microsoft, and AWS actively contribute to and embrace open-source projects. This shift, while promoting innovation, also presents significant challenges for both these giants and traditional corporate entities. Even…"
   },
   {
    "id": "b5da9b3d368a",
@@ -96,7 +96,7 @@
     "artificial-intelligence",
     "machine-learning"
    ],
-   "excerpt": ""
+   "excerpt": "Machine Learning 2.0 In the rapidly evolving world of machine learning, a new player is making waves — generative AI. This advanced form of AI is not just an incremental improvement; it’s a game changer that’s rendering many traditional machine learning methodologies obsolete. Traditional machine…"
   },
   {
    "id": "95ac17a8e5e1",
@@ -134,7 +134,7 @@
     "artificial-intelligence",
     "ai"
    ],
-   "excerpt": ""
+   "excerpt": "In the ever-evolving landscape of Artificial Intelligence (AI), the quest for solving complex problems efficiently is an ongoing journey. Traditional approaches often involve feeding colossal problem statements to massive AI models, hoping for solutions. However, this approach presents formidable challenges: Large AI models demand substantial…"
   }
  ]
 }
