@@ -6,6 +6,7 @@
    "title": "Latent Contextual Reinforcement: Teaching Language Models to Think Better Without Changing Their…",
    "url": "https://pub.towardsai.net/latent-contextual-reinforcement-teaching-language-models-to-think-better-without-changing-their-39d73c315b0d",
    "date": "2026-04-12",
+   "slug": "latent-contextual-reinforcement-teaching-language-models-to-think-better-without-changing-their-39d73c315b0d",
    "topics": [
     "artificial-intelligence",
     "ai-safety",
@@ -13,13 +14,14 @@
     "deep-learning",
     "nlp"
    ],
-   "excerpt": "Adeel Ahmad I trained a 4-billion-parameter language model on a laptop with 8 gigabytes of RAM. It took a few hours and produced an adapter file smaller than most photographs. Every standard evaluation metric — cosine similarity, CKA, benchmark scores, perplexity — says the model…"
+   "excerpt": "I trained a 4-billion-parameter language model on a laptop with 8 gigabytes of RAM. It took a few hours and produced an adapter file smaller than most photographs. Every standard evaluation metric — cosine similarity, CKA, benchmark scores, perplexity — says the model did not…"
   },
   {
    "id": "d43b47933162",
    "title": "Teaching a Small Model to Think",
    "url": "https://ai.plainenglish.io/teaching-a-small-model-to-think-d43b47933162",
    "date": "2026-02-22",
+   "slug": "teaching-a-small-model-to-think-d43b47933162",
    "topics": [
     "llm-large-language-model",
     "machine-learning",
@@ -34,6 +36,7 @@
    "title": "I Built a 4B Model That Thinks for 14 Minutes Before Admitting It Doesn’t Know",
    "url": "https://pub.towardsai.net/i-built-a-4b-model-that-thinks-for-14-minutes-before-admitting-it-doesnt-know-19b63787ca65",
    "date": "2025-11-20",
+   "slug": "i-built-a-4b-model-that-thinks-for-14-minutes-before-admitting-it-doesnt-know-19b63787ca65",
    "topics": [
     "technology",
     "large-language-models",
@@ -48,6 +51,7 @@
    "title": "AI: The New Bicycle for the Mind",
    "url": "https://adeelahmadch.medium.com/ai-the-new-bicycle-for-the-mind-836aa555b00e",
    "date": "2024-05-04",
+   "slug": "ai-the-new-bicycle-for-the-mind-836aa555b00e",
    "topics": [
     "productivity",
     "technology",
@@ -62,6 +66,7 @@
    "title": "The Quantum Leap: Navigating the Future with AI and Quantum Computing",
    "url": "https://adeelahmadch.medium.com/the-quantum-leap-navigating-the-future-with-ai-and-quantum-computing-a7f032b637c7",
    "date": "2024-04-05",
+   "slug": "the-quantum-leap-navigating-the-future-with-ai-and-quantum-computing-a7f032b637c7",
    "topics": [
     "generative-ai-tools",
     "quantum-computing",
@@ -76,6 +81,7 @@
    "title": "Corporate Australia’s Eye-Opening Jolting Introduction with the Power of Open Source",
    "url": "https://adeelahmadch.medium.com/corporate-australias-eye-opening-jolting-introduction-with-the-power-of-open-source-75c06f7d1371",
    "date": "2024-03-16",
+   "slug": "corporate-australias-eye-opening-jolting-introduction-with-the-power-of-open-source-75c06f7d1371",
    "topics": [
     "innovation",
     "open-source",
@@ -90,6 +96,7 @@
    "title": "How Generative AI is Outsmarting Traditional Machine Learning Methods",
    "url": "https://adeelahmadch.medium.com/how-generative-ai-is-outsmarting-traditional-machine-learning-methods-b5da9b3d368a",
    "date": "2024-01-31",
+   "slug": "how-generative-ai-is-outsmarting-traditional-machine-learning-methods-b5da9b3d368a",
    "topics": [
     "deep-learning",
     "chatgpt",
@@ -103,6 +110,7 @@
    "title": "Iterative Approach to Discovering Gen AI Opportunities for Business Impact. The AI Agent way",
    "url": "https://adeelahmadch.medium.com/iterative-approach-to-discovering-gen-ai-opportunities-for-business-impact-the-ai-agent-way-95ac17a8e5e1",
    "date": "2024-01-29",
+   "slug": "iterative-approach-to-discovering-gen-ai-opportunities-for-business-impact-the-ai-agent-way-95ac17a8e5e1",
    "topics": [
     "open-source",
     "aws",
@@ -117,6 +125,7 @@
    "title": "OpenAI and its Ceo following Jef bazez",
    "url": "https://adeelahmadch.medium.com/openai-and-its-ceo-following-jef-bazez-214b66a9fccb",
    "date": "2023-12-12",
+   "slug": "openai-and-its-ceo-following-jef-bazez-214b66a9fccb",
    "topics": [
     "business",
     "openai"
@@ -128,6 +137,7 @@
    "title": "Unleashing the Power of Collaborative Edge AI: A Paradigm Shift",
    "url": "https://adeelahmadch.medium.com/unleashing-the-power-of-collaborative-edge-ai-a-paradigm-shift-a2b07f68ba00",
    "date": "2023-10-14",
+   "slug": "unleashing-the-power-of-collaborative-edge-ai-a-paradigm-shift-a2b07f68ba00",
    "topics": [
     "chatgpt",
     "privacy",
