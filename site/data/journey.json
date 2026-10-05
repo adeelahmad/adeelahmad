@@ -3,9 +3,9 @@
   "chapters": [
     {
       "id": "chapter-1",
-      "when": "Teenage years, Lahore",
+      "when": "Teenage years to 2006, Lahore",
       "title": "Starting with security",
-      "story": "I got into computers by poking at networks. While still at school I did a vulnerability assessment for a company and had to explain what I found to the people who ran the system.",
+      "story": "I got into computers by poking at networks. In 2006, while still at school, I did a vulnerability assessment of a company's website and had to explain what I found to the people who ran it.",
       "learned": "Seeing where systems break was how I learned how they were put together.",
       "skills": [
         "Network security",

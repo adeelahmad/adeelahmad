@@ -5,6 +5,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {phraseHashes} from './scripts/terms.mjs';
+import {buildPages,sanitize} from './scripts/pages.mjs';
 const ROOT=path.dirname(fileURLToPath(import.meta.url));
 const read=p=>fs.readFileSync(path.join(ROOT,p),'utf8');
 const D=JSON.parse(read('data/public-timeline.json'));
@@ -14,7 +15,8 @@ const WL=JSON.parse(read('data/writing-links.json'));
 const SITE_URL='https://adeelahmad.net/';
 const BLOG_URL='https://blog.adeelahmad.net/';
 const LINKEDIN_URL='https://www.linkedin.com/in/adeelahmadch/';
-const writing=M.posts.map(p=>Object.assign({},p,{eventIds:WL[p.id]||[]}));
+const hasPage=p=>p.slug&&fs.existsSync(path.join(ROOT,'data/medium-content',p.id+'.html'));
+const writing=M.posts.map(p=>Object.assign({},p,{eventIds:WL[p.id]||[],local:hasPage(p)?'/blog/'+p.slug+'/':''}));
 const permittedTop=['schemaVersion','edition','asOf','author','title','location','intro','description','github','periods','events','projects','domains','highlights','method'];
 const permittedEvent=['id','date','period','title','body','skills','kind','track','evidence','note','links','featured'];
 function validate(){
@@ -42,7 +44,8 @@ function validate(){
     const u=new URL(p.url);if(u.protocol!=='https:'||u.username||u.password)throw Error('Unapproved writing link.');
     if(p.eventIds.some(id=>!ids.has(id)))throw Error('Broken writing reference.');
   }
-  const text=JSON.stringify([D,J,writing]);
+  const postText=writing.filter(p=>p.local).map(p=>sanitize(fs.readFileSync(path.join(ROOT,'data/medium-content',p.id+'.html'),'utf8'),p.title));
+  const text=JSON.stringify([D,J,writing,postText]);
   // Hashed private terms: blocks client names and other private details without publishing the list.
   const blocked=new Set(read('data/private-terms.sha256').split('\n').map(s=>s.trim()).filter(Boolean));
   const found=[...phraseHashes(text)].filter(h=>blocked.has(h));
@@ -60,7 +63,7 @@ function staticBody(){
   const inventory=Object.entries(D.domains).map(([k,v])=>'<section class="domain-block"><h3>'+esc(k)+'</h3>'+chips(v)+'</section>').join('');
   const projects=D.projects.map(p=>'<article class="project-card"><span class="project-status">'+esc(p.status)+'</span><h3>'+esc(p.name)+'</h3><p>'+esc(p.description)+'</p>'+chips(p.skills.slice(0,5))+'<div class="project-links">'+links(p.links)+'</div></article>').join('');
   const journey=J.chapters.map((c,i)=>`<article class="chapter" id="${esc(c.id)}"><div class="chapter-when"><span class="chapter-number">${String(i+1).padStart(2,'0')}</span><span>${esc(c.when)}</span></div><div class="chapter-main"><h3>${esc(c.title)}</h3><p>${esc(c.story)}</p><p class="chapter-learned"><span class="tiny-label">WHAT CARRIED FORWARD</span>${esc(c.learned)}</p>${chips(c.skills)}</div></article>`).join('');
-  const posts=writing.map(p=>`<article class="post-card"><span class="post-date">${esc(p.date)}</span><h3><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a></h3>${p.excerpt?'<p>'+esc(p.excerpt)+'</p>':''}</article>`).join('');
+  const posts=writing.map(p=>`<article class="post-card"><span class="post-date">${esc(p.date)}</span><h3><a href="${esc(p.local||p.url)}"${p.local?'':' target="_blank" rel="noopener noreferrer"'}>${esc(p.title)}</a></h3>${p.excerpt?'<p>'+esc(p.excerpt)+'</p>':''}</article>`).join('');
   return `<header class="topbar"><div class="container topbar-inner"><a class="wordmark" href="#top"><span class="monogram">aa</span>Adeel Ahmad</a><nav aria-label="Portfolio sections"><a class="nav-link" href="#static-journey">Journey</a><a class="nav-link" href="#workspace">Timeline</a><a class="nav-link" href="#static-skills">Skills</a><a class="nav-link" href="#static-projects">Projects</a><a class="nav-link" href="#static-writing">Writing</a></nav></div></header><section class="hero hero-plain container"><h1>Adeel Ahmad</h1><p class="intro">${esc(D.intro)}</p><p class="hero-sub">Most of it comes from one habit: when something I depend on doesn’t make sense to me, I go and learn the layer underneath it.</p></section><main class="container workspace" id="workspace"><section id="static-journey"><h2>How it fits together</h2><p class="section-intro">${esc(J.intro)}</p><div class="chapters">${journey}</div></section><h2>Timeline</h2><p class="section-intro">${esc(D.description)}</p><noscript><p class="static-note">Everything is readable below. With JavaScript on, you can filter and search.</p></noscript><div class="results-bar">${D.events.length} entries</div>${periods}<section id="static-skills"><h2>Everything I’ve used</h2><p class="section-intro">Self-reported experience. Some of these I used deeply, some briefly.</p>${inventory}</section><section id="static-projects"><h2>Projects</h2><div class="project-grid">${projects}</div></section><section id="static-writing"><h2>Writing</h2><p class="section-intro">Things I’ve written on Medium, newest first.</p><div class="post-grid">${posts}</div><p><a href="${BLOG_URL}">All posts on Medium ↗</a></p></section></main><footer class="footer container"><p>Adeel Ahmad · Melbourne · Last updated October 2026</p></footer>`;
 }
 const scripts=[read('vendor/react.production.min.js'),read('vendor/react-dom.production.min.js'),'window.PUBLIC_TIMELINE='+json(D)+';window.SITE_EXTRAS='+json({journey:J,writing,links:{blog:BLOG_URL,linkedin:LINKEDIN_URL}})+';',read('src/app.js')].map(s=>s.replace(/<\/script/gi,'<\\/script'));
@@ -74,10 +77,14 @@ fs.mkdirSync(path.join(ROOT,'dist'),{recursive:true});
 fs.writeFileSync(path.join(ROOT,'dist/index.html'),html);
 fs.writeFileSync(path.join(ROOT,'index.html'),html);
 for(const f of fs.readdirSync(path.join(ROOT,'static')))fs.copyFileSync(path.join(ROOT,'static',f),path.join(ROOT,'dist',f));
-const md=['# Adeel Ahmad','','Last updated October 2026','',D.intro,''];
+const favicon='data:image/svg+xml,'+encodeURIComponent(svg);
+const md=['# Adeel Ahmad','','Last updated October 2026','',D.intro,'','## How it fits together',''];
+for(const c of J.chapters)md.push('### '+c.when+' — '+c.title,'',c.story,'','*What carried forward:* '+c.learned,'');
+md.push('# Timeline','');
 for(const period of D.periods){md.push('## '+period,'');for(const e of D.events.filter(e=>e.period===period)){md.push('### '+e.date+' — '+e.title,'',e.body,'','**Type:** '+e.kind+' · **Workstream:** '+e.track,'','**Technologies / skills:** '+e.skills.join(', ')+'.','');if(e.note)md.push('*Context: '+e.note+'*','');md.push('Evidence: '+e.evidence+'.','');for(const l of e.links)md.push('['+l.label+']('+l.url+')');if(e.links.length)md.push('');}}
 md.push('## Projects','');for(const p of D.projects)md.push('### '+p.name,'',p.description,'','Status: '+p.status+'.','');
 md.push('## Everything I’ve used','',D.method.skills,'');for(const [k,skills] of Object.entries(D.domains))md.push('### '+k,'',skills.join(', ')+'.','');
 md.push('## About this page','');Object.values(D.method).forEach(p=>md.push(p,''));
 fs.writeFileSync(path.join(ROOT,'PUBLIC-TIMELINE.md'),md.join('\n')+'\n');
-console.log(JSON.stringify({chapters:J.chapters.length,milestones:D.events.length,projects:D.projects.length,posts:writing.length,bytes:Buffer.byteLength(html),csp:'hashed scripts and stylesheet; no network connections',build:'complete'}));
+const pages=buildPages({root:ROOT,dist:path.join(ROOT,'dist'),site:SITE_URL,posts:writing,css:css+read('src/post.css'),favicon,intro:D.intro,journey:J,timelineMd:md.join('\n')+'\n',links:{blog:BLOG_URL,linkedin:LINKEDIN_URL}});
+console.log(JSON.stringify({chapters:J.chapters.length,milestones:D.events.length,projects:D.projects.length,posts:writing.length,postPages:pages.length,bytes:Buffer.byteLength(html),csp:'hashed scripts and stylesheet; no network connections',build:'complete'}));

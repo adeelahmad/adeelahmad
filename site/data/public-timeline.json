@@ -40,10 +40,10 @@
   },
   {
    "id": "milestone-002",
-   "date": "School years",
+   "date": "2006",
    "period": "Foundations",
    "title": "A first vulnerability assessment",
-   "body": "While still at school I did a vulnerability assessment for a company and learned to explain the findings to the people who ran the system.",
+   "body": "While still at school I did a vulnerability assessment of a company's website and found issues that would have let attackers in. The company's CEO later wrote me a recommendation letter.",
    "skills": [
     "Vulnerability assessment",
     "Security reporting",
@@ -51,7 +51,7 @@
    ],
    "kind": "Experience",
    "track": "Security",
-   "evidence": "From my own notes",
+   "evidence": "Recommendation letter, October 2006",
    "note": "",
    "links": [],
    "featured": false
