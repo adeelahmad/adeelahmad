@@ -50,7 +50,7 @@ const THEME = "try{var t=localStorage.getItem('adeel-theme');if(t==='light'||t==
 const hash = s => "'sha256-" + crypto.createHash('sha256').update(s).digest('base64') + "'";
 export const MEDIUM_IMG_HOSTS = ['miro.medium.com', 'cdn-images-1.medium.com'];
 
-function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false, frames = false }) {
+function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false, frames = false, wide = false }) {
   const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; " + (frames ? "frame-src 'self'; " : '') + "img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
   return `<!doctype html>
 <html lang="en">
@@ -81,7 +81,7 @@ ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ''}
 <script src="${root}site.js" defer></script>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap${wide ? ' wrap--wide' : ''}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
   ${label
@@ -297,48 +297,15 @@ ${siteFooter(D, root)}`;
 }
 
 /* ---------- CV ---------- */
-export function renderCV({ timeline: D, cv: C, cvPdf }) {
+export function renderCV({ cvPdf }) {
   const root = '../';
-  const item = (when, title, sub, body) => `<article class="entry">
-  <div class="entry__when">${esc(when)}</div>
-  <div class="entry__main">
-    <h3 class="entry__title">${esc(title)}</h3>
-    ${sub ? `<p class="cv__role">${esc(sub)}</p>` : ''}
-    ${body}
-  </div>
-</article>`;
-  const list = pts => pts.length ? `<ul class="cv__points">${pts.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
-  const pairs = rows => `<dl class="cv__pairs">${rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`;
   const body = `
-<main id="main">
-  <h1 class="h2 page-title">Curriculum vitae</h1>
-  <p class="lede page-lede">${esc(C.headline)} ${esc(C.location)}.${cvPdf ? ` <a href="${cvPdf}">Download PDF</a>.` : ''} The <a href="${root}#journey">journey</a> explains how the pieces connect.</p>
-  ${cvPdf ? `<section class="cv__pdf" id="pdf" aria-label="CV as PDF">
-    <iframe class="cv__frame" src="${cvPdf}" title="${esc(SITE.name)} CV (PDF)" loading="lazy"></iframe>
-    <p class="more more--small"><a href="${cvPdf}">Open the PDF</a> if it doesn't show here.</p>
-  </section>` : ''}
-  ${C.summary.map(t => `<p>${esc(t)}</p>`).join('\n')}
-  <section class="section" id="experience" aria-labelledby="experience-title">
-    <h2 class="h2" id="experience-title">Experience</h2>
-    <div class="timeline__list">${C.experience.map(x => item(x.when, x.org + ' · ' + x.place, x.role, list(x.points))).join('\n')}</div>
-  </section>
-  <section class="section" id="cv-projects" aria-labelledby="cv-projects-title">
-    <h2 class="h2" id="cv-projects-title">Projects and open source</h2>
-    ${pairs(C.projects)}
-    <p class="more more--small"><a href="${root}#projects">All projects →</a></p>
-  </section>
-  <section class="section" id="cv-skills" aria-labelledby="cv-skills-title">
-    <h2 class="h2" id="cv-skills-title">Skills</h2>
-    ${pairs(C.skills)}
-  </section>
-  <section class="section" id="education" aria-labelledby="education-title">
-    <h2 class="h2" id="education-title">Certification and education</h2>
-    ${pairs(C.education)}
-  </section>
-  <div class="hair"></div>
-</main>
-${siteFooter(D, root)}`;
-  return layout({ title: 'CV · ' + SITE.name, description: 'Curriculum vitae of ' + SITE.name + ', ' + C.headline, body, root, label: '<span>CV</span>', canonical: SITE.url + 'cv/', frames: !!cvPdf });
+<main id="main" class="cvpdf">
+  <h1 class="visually-hidden">Curriculum vitae</h1>
+  <p class="cvpdf__bar"><a class="cvpdf__download" href="${cvPdf}" download>Download PDF</a></p>
+  <iframe class="cvpdf__frame" src="${cvPdf}#view=FitH&navpanes=0" title="${esc(SITE.name)} CV (PDF)"></iframe>
+</main>`;
+  return layout({ title: 'CV · ' + SITE.name, description: 'Curriculum vitae of ' + SITE.name + ' (PDF).', body, root, label: '<span>CV</span>', canonical: SITE.url + 'cv/', frames: true, wide: true });
 }
 
 /* ---------- everything ---------- */
@@ -346,7 +313,7 @@ export function renderSite(data) {
   const out = {};
   out['index.html'] = renderHome(data);
   out['blog/index.html'] = renderWritingIndex(data);
-  if (data.cv) out['cv/index.html'] = renderCV(data);
+  if (data.cvPdf) out['cv/index.html'] = renderCV(data);
   data.medium.posts.forEach((p, i) => { if (p.local) out[`blog/${p.slug}/index.html`] = renderArticle(p, i, data); });
   const skillMap = new Map();
   data.timeline.events.forEach(e => e.skills.forEach(s => { if (!skillMap.has(s)) skillMap.set(s, []); skillMap.get(s).push(e.id); }));

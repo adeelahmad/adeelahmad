@@ -23,7 +23,7 @@ No install step. The build validates the data, renders the pages with `src/rende
 - `src/render.mjs`: page templates. `SITE`, `CHAPTER_FIGURES` and `PROJECT_AREAS` at the top hold the intro line, the chapter photo and the project groups.
 - `src/styles.css`: all styling, light and dark.
 - `src/site.js`: optional enhancements (theme toggle, timeline search and filters, skill filtering, old `#event=` links).
-- `static/`: copied as is (images, fonts, favicons and web manifest, share image, CNAME). `static/cv.pdf`, when present, is embedded on `/cv/` with a download link.
+- `static/`: copied as is (images, fonts, favicons and web manifest, share image, CNAME). `static/cv.pdf`, when present, becomes `/cv/`: the header, a download button and the PDF, full width.
 
 To block a new term without writing it into the repo:
 
