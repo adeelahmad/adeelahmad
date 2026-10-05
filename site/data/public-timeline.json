@@ -176,7 +176,7 @@
    "date": "Consultancy years; exact date unrecorded",
    "period": "2007–2012",
    "title": "Enterprise workflow automation",
-   "body": "Built workflow tooling for enterprise quality-assurance processes, extending application engineering into operational integration.",
+   "body": "Built tools to automate quality-assurance workflows for a business.",
    "skills": [
     "Workflow automation",
     "Enterprise integration",
@@ -194,7 +194,7 @@
    "date": "2012–2013",
    "period": "2007–2012",
    "title": "Co-founded Geeks Chicago",
-   "body": "Worked as a co-founder in a consultancy setting, combining client delivery, solution design and entrepreneurship.",
+   "body": "Co-founded a small consultancy and worked on client projects and solution design.",
    "skills": [
     "Entrepreneurship",
     "Consulting",
@@ -250,7 +250,7 @@
    "date": "Xoho portfolio period",
    "period": "2013–2022",
    "title": "Digital archives and video platforms",
-   "body": "Worked on AWS-hosted archival and video-streaming systems, combining media delivery, searchable collections and web-application architecture.",
+   "body": "Worked on AWS-hosted archive and video-streaming systems with searchable collections.",
    "skills": [
     "AWS",
     "Video platforms",
@@ -485,7 +485,7 @@
    "date": "Late 2019; recollection",
    "period": "2013–2022",
    "title": "Teaching containers and systems thinking",
-   "body": "Shared container concepts and broader infrastructure skills with the engineering team, connecting application work with the environment it runs in.",
+   "body": "Taught the team containers and some of the infrastructure under our applications.",
    "skills": [
     "Containers",
     "Technical teaching",
@@ -523,7 +523,7 @@
    "date": "Around 2020",
    "period": "2013–2022",
    "title": "Media-monitoring platform work",
-   "body": "Contributed to systems combining content ingestion, search and media monitoring for institutional use.",
+   "body": "Worked on systems that collect, search and monitor media content.",
    "skills": [
     "Data ingestion",
     "Search",
@@ -598,7 +598,7 @@
    "date": "2022–2024",
    "period": "2021–2022",
    "title": "Cloud API delivery and domain-team leadership",
-   "body": "Delivered cloud APIs and integration work, including Consumer Data Right and domain-oriented services, while taking on engineering leadership and downstream-consumer coordination.",
+   "body": "Built cloud APIs and integrations, including Consumer Data Right services, and led the engineers working on them.",
    "skills": [
     "AWS",
     "API architecture",
@@ -779,7 +779,7 @@
    "date": "June 2023",
    "period": "2023",
    "title": "Developer portals as a shared starting point",
-   "body": "Proposed connecting discoverable APIs, documentation, examples and environment provisioning through an internal developer portal. Backstage was one option explored.",
+   "body": "Proposed an internal developer portal for APIs, docs, examples and environment setup. Backstage was one option I looked at.",
    "skills": [
     "Backstage",
     "Internal developer platforms",
@@ -932,7 +932,7 @@
    "date": "2023–2024; presentation date unrecorded",
    "period": "2023",
    "title": "Sharing the remote-development journey",
-   "body": "Presented the progression from hosted workspaces to container-based tooling, prebuilds, developer-environment definitions and AI-assisted delivery workflows.",
+   "body": "Gave a talk on how our setup went from hosted workspaces to containers, prebuilt environments and AI-assisted workflows.",
    "skills": [
     "Technical teaching",
     "Gitpod",
@@ -1068,7 +1068,7 @@
    "date": "12–13 October 2023",
    "period": "2023",
    "title": "Local and edge AI as an architectural choice",
-   "body": "Wrote about bringing smaller models closer to data, considering privacy, infrastructure cost and deployment constraints together.",
+   "body": "Wrote about running smaller models closer to the data, for privacy and cost reasons.",
    "skills": [
     "Local inference",
     "Edge AI",
@@ -1116,7 +1116,7 @@
    "date": "24 October 2023",
    "period": "2023",
    "title": "Knowledge graphs, vector search and RAG together",
-   "body": "Argued for combining graph structure, vector retrieval and retrieval-augmented generation instead of expecting vector search alone to solve every knowledge-system problem.",
+   "body": "Argued that graph structure and vector search work better together than vector search alone.",
    "skills": [
     "Knowledge graphs",
     "Vector search",
@@ -1348,7 +1348,7 @@
    "date": "8 April 2024",
    "period": "2024",
    "title": "Training data with explicit reasoning and protection structure",
-   "body": "Explored combining entity extraction, structured task analysis, sentiment and dynamic prompts into fine-tuning data, including protection-oriented structure.",
+   "body": "Tried building fine-tuning data that spells out the reasoning steps, including steps meant to resist misuse.",
    "skills": [
     "NER",
     "Training-data engineering",
@@ -1547,7 +1547,7 @@
    "date": "2024; exact test date unrecorded",
    "period": "2024",
    "title": "Early voice-AI evaluation",
-   "body": "Participated in early-stage voice-AI testing, extending hands-on evaluation into realtime interaction and streaming systems.",
+   "body": "Took part in early testing of a voice AI product, which got me into realtime and streaming systems.",
    "skills": [
     "Voice-AI evaluation",
     "Realtime systems",
@@ -1630,7 +1630,7 @@
    "date": "2025–2026",
    "period": "2025",
    "title": "Applied-AI delivery from early design to production",
-   "body": "Contributed across development, data and infrastructure on enterprise AI delivery, connecting technical design with deployment readiness and operational reliability.",
+   "body": "Work across development, data and infrastructure to get AI applications from design into production.",
    "skills": [
     "Applied AI",
     "Data engineering",
@@ -1670,7 +1670,7 @@
    "date": "14 April 2025",
    "period": "2025",
    "title": "Researching small-model reasoning with RL and SFT",
-   "body": "Publicly described independent work combining reinforcement learning and supervised fine-tuning to investigate reasoning in smaller language models.",
+   "body": "Wrote publicly about using reinforcement learning and supervised fine-tuning to study reasoning in small models.",
    "skills": [
     "Reinforcement learning",
     "SFT",
@@ -1802,7 +1802,7 @@
    "date": "2026",
    "period": "2026 · January–June",
    "title": "Security Champion",
-   "body": "Took on the Security Champion role for my squad alongside engineering work.",
+   "body": "Took on the Security Champion role for my squad.",
    "skills": [
     "Cybersecurity",
     "Security advocacy",
@@ -2216,7 +2216,7 @@
    "date": "Recorded by August 2026",
    "period": "2026 · July–October",
    "title": "Local Python execution inside a document editor",
-   "body": "Prototyped a browser extension that runs selected Python locally using Pyodide/WebAssembly, bringing executable examples closer to written material.",
+   "body": "Prototyped a browser extension that runs Python locally with Pyodide, so code examples in a document can run where they are written.",
    "skills": [
     "Python",
     "Pyodide",
@@ -2308,7 +2308,7 @@
    "date": "September 2026",
    "period": "2026 · July–October",
    "title": "Local GRPO and LoRA experiments on Apple Silicon",
-   "body": "Continued hands-on model training, guided-reasoning experiments, quantization and experiment tracking on local hardware, alongside tooling to make runs repeatable.",
+   "body": "Kept training small models at home: guided-reasoning runs, quantisation and tooling to make runs repeatable.",
    "skills": [
     "MLX",
     "GRPO",
@@ -2592,7 +2592,7 @@
    "date": "4 October 2026",
    "period": "2026 · July–October",
    "title": "Lens product identity and interface design",
-   "body": "Worked on a magnifier-based identity and a cross-platform visual system for Lens, connecting the product concept with web, application and command-line surfaces.",
+   "body": "Worked on the look and interface for Lens across web, app and command line.",
    "skills": [
     "Product design",
     "Brand systems",
@@ -2611,7 +2611,7 @@
    "date": "4 October 2026",
    "period": "2026 · July–October",
    "title": "Lens: a private, user-owned AI hub",
-   "body": "Defined a product direction combining personal inputs, cited searchable memory, knowledge graphs and approval-gated assistance on user-controlled infrastructure.",
+   "body": "Planned a private AI hub that runs on my own machines: my notes and files, searchable, with answers that cite sources and actions that need my approval.",
    "skills": [
     "Local AI",
     "RAG",
