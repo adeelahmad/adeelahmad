@@ -1,0 +1,64 @@
+name: Site
+
+on:
+  push:
+    branches: [master]
+    paths: ['site/**', '.github/workflows/site.yml']
+  pull_request:
+    paths: ['site/**', '.github/workflows/site.yml']
+  schedule:
+    - cron: '30 20 * * *' # daily, early morning in Melbourne, to pick up new Medium posts
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh Medium posts
+        if: github.event_name != 'pull_request'
+        run: node scripts/fetch-medium.mjs || echo "::warning::Medium feed unavailable; building with saved posts"
+      - name: Build and check public content
+        run: node build.mjs
+      - name: Save new Medium posts
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        run: |
+          if ! git diff --quiet data/medium.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update saved Medium posts' data/medium.json
+            git push
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        with:
+          path: site/dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

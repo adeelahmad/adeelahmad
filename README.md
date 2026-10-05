@@ -10,7 +10,8 @@ I approach them as **one connected system**: understand the constraints, find th
 
 **Melbourne, Australia · Hands-on engineer · Founder background**
 
-[![Blog](https://img.shields.io/badge/Blog-adeelahmad.net-0A0A0A?style=flat-square&logo=hashnode&logoColor=white)](https://blog.adeelahmad.net/)
+[![Website](https://img.shields.io/badge/Web-adeelahmad.net-216B5C?style=flat-square)](https://adeelahmad.net/)
+[![Medium](https://img.shields.io/badge/Medium-blog.adeelahmad.net-000000?style=flat-square&logo=medium&logoColor=white)](https://blog.adeelahmad.net/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-adeelahmadch-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adeelahmadch/)
 [![Twitter](https://img.shields.io/badge/𝕏-@adeelahmad-000000?style=flat-square&logo=x&logoColor=white)](https://www.twitter.com/adeelahmad)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/adeelahmad)
@@ -23,7 +24,7 @@ I approach them as **one connected system**: understand the constraints, find th
 
 I'm part of **Commonwealth Bank of Australia's AI Centre of Excellence, in the AI Acceleration squad**. My formal title is **Staff Platform Engineer (MLOps)**; my work centres on **applied AI, technical leadership and turning emerging AI capabilities into usable enterprise solutions**. I'm also the squad's Security Champion.
 
-Before CBA, I worked on GenAI engineering at **Lyrebird Health** and AWS cloud consulting at **Cevo**. Earlier, I founded and led **Xoho Tech** for 13 years, growing the consultancy to around 40 people and delivering software, digital-preservation systems and infrastructure for universities, public institutions and enterprise clients.
+Before CBA, I worked on GenAI engineering at **Lyrebird Health** and AWS cloud consulting at **Cevo**. Earlier, I founded and led **Xoho Tech** for nine years, growing the consultancy to around 40 people and delivering software, digital-preservation systems and infrastructure for universities, public institutions and enterprise clients.
 
 Founder did not mean stepping away from implementation. I wrote software, designed systems, ran networks, handled security, worked with customers and led delivery. That is where the range comes from: **cloud learned on top of on-premises systems; AI learned on top of software, infrastructure and security.**
 

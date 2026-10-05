@@ -1,0 +1,3421 @@
+{
+ "schemaVersion": 1,
+ "edition": "Public edition",
+ "asOf": "2026-10-05",
+ "author": "Adeel Ahmad",
+ "title": "Systems, AI & Security",
+ "location": "Melbourne, Australia",
+ "intro": "I build across software, infrastructure and applied AI. This timeline connects the work: early security exploration, a hands-on consultancy, remote developer environments, local models, agents and the systems that make them useful.",
+ "description": "An engineering timeline of projects, experiments, proposals and career milestones, with the technologies and skills connected to each.",
+ "github": "https://github.com/adeelahmad",
+ "periods": [
+  "Foundations",
+  "2007–2012",
+  "2013–2022",
+  "2021–2022",
+  "2023",
+  "2024",
+  "2025",
+  "2026 · January–June",
+  "2026 · July–October",
+  "Cross-period"
+ ],
+ "events": [
+  {
+   "id": "milestone-001",
+   "date": "Teenage years",
+   "period": "Foundations",
+   "title": "Security before software was a job",
+   "body": "My interest in computing began with hands-on network and security exploration in Lahore, before my first professional software role.",
+   "skills": [
+    "Network security",
+    "Security testing"
+   ],
+   "kind": "Experience",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "Calendar year is not established; this is an early personal-history account.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-002",
+   "date": "School years",
+   "period": "Foundations",
+   "title": "An early vulnerability-assessment engagement",
+   "body": "While still at school, I carried out a vulnerability-assessment engagement and learned to communicate technical findings to a client.",
+   "skills": [
+    "Vulnerability assessment",
+    "Security reporting",
+    "Client communication"
+   ],
+   "kind": "Experience",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "Client identity and private correspondence are not included.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-003",
+   "date": "2007–2011",
+   "period": "2007–2012",
+   "title": "Computer-science education",
+   "body": "Studied computer science at the Institute of Management Sciences in Lahore while developing practical engineering experience.",
+   "skills": [
+    "Computer science",
+    "Software engineering"
+   ],
+   "kind": "Education",
+   "track": "Career",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-004",
+   "date": "May 2007–February 2009",
+   "period": "2007–2012",
+   "title": "APTLOGIX: application development and integration",
+   "body": "My first professional role included CMS and e-commerce development, C#/.NET backends and third-party integrations.",
+   "skills": [
+    "C#",
+    ".NET",
+    "PHP",
+    "E-commerce",
+    "SOAP/XML",
+    "API integration"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Employment record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-005",
+   "date": "March–August 2009",
+   "period": "2007–2012",
+   "title": "Senior Software Engineer at PureLogics",
+   "body": "Moved into a senior software-engineering role, extending the application-development foundation before taking on broader technical leadership.",
+   "skills": [
+    "Software engineering"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Employment record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-006",
+   "date": "2009–December 2012",
+   "period": "2007–2012",
+   "title": "PureLogics: Co-Partner and CTO",
+   "body": "Combined software leadership with hands-on development, network security and organization-wide systems administration.",
+   "skills": [
+    "Technical leadership",
+    "C",
+    "PHP",
+    "Python",
+    "Perl",
+    "Java",
+    "Systems administration",
+    "Network security"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Employment record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-007",
+   "date": "From the PureLogics years",
+   "period": "2007–2012",
+   "title": "Virtualization, networks and telephony",
+   "body": "Worked with VMware, Asterisk and Cisco networking. My later virtualization work progressed through XenServer and then Proxmox/KVM; these were successive stages, not one simultaneous deployment.",
+   "skills": [
+    "VMware",
+    "XenServer",
+    "Asterisk",
+    "Cisco",
+    "Systems administration"
+   ],
+   "kind": "Experience",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "The sequence is recorded; exact first-use dates are not.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-008",
+   "date": "PureLogics period",
+   "period": "2007–2012",
+   "title": "Facebook-integrated community application work",
+   "body": "Worked on a Facebook-integrated community application, connecting product engineering with social-platform APIs and technical leadership.",
+   "skills": [
+    "Application engineering",
+    "API integration",
+    "Product development"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "No award, nomination ranking or exact release date is claimed here.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-009",
+   "date": "Consultancy years; exact date unrecorded",
+   "period": "2007–2012",
+   "title": "Enterprise workflow automation",
+   "body": "Built workflow tooling for enterprise quality-assurance processes, extending application engineering into operational integration.",
+   "skills": [
+    "Workflow automation",
+    "Enterprise integration",
+    "Software engineering"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-010",
+   "date": "2012–2013",
+   "period": "2007–2012",
+   "title": "Co-founded Geeks Chicago",
+   "body": "Worked as a co-founder in a consultancy setting, combining client delivery, solution design and entrepreneurship.",
+   "skills": [
+    "Entrepreneurship",
+    "Consulting",
+    "Solution architecture"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-011",
+   "date": "January 2013–February 2022",
+   "period": "2013–2022",
+   "title": "Xoho Tech: founder, CTO and principal architect",
+   "body": "Built and ran a consultancy that grew to approximately 40 people across Pakistan and the United States. My responsibilities combined coding, architecture, security, delivery, sales and company operations.",
+   "skills": [
+    "Entrepreneurship",
+    "Software engineering",
+    "Solution architecture",
+    "Engineering leadership",
+    "Consulting",
+    "Delivery management"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Employment record and first-hand account",
+   "note": "The role dates follow the employment record; the team size is my reported approximate scale.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-012",
+   "date": "2013; personal recollection",
+   "period": "2013–2022",
+   "title": "Early AWS adoption",
+   "body": "Cloud architecture became part of my consultancy work during the early AWS-adoption period. The dated credential records are listed separately.",
+   "skills": [
+    "AWS",
+    "Cloud architecture"
+   ],
+   "kind": "Experience",
+   "track": "Cloud",
+   "evidence": "Personal engineering record",
+   "note": "The recalled adoption year is not used to assert an unverified certification date.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-013",
+   "date": "Xoho portfolio period",
+   "period": "2013–2022",
+   "title": "Digital archives and video platforms",
+   "body": "Worked on AWS-hosted archival and video-streaming systems, combining media delivery, searchable collections and web-application architecture.",
+   "skills": [
+    "AWS",
+    "Video platforms",
+    "Archival systems",
+    "Web architecture",
+    "Search"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "Client-specific implementation details and performance figures are omitted.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-014",
+   "date": "Xoho portfolio period",
+   "period": "2013–2022",
+   "title": "Institutional archival management",
+   "body": "Delivered archival-management and audiovisual-platform work involving data modeling, media integration, search and maintainable application architecture.",
+   "skills": [
+    "Data modeling",
+    "Media integration",
+    "Archival systems",
+    "Search",
+    "Scalable architecture"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-015",
+   "date": "Xoho portfolio period",
+   "period": "2013–2022",
+   "title": "Tools for archival quality and integrity",
+   "body": "Worked on multiple applications for collection management, data quality and file integrity within an archival-software portfolio.",
+   "skills": [
+    "Data quality",
+    "File integrity",
+    "Web applications",
+    "Product engineering"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-016",
+   "date": "Xoho portfolio period",
+   "period": "2013–2022",
+   "title": "E-signature application engineering",
+   "body": "Contributed to an AWS-hosted e-signature application, including workflow design and enterprise integration.",
+   "skills": [
+    "AWS",
+    "E-signature workflows",
+    "Web applications",
+    "Enterprise integration"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-017",
+   "date": "Xoho portfolio period",
+   "period": "2013–2022",
+   "title": "Engineering standards as a shared system",
+   "body": "Authored engineering guidance covering cloud practices, identity controls, secure coding, style conventions and onboarding.",
+   "skills": [
+    "Engineering standards",
+    "IAM",
+    "MFA",
+    "Secure coding",
+    "Onboarding",
+    "Technical writing"
+   ],
+   "kind": "Built",
+   "track": "Leadership",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-018",
+   "date": "April 2016",
+   "period": "2013–2022",
+   "title": "AWS Solutions Architect — Associate",
+   "body": "A dated credential record marks this stage in my cloud-architecture development.",
+   "skills": [
+    "AWS",
+    "Solution architecture"
+   ],
+   "kind": "Credential",
+   "track": "Career",
+   "evidence": "Historical credential record",
+   "note": "An earned-history entry, not a statement of current certification validity.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-019",
+   "date": "Approximately 2016–2017",
+   "period": "2013–2022",
+   "title": "Power outages became a developer-experience problem",
+   "body": "Repeated power interruptions disrupted concentration and sometimes local work. I began investigating remotely hosted development as a way to preserve working state and improve continuity for the team.",
+   "skills": [
+    "Developer experience",
+    "Operational resilience",
+    "Problem framing"
+   ],
+   "kind": "Explored",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-020",
+   "date": "Late 2010s",
+   "period": "2013–2022",
+   "title": "Dissecting the browser IDE",
+   "body": "Investigated the separation between the editor interface, extension host and background services, then used browser-hosted VS Code tooling in later remote-development iterations.",
+   "skills": [
+    "VS Code",
+    "Browser IDEs",
+    "Architecture",
+    "Developer tools"
+   ],
+   "kind": "Explored",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "Problem discovery and adoption of a particular tool are not assigned the same first-use date.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-021",
+   "date": "Late 2010s–2020",
+   "period": "2013–2022",
+   "title": "Built a three-node hyperconverged lab",
+   "body": "Built a hands-on lab around Proxmox, Ceph, ZFS, virtual machines and fibre networking to understand storage, availability and distributed infrastructure.",
+   "skills": [
+    "Proxmox",
+    "Ceph",
+    "ZFS",
+    "KVM",
+    "High availability",
+    "Fibre networking"
+   ],
+   "kind": "Built",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "Different historical configurations had different capacities; no single reconciled storage or link-speed figure is asserted.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-022",
+   "date": "Late 2010s; described by June 2023",
+   "period": "2013–2022",
+   "title": "Shared, template-based development environments",
+   "body": "Built Linux-container templates with project dependencies and browser-based editing on a rented European server. Private networking, cloning and shared resources made the environment reusable across developers.",
+   "skills": [
+    "Linux containers",
+    "Proxmox",
+    "VS Code",
+    "PHP",
+    "MySQL",
+    "Node.js",
+    "VPNs",
+    "Environment templates"
+   ],
+   "kind": "Built",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-023",
+   "date": "Remote-workspace development period",
+   "period": "2013–2022",
+   "title": "Request-driven workspace shutdown and wake-up",
+   "body": "Used a web server and shell scripts to stop idle workspaces and restart them when a browser request arrived, rather than keeping every development environment running continuously.",
+   "skills": [
+    "Bash",
+    "Reverse proxies",
+    "Lifecycle automation",
+    "Resource optimization"
+   ],
+   "kind": "Built",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "No independently measured startup time or energy-saving percentage is claimed.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-024",
+   "date": "Around 2019",
+   "period": "2013–2022",
+   "title": "Experimented with Firecracker developer environments",
+   "body": "Moved from container-based workspace experiments toward Firecracker microVMs, exploring the balance between isolation, resource use and lightweight startup.",
+   "skills": [
+    "Firecracker",
+    "MicroVMs",
+    "Virtualization",
+    "Isolation design"
+   ],
+   "kind": "Experiment",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "Approximate historical date; not a benchmark comparison.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-025",
+   "date": "Late 2019; recollection",
+   "period": "2013–2022",
+   "title": "Teaching containers and systems thinking",
+   "body": "Shared container concepts and broader infrastructure skills with the engineering team, connecting application work with the environment it runs in.",
+   "skills": [
+    "Containers",
+    "Technical teaching",
+    "Engineering leadership"
+   ],
+   "kind": "Teaching",
+   "track": "Leadership",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-026",
+   "date": "Around 2019–2020",
+   "period": "2013–2022",
+   "title": "Workspaces as an onboarding and continuity system",
+   "body": "Used persistent editor state, snapshots, cloneable environments and preinstalled dependencies to support handovers, onboarding and returning to an existing project.",
+   "skills": [
+    "Snapshots",
+    "Developer onboarding",
+    "DevOps",
+    "Virtualization",
+    "Reproducibility"
+   ],
+   "kind": "Built",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-027",
+   "date": "Around 2020",
+   "period": "2013–2022",
+   "title": "Media-monitoring platform work",
+   "body": "Contributed to systems combining content ingestion, search and media monitoring for institutional use.",
+   "skills": [
+    "Data ingestion",
+    "Search",
+    "Media platforms",
+    "Platform engineering"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-028",
+   "date": "4 June 2021",
+   "period": "2021–2022",
+   "title": "OpenAI private API beta access — before ChatGPT",
+   "body": "Received access to OpenAI’s private API beta while running my consultancy in Pakistan. This is a dated early-access milestone in my AI work, rather than a claim of a shipped 2021 agent or product.",
+   "skills": [
+    "Generative AI",
+    "LLM APIs"
+   ],
+   "kind": "Access",
+   "track": "AI & agents",
+   "evidence": "Dated personal access record",
+   "note": "The record establishes access on this date; it does not establish the first API call.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-029",
+   "date": "2022",
+   "period": "2021–2022",
+   "title": "Researching browser-based compute and developer tooling",
+   "body": "Explored browser extensions, React internals, WebRTC desktop access, cloud isolation and customizable developer environments.",
+   "skills": [
+    "React",
+    "Browser extensions",
+    "WebRTC",
+    "AWS Nitro",
+    "Developer tools"
+   ],
+   "kind": "Explored",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-030",
+   "date": "2022–July 2024",
+   "period": "2021–2022",
+   "title": "Cevo: AWS cloud consulting",
+   "body": "Moved into cloud consulting in Australia, working across solution architecture, application integration and technical delivery.",
+   "skills": [
+    "AWS",
+    "Solution architecture",
+    "Cloud consulting",
+    "Technical leadership"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Employment record",
+   "note": "The exact start month differs between records, so the public timeline uses the year.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-031",
+   "date": "2022–2024",
+   "period": "2021–2022",
+   "title": "Cloud API delivery and domain-team leadership",
+   "body": "Delivered cloud APIs and integration work, including Consumer Data Right and domain-oriented services, while taking on engineering leadership and downstream-consumer coordination.",
+   "skills": [
+    "AWS",
+    "API architecture",
+    "Domain-driven design",
+    "Data integration",
+    "Technical leadership",
+    "Observability"
+   ],
+   "kind": "Built",
+   "track": "Cloud",
+   "evidence": "Personal engineering record",
+   "note": "Internal program names, commercial exposure, staffing figures and access arrangements are not included.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-032",
+   "date": "Cevo period; exact date unrecorded",
+   "period": "2021–2022",
+   "title": "Enterprise retrieval and permission-aware knowledge access",
+   "body": "Worked on enterprise retrieval involving Amazon Q Business and SharePoint, with attention to access-aware search rather than treating all content as equally available.",
+   "skills": [
+    "Amazon Q Business",
+    "SharePoint",
+    "Enterprise search",
+    "RAG",
+    "Access-aware retrieval"
+   ],
+   "kind": "Built",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "Private corpus-size and customer-operating details are not published.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-033",
+   "date": "Cevo period; exact date unrecorded",
+   "period": "2021–2022",
+   "title": "Document and email processing pipelines",
+   "body": "Worked with data transformation, machine learning and language-model components in document and email-processing workflows.",
+   "skills": [
+    "dbt",
+    "Document processing",
+    "Machine learning",
+    "Amazon Bedrock",
+    "Data pipelines"
+   ],
+   "kind": "Built",
+   "track": "Cloud",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-034",
+   "date": "By June 2023",
+   "period": "2023",
+   "title": "WebRTC beyond the browser IDE",
+   "body": "Experimented with browser-delivered desktops where an editor and shell were not enough for development or QA, considering bandwidth, frame rate, audio and client requirements.",
+   "skills": [
+    "WebRTC",
+    "Remote desktop delivery",
+    "Developer experience",
+    "Bandwidth analysis"
+   ],
+   "kind": "Experiment",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "This is an experimentation account, not a universal RDP/VNC performance claim.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-035",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Explaining LLMs and Transformers",
+   "body": "Prepared presentation material on Transformers, attention, fine-tuning, prompts, agents and plugins.",
+   "skills": [
+    "Transformers",
+    "Attention",
+    "Fine-tuning",
+    "Prompting",
+    "Agents",
+    "Technical teaching"
+   ],
+   "kind": "Teaching",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-036",
+   "date": "6 June 2023",
+   "period": "2023",
+   "title": "Writing about open language models",
+   "body": "Discussed the possibilities of open LLMs and Falcon, reflecting an active interest in models that could be adapted and run beyond a single managed service.",
+   "skills": [
+    "Open LLMs",
+    "Model evaluation"
+   ],
+   "kind": "Writing",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7071782270163955712"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-037",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "The development environment is part of DevOps",
+   "body": "Outlined development environments as versioned, reproducible artifacts: dependency definitions, prebuilds and consistent tooling belong in the delivery process, not in a separate manual setup guide.",
+   "skills": [
+    "Environment-as-code",
+    "CI/CD",
+    "Prebuilds",
+    "Dependency management",
+    "Developer onboarding"
+   ],
+   "kind": "Proposed",
+   "track": "Developer tools",
+   "evidence": "Dated personal design record",
+   "note": "Month follows a dated recording label; it is not a public release date.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-038",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Separate the IDE from the application runtime",
+   "body": "Explored a multi-container workspace design with separate responsibilities for the editor and the application, considering managed orchestration where appropriate.",
+   "skills": [
+    "Container architecture",
+    "ECS",
+    "EKS",
+    "Separation of concerns"
+   ],
+   "kind": "Proposed",
+   "track": "Developer tools",
+   "evidence": "Dated personal design record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-039",
+   "date": "By June 2023",
+   "period": "2023",
+   "title": "Built workspace images with GitLab CI/CD",
+   "body": "Adapted an existing workspace base image, added project dependencies in a Dockerfile and arranged automated environment builds on change.",
+   "skills": [
+    "Dockerfiles",
+    "GitLab CI/CD",
+    "Image customization",
+    "Reusable components"
+   ],
+   "kind": "Built",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "A prototype implementation, not a claim of an organization-wide rollout.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-040",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Developer portals as a shared starting point",
+   "body": "Proposed connecting discoverable APIs, documentation, examples and environment provisioning through an internal developer portal. Backstage was one option explored.",
+   "skills": [
+    "Backstage",
+    "Internal developer platforms",
+    "API catalogs",
+    "Self-service provisioning"
+   ],
+   "kind": "Proposed",
+   "track": "Developer tools",
+   "evidence": "Dated personal design record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-041",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Treating extension distribution as an architecture constraint",
+   "body": "Considered how custom IDE distributions, extension marketplaces and distribution terms affect the viability of a developer-platform design.",
+   "skills": [
+    "IDE extensibility",
+    "Software distribution",
+    "Licensing awareness"
+   ],
+   "kind": "Explored",
+   "track": "Developer tools",
+   "evidence": "Dated personal design record",
+   "note": "Historical design consideration, not current licensing advice.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-042",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Managed workspaces, data locality and client independence",
+   "body": "Explored keeping development near shared services, controlling dependency access centrally and separating the developer’s access device from the hosted workspace.",
+   "skills": [
+    "Data locality",
+    "Network security",
+    "Dependency supply chain",
+    "Resource pooling",
+    "Remote development"
+   ],
+   "kind": "Proposed",
+   "track": "Developer tools",
+   "evidence": "Dated personal design record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-043",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Private AI coding assistance and the adoption problem",
+   "body": "Proposed integrating privately hosted model endpoints into developer environments. The design considered both code confidentiality and the risk of useful tools being adopted outside sanctioned workflows.",
+   "skills": [
+    "Private LLMs",
+    "GPU inference",
+    "IDE integration",
+    "AI security",
+    "Developer enablement"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Dated personal design record",
+   "note": "",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-044",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Jira-triggered AI preparation before a developer starts",
+   "body": "Outlined a workflow in which a task triggers an ephemeral development environment and an AI system prepares a plan and carries out preliminary work before the engineer takes over.",
+   "skills": [
+    "Agent workflows",
+    "Task orchestration",
+    "Ephemeral workspaces",
+    "AI-assisted SDLC"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Dated personal design record",
+   "note": "A proposal recorded in June 2023, not evidence that the entire workflow had been deployed.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-045",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Visible plans, action records and human verification",
+   "body": "The engineer would see what the AI planned and what it actually did, verify the work and retain responsibility for the result. This put inspectability and handoff into the workflow design.",
+   "skills": [
+    "Human-in-the-loop design",
+    "Agent observability",
+    "Provenance",
+    "Workflow handoff"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Dated personal design record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-046",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Runnable environments for pull-request review",
+   "body": "Proposed opening a pull request into a checked-out, running browser workspace so a reviewer could examine behavior as well as code before accepting a change.",
+   "skills": [
+    "Pull-request workflows",
+    "Reproducible environments",
+    "Quality gates",
+    "AI-assisted SDLC"
+   ],
+   "kind": "Proposed",
+   "track": "Developer tools",
+   "evidence": "Dated personal design record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-047",
+   "date": "June 2023",
+   "period": "2023",
+   "title": "Scope, supportability and a runnable pilot",
+   "body": "Worked through the operational cost and training implications of a developer-platform proposal, favouring a small, understandable pilot with runnable examples over an all-at-once platform build.",
+   "skills": [
+    "Architecture trade-offs",
+    "Pilot scoping",
+    "Change management",
+    "Technical communication"
+   ],
+   "kind": "Explored",
+   "track": "Leadership",
+   "evidence": "Dated personal design record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-048",
+   "date": "2023–2024; presentation date unrecorded",
+   "period": "2023",
+   "title": "Sharing the remote-development journey",
+   "body": "Presented the progression from hosted workspaces to container-based tooling, prebuilds, developer-environment definitions and AI-assisted delivery workflows.",
+   "skills": [
+    "Technical teaching",
+    "Gitpod",
+    "Dev containers",
+    "Kubernetes",
+    "DevOps",
+    "Architecture"
+   ],
+   "kind": "Teaching",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-049",
+   "date": "2023–2024; talk date unresolved",
+   "period": "2023",
+   "title": "Second Brain: owned knowledge and adaptable consumption",
+   "body": "Explored a personal-knowledge system that retains source material, retrieves relevant context and adapts outputs to how a person consumes information, including audio.",
+   "skills": [
+    "RAG",
+    "Knowledge management",
+    "Embeddings",
+    "Hybrid retrieval",
+    "Text-to-speech",
+    "Cost-aware architecture"
+   ],
+   "kind": "Teaching",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "The public talk’s exact date is unresolved; related implementation work is dated separately.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-050",
+   "date": "24 August 2023",
+   "period": "2023",
+   "title": "Small, domain-specific models on consumer hardware",
+   "body": "Reported experiments adapting small GPT-NeoX models for a focused task such as email drafting, with local execution on consumer hardware.",
+   "skills": [
+    "GPT-NeoX",
+    "Fine-tuning",
+    "Local inference",
+    "Small models"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7099086738823815168"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-051",
+   "date": "20 September 2023",
+   "period": "2023",
+   "title": "Article-to-podcast workflow in Python",
+   "body": "Built a script that transformed source content into podcast-style text and used the macOS speech tooling to produce an audio output.",
+   "skills": [
+    "Python",
+    "Text-to-speech",
+    "Content transformation",
+    "Automation"
+   ],
+   "kind": "Built",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7110023563620884481"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-052",
+   "date": "21 September 2023",
+   "period": "2023",
+   "title": "Browser-to-podcast automation with Shortcuts",
+   "body": "Shared an iOS/macOS Shortcut for turning browser content into podcast-style output, making the workflow usable beyond a development shell.",
+   "skills": [
+    "Shortcuts",
+    "Workflow automation",
+    "Text-to-speech"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7110023563620884481"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-053",
+   "date": "12 October 2023",
+   "period": "2023",
+   "title": "Thinking about small-model serving economics",
+   "body": "Proposed serving approaches that account for idle workloads and the cost of keeping a model resident in memory.",
+   "skills": [
+    "Inference economics",
+    "Resource scheduling",
+    "Small models"
+   ],
+   "kind": "Proposed",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7118123380234493952"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-054",
+   "date": "12–13 October 2023",
+   "period": "2023",
+   "title": "Local and edge AI as an architectural choice",
+   "body": "Wrote about bringing smaller models closer to data, considering privacy, infrastructure cost and deployment constraints together.",
+   "skills": [
+    "Local inference",
+    "Edge AI",
+    "Privacy",
+    "AI architecture"
+   ],
+   "kind": "Writing",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7118180502360006656"
+    },
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7118547811301814273"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-055",
+   "date": "24 October 2023",
+   "period": "2023",
+   "title": "A concrete multi-role AutoGen prototype",
+   "body": "Built and shared a GPT-4/AutoGen notebook with account-manager, architect, critic, engineer and executor roles. Its design included specialist-agent generation, Python execution and human oversight.",
+   "skills": [
+    "AutoGen",
+    "Multi-agent architecture",
+    "Python",
+    "Tool execution",
+    "Human-in-the-loop design"
+   ],
+   "kind": "Prototype",
+   "track": "AI & agents",
+   "evidence": "Dated notebook-sharing record",
+   "note": "The notebook documents the design; it does not establish a completed recursive execution chain or an industry-first claim.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-056",
+   "date": "24 October 2023",
+   "period": "2023",
+   "title": "Knowledge graphs, vector search and RAG together",
+   "body": "Argued for combining graph structure, vector retrieval and retrieval-augmented generation instead of expecting vector search alone to solve every knowledge-system problem.",
+   "skills": [
+    "Knowledge graphs",
+    "Vector search",
+    "RAG"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7120802693845041152"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-057",
+   "date": "24 October 2023",
+   "period": "2023",
+   "title": "Prompt and SQL-injection risks in AI applications",
+   "body": "Raised injection concerns in an AI-assisted data-access approach, including the importance of how untrusted input reaches templates and tools.",
+   "skills": [
+    "Prompt injection",
+    "SQL injection",
+    "AI security"
+   ],
+   "kind": "Writing",
+   "track": "Security",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7122335779665674240"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-058",
+   "date": "26 October 2023",
+   "period": "2023",
+   "title": "Private, multi-model agent orchestration",
+   "body": "Discussed AutoGen and Griptape as options for composing multi-model agents, including the use of private or open models.",
+   "skills": [
+    "AutoGen",
+    "Griptape",
+    "Multi-agent orchestration",
+    "Private LLMs"
+   ],
+   "kind": "Writing",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7123165946977890304"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-059",
+   "date": "9 November 2023",
+   "period": "2023",
+   "title": "Adaptive decoys as an AI-security idea",
+   "body": "Proposed investigating whether language models could make controlled decoy environments more realistic and useful for studying attacker behavior.",
+   "skills": [
+    "Honeypots",
+    "Adaptive security",
+    "AI security"
+   ],
+   "kind": "Proposed",
+   "track": "Security",
+   "evidence": "Public writing and engineering record",
+   "note": "An idea, not a claimed deployed defense.",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7125907723015073792"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-060",
+   "date": "12 December 2023",
+   "period": "2023",
+   "title": "Structured metadata for retrieval",
+   "body": "Wrote about RDF and metadata as part of the relationship between language models, data semantics and information retrieval.",
+   "skills": [
+    "RDF",
+    "Metadata modeling",
+    "Retrieval"
+   ],
+   "kind": "Writing",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7140275620294311938"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-061",
+   "date": "2024",
+   "period": "2024",
+   "title": "Local supervised fine-tuning",
+   "body": "Ran local fine-tuning experiments using llama.cpp and Llama/OpenChat-class models, working through training data, adaptation and evaluation.",
+   "skills": [
+    "llama.cpp",
+    "SFT",
+    "LoRA",
+    "Dataset engineering",
+    "Local inference"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Personal engineering record",
+   "note": "Unreproduced model-superiority and benchmark claims are not included.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-062",
+   "date": "19 March 2024",
+   "period": "2024",
+   "title": "Synthetic data, fine-tuning and quantization loops",
+   "body": "Explored a cyclic workflow in which models help generate and refine task-focused training data before further fine-tuning and quantization.",
+   "skills": [
+    "Synthetic data",
+    "Fine-tuning",
+    "Quantization",
+    "Model evaluation"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7175746712274145280"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-063",
+   "date": "21 March 2024",
+   "period": "2024",
+   "title": "Publicly describing AI-prepared developer workspaces",
+   "body": "Published a design for a model to plan and prepare isolated development work after requirements and Jira tasks are defined, leaving final code ownership and review with the engineer.",
+   "skills": [
+    "Agent workflows",
+    "Jira integration",
+    "Human-in-the-loop design",
+    "Developer environments"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7175808299538251776"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-064",
+   "date": "23 March 2024",
+   "period": "2024",
+   "title": "Personal assistants and audio knowledge workflows",
+   "body": "Outlined personal-assistant workflows that combine open tooling, automation, knowledge distillation and customized written or audio briefings.",
+   "skills": [
+    "Personal AI",
+    "Knowledge distillation",
+    "Audio workflows",
+    "Automation"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AarticleSegment%3A%28urn%3Ali%3AlinkedInArticle%3A7169737324086476800%2C7169737325466238976%29"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-065",
+   "date": "28 March 2024",
+   "period": "2024",
+   "title": "Structured reasoning with smaller models",
+   "body": "Experimented with situation, task, action and result structures to guide agent work and reflection with quantized models.",
+   "skills": [
+    "Structured prompting",
+    "STAR reasoning",
+    "Quantized models",
+    "Agent workflows"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7179159130325078016"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-066",
+   "date": "8 April 2024",
+   "period": "2024",
+   "title": "Training data with explicit reasoning and protection structure",
+   "body": "Explored combining entity extraction, structured task analysis, sentiment and dynamic prompts into fine-tuning data, including protection-oriented structure.",
+   "skills": [
+    "NER",
+    "Training-data engineering",
+    "JSONL",
+    "Prompt workflows",
+    "AI security"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "A research workflow, not a guarantee that a model is protected from attacks.",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7183002250003247104"
+    },
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7183002249244151809"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-067",
+   "date": "30 April 2024",
+   "period": "2024",
+   "title": "Model behavior and serialization risk",
+   "body": "Raised questions about model interaction with serialized or binary representations as part of broader AI-security exploration.",
+   "skills": [
+    "Serialization security",
+    "Model evaluation"
+   ],
+   "kind": "Writing",
+   "track": "Security",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7191044016577126400"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-068",
+   "date": "27 May 2024",
+   "period": "2024",
+   "title": "Policy-as-code exploration with Cedar",
+   "body": "Discussed experiments with Cedar and the problem of managing security policy at scale.",
+   "skills": [
+    "Cedar",
+    "Policy-as-code",
+    "Security architecture"
+   ],
+   "kind": "Explored",
+   "track": "Security",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7200967618000797696"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-069",
+   "date": "3 June 2024",
+   "period": "2024",
+   "title": "Exploring smaller-model inference in serverless environments",
+   "body": "Discussed ONNX and the possibility of fitting small-model inference into serverless execution models.",
+   "skills": [
+    "ONNX",
+    "AWS Lambda",
+    "Small-model inference"
+   ],
+   "kind": "Proposed",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7199160851122053121"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-070",
+   "date": "1 July 2024",
+   "period": "2024",
+   "title": "Separating cloud-platform security from AI-application security",
+   "body": "Wrote about security gaps that remain at the application layer even when the underlying AI platform provides security controls.",
+   "skills": [
+    "Application security",
+    "GenAI security",
+    "Threat modeling"
+   ],
+   "kind": "Writing",
+   "track": "Security",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7213416918706192384"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-071",
+   "date": "July 2024",
+   "period": "2024",
+   "title": "AWS Solutions Architect — Professional",
+   "body": "Recorded the Professional credential as part of the continuing cloud-architecture learning path.",
+   "skills": [
+    "AWS",
+    "Solution architecture"
+   ],
+   "kind": "Credential",
+   "track": "Career",
+   "evidence": "Historical credential record",
+   "note": "No current-validity or expiry-date claim is made.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-072",
+   "date": "July 2024",
+   "period": "2024",
+   "title": "Snowflake SnowPro Core",
+   "body": "Recorded SnowPro Core alongside broader data-platform and cloud-architecture work.",
+   "skills": [
+    "Snowflake",
+    "Data platforms"
+   ],
+   "kind": "Credential",
+   "track": "Career",
+   "evidence": "Historical credential record",
+   "note": "An earned-history entry, not a claim of current validity.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-073",
+   "date": "August–October 2024",
+   "period": "2024",
+   "title": "Lyrebird Health: technical leadership in clinical AI",
+   "body": "Worked as a Tech Lead on a clinical GenAI product, combining applied AI, AWS engineering and technical leadership.",
+   "skills": [
+    "Applied AI",
+    "AWS",
+    "Technical leadership",
+    "Clinical AI"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Employment record and public announcement",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7234048995386400768"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-074",
+   "date": "2024",
+   "period": "2024",
+   "title": "Clinical AI: evaluation, provenance and security",
+   "body": "Worked on clinical language-model applications with attention to structured extraction, evaluation, prompt versioning, provenance and protection of sensitive data.",
+   "skills": [
+    "Structured extraction",
+    "LLM evaluation",
+    "LLM-as-Judge",
+    "Prompt versioning",
+    "Provenance",
+    "Security architecture"
+   ],
+   "kind": "Built",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "Internal designs, customer information and compliance-certification claims are excluded.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-075",
+   "date": "2024; exact test date unrecorded",
+   "period": "2024",
+   "title": "Early voice-AI evaluation",
+   "body": "Participated in early-stage voice-AI testing, extending hands-on evaluation into realtime interaction and streaming systems.",
+   "skills": [
+    "Voice-AI evaluation",
+    "Realtime systems",
+    "Test design"
+   ],
+   "kind": "Evaluation",
+   "track": "AI & agents",
+   "evidence": "First-hand testing account",
+   "note": "Program-specific details are not part of this public edition.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-076",
+   "date": "2024",
+   "period": "2024",
+   "title": "Responsible-disclosure work in AI systems",
+   "body": "Worked on AI-system security research and submitted a vulnerability report through a responsible-disclosure channel.",
+   "skills": [
+    "AI security",
+    "Responsible disclosure",
+    "Protocol analysis"
+   ],
+   "kind": "Research",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "No target-specific issue, report identifier, severity or vendor-confirmation claim is published.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-077",
+   "date": "10 November 2024",
+   "period": "2024",
+   "title": "Prompt experiments with reasoning models",
+   "body": "Shared an observation from experimenting with reward-oriented wording in reasoning-model prompts.",
+   "skills": [
+    "Prompt experiments",
+    "Reasoning-model evaluation"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "An observation, not a general guarantee of model behavior.",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7261256868306563073"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-078",
+   "date": "March 2025 onward; record through October 2026",
+   "period": "2025",
+   "title": "Commonwealth Bank: Staff Platform Engineer, AI Acceleration",
+   "body": "Joined Commonwealth Bank in a Staff Platform Engineer role within AI Acceleration. The work spans applied AI, technical direction and production engineering.",
+   "skills": [
+    "Applied AI",
+    "Staff engineering",
+    "MLOps",
+    "Technical leadership",
+    "Production engineering"
+   ],
+   "kind": "Role",
+   "track": "Career",
+   "evidence": "Employment record and public announcement",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7305421036261449729"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-079",
+   "date": "2025–2026",
+   "period": "2025",
+   "title": "Applied-AI delivery from early design to production",
+   "body": "Contributed across development, data and infrastructure on enterprise AI delivery, connecting technical design with deployment readiness and operational reliability.",
+   "skills": [
+    "Applied AI",
+    "Data engineering",
+    "Production engineering",
+    "Architecture",
+    "Reliability"
+   ],
+   "kind": "Built",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "The public account excludes internal project names, topology and operating metrics.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-080",
+   "date": "2025–2026",
+   "period": "2025",
+   "title": "Identity and authorization for AI applications",
+   "body": "Worked on identity and authorization patterns for service-to-service and agent-to-tool interactions, with attention to least privilege and avoiding shared secrets.",
+   "skills": [
+    "OAuth2",
+    "OIDC",
+    "Workload identity",
+    "Agent authorization",
+    "Security architecture"
+   ],
+   "kind": "Built",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-081",
+   "date": "14 April 2025",
+   "period": "2025",
+   "title": "Researching small-model reasoning with RL and SFT",
+   "body": "Publicly described independent work combining reinforcement learning and supervised fine-tuning to investigate reasoning in smaller language models.",
+   "skills": [
+    "Reinforcement learning",
+    "SFT",
+    "Small models",
+    "Reasoning-model training"
+   ],
+   "kind": "Research",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7317351143611801600"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-082",
+   "date": "2025",
+   "period": "2025",
+   "title": "AI-application security evaluation",
+   "body": "Carried out hands-on AI-application security evaluation, considering the boundary between language-model output and application behavior.",
+   "skills": [
+    "AI red teaming",
+    "Application security",
+    "Security evaluation"
+   ],
+   "kind": "Evaluation",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "Internal demonstrations, methods and system details are not published.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-083",
+   "date": "June 2025",
+   "period": "2025",
+   "title": "Comparative audio-intelligence prototyping",
+   "body": "Built a prototype to compare audio-analysis approaches, exploring speaker separation, timestamps and contextual interaction.",
+   "skills": [
+    "Gradio",
+    "Audio AI",
+    "Speaker diarization",
+    "Multimodal evaluation",
+    "Rapid prototyping"
+   ],
+   "kind": "Prototype",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "Source recordings, employer-specific scenarios and performance claims are excluded.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-084",
+   "date": "June–October 2025",
+   "period": "2025",
+   "title": "Writing about capability and agent risk",
+   "body": "Discussed the security implications of increasingly capable models and agents, including the trade-offs of smaller task-specific models.",
+   "skills": [
+    "Agent security",
+    "Risk analysis",
+    "Model evaluation"
+   ],
+   "kind": "Writing",
+   "track": "Security",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7341202015957544963"
+    },
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7389645631243309056"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-085",
+   "date": "19 June 2025",
+   "period": "2025",
+   "title": "Leading an AI hackathon team",
+   "body": "Shared a public account of leading a team through a concentrated AI prototyping effort, from an initial challenge toward a demonstrable solution.",
+   "skills": [
+    "Rapid prototyping",
+    "Applied AI",
+    "Team delivery",
+    "Technical leadership"
+   ],
+   "kind": "Recognition",
+   "track": "Leadership",
+   "evidence": "Public writing and engineering record",
+   "note": "The public account does not assert that the prototype was a production deployment.",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7341431711701901313"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-086",
+   "date": "2025–2026",
+   "period": "2025",
+   "title": "Mentoring, standards and engineering delivery",
+   "body": "Combined hands-on engineering with technical guidance, design discussions, mentoring and efforts to improve delivery practices.",
+   "skills": [
+    "Mentoring",
+    "Engineering standards",
+    "DevSecOps",
+    "Delivery management"
+   ],
+   "kind": "Experience",
+   "track": "Leadership",
+   "evidence": "Personal engineering record",
+   "note": "Private performance-review text, ratings and internal measurements are not included.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-087",
+   "date": "2026",
+   "period": "2026 · January–June",
+   "title": "Security Champion and cybersecurity advocacy",
+   "body": "Participated in Security Champion work and internal cybersecurity learning and advocacy alongside the engineering role.",
+   "skills": [
+    "Cybersecurity",
+    "Security advocacy",
+    "Risk awareness"
+   ],
+   "kind": "Experience",
+   "track": "Leadership",
+   "evidence": "Personal engineering record",
+   "note": "Internal leaderboard details are not published.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-088",
+   "date": "22–23 February 2026",
+   "period": "2026 · January–June",
+   "title": "Declarative agents and filesystem-native tools",
+   "body": "Proposed composing agents from explicit declarations and making tools discoverable through familiar filesystem and command-line interfaces.",
+   "skills": [
+    "Agent architecture",
+    "MCP",
+    "OCI",
+    "Filesystem-native tools",
+    "Policy design"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7431312683196604416"
+    },
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7423012527451561984"
+    },
+    {
+     "label": "Public design discussion",
+     "url": "https://github.com/agentskills/agentskills/discussions/179"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-089",
+   "date": "February–March 2026",
+   "period": "2026 · January–June",
+   "title": "Expert scaffolding and model adaptation",
+   "body": "Investigated how small models learn with reasoning scaffolds and examined internal differences between base and adapted models.",
+   "skills": [
+    "GRPO",
+    "LoRA",
+    "MLX",
+    "Mechanistic interpretability",
+    "Experiment design"
+   ],
+   "kind": "Research",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "Independent, exploratory research; detailed unpublished methods and universal claims are not included.",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7431243976348938240"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "milestone-090",
+   "date": "March 2026",
+   "period": "2026 · January–June",
+   "title": "Testing what model adaptation preserves and changes",
+   "body": "Shared experimental observations about internal representations after fine-tuning and proposed testing whether those observations generalize across model families.",
+   "skills": [
+    "Activation analysis",
+    "Model evaluation",
+    "Cross-model evaluation",
+    "Fine-tuning"
+   ],
+   "kind": "Research",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "The observations are experiment-specific, not an established law of Transformer behavior.",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7433581529886412802"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-091",
+   "date": "12 April 2026",
+   "period": "2026 · January–June",
+   "title": "Latent Contextual Reinforcement research",
+   "body": "Introduced a research direction around contextual guidance and small-model reasoning, considering retention, adaptation and the limitations of conventional fine-tuning.",
+   "skills": [
+    "Reasoning-model training",
+    "Expert scaffolding",
+    "Model evaluation"
+   ],
+   "kind": "Research",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "A publicly described research approach, not an independently validated superiority claim.",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7449012298184069120"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-092",
+   "date": "Recorded by April 2026",
+   "period": "2026 · January–June",
+   "title": "Completion proxy with an agent-tool runtime",
+   "body": "Developed a single-binary Go proxy concept that exposes a chat-completions-compatible interface and separates model backends from tool registry and execution responsibilities.",
+   "skills": [
+    "Go",
+    "API compatibility",
+    "Tool execution",
+    "Agent loops"
+   ],
+   "kind": "Prototype",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "Artifact date, not a verified project-start or general-availability date.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-093",
+   "date": "May–June 2026",
+   "period": "2026 · January–June",
+   "title": "JuiceFS fork: storage, caching and backend engineering",
+   "body": "Worked in a JuiceFS fork on cloud-storage integration, caching, replication, integrity, encryption and block/storage interfaces. This connected systems engineering with the practical demands of data-heavy workflows.",
+   "skills": [
+    "Go",
+    "Filesystems",
+    "Distributed storage",
+    "Caching",
+    "Replication",
+    "Encryption",
+    "iSCSI"
+   ],
+   "kind": "Development",
+   "track": "Systems",
+   "evidence": "Public writing and engineering record",
+   "note": "Fork development is distinguished from upstream authorship and independently verified releases.",
+   "links": [
+    {
+     "label": "Project fork",
+     "url": "https://github.com/adeelahmad/juicefs"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "milestone-094",
+   "date": "2026",
+   "period": "2026 · January–June",
+   "title": "MLX model-inspection and comparison tools",
+   "body": "Developed tooling for layer-wise predictions, activation comparisons, geometric drift, ablation-style investigation and inspectable CLI/TUI output.",
+   "skills": [
+    "MLX",
+    "Activation analysis",
+    "Logit lens",
+    "Model comparison",
+    "CLI/TUI",
+    "Mechanistic interpretability"
+   ],
+   "kind": "Development",
+   "track": "Research",
+   "evidence": "Personal engineering record",
+   "note": "Research tooling, not a universal model-integrity detector.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-095",
+   "date": "June 2026",
+   "period": "2026 · January–June",
+   "title": "A lesson in parallel-agent integration",
+   "body": "A multi-agent development effort exposed the cost of starting dependent implementation before the shared interface was settled. The resulting lesson was to establish and verify the common contract before composing dependent work.",
+   "skills": [
+    "Multi-agent orchestration",
+    "Interface design",
+    "Dependency management",
+    "Integration testing"
+   ],
+   "kind": "Experience",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-096",
+   "date": "Recorded by June 2026",
+   "period": "2026 · January–June",
+   "title": "CTXConfig: choose context at the symbol level",
+   "body": "Explored AST-aware context selection and task planning around source symbols, rather than treating entire repositories as undifferentiated model input.",
+   "skills": [
+    "Rust",
+    "Tree-sitter",
+    "AST-aware context",
+    "Token budgeting",
+    "Agent tools"
+   ],
+   "kind": "Prototype",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "Implementation/prototype record, not a claim that every planned feature is complete.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-097",
+   "date": "12 June 2026",
+   "period": "2026 · January–June",
+   "title": "agentic-agile: test-driven agent workflows",
+   "body": "Published a Claude Code plugin organized around human-gated planning, test-first work, review stages and explicit completion checks.",
+   "skills": [
+    "TDD",
+    "Agent workflows",
+    "Claude Code hooks",
+    "Review gates",
+    "Developer tools"
+   ],
+   "kind": "Published",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "Workflow checks are not a guarantee of correctness or a security boundary.",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7471139939909271552"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "milestone-098",
+   "date": "13 June 2026",
+   "period": "2026 · January–June",
+   "title": "Measuring agent-assisted development",
+   "body": "Reported on a development run using tokens, packages, tests, commits and sprint output to examine agent-assisted engineering beyond a simple completion claim.",
+   "skills": [
+    "Agent evaluation",
+    "Token accounting",
+    "TDD",
+    "Engineering metrics"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "A single-run account, not a standardized productivity benchmark.",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7471380688865284096"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-100",
+   "date": "2026",
+   "period": "2026 · July–October",
+   "title": "Isolation as an explicit agent-runtime requirement",
+   "body": "Explored packaged agents running in microVMs and compared isolation approaches against a consistent set of requirements.",
+   "skills": [
+    "MicroVMs",
+    "libkrun",
+    "OCI",
+    "Agent isolation",
+    "Threat modeling",
+    "Virtualization"
+   ],
+   "kind": "Prototype",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "Research and runtime prototyping, not a universal security guarantee.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-101",
+   "date": "3 July 2026",
+   "period": "2026 · July–October",
+   "title": "AgentRC: declared capabilities and reviewable boundaries",
+   "body": "Published a working draft for packaging agents with explicit model, tool and network requests that a platform can grant, narrow or reject before execution.",
+   "skills": [
+    "AgentRC",
+    "OCI",
+    "Cedar",
+    "Go",
+    "BuildKit",
+    "Policy-as-code"
+   ],
+   "kind": "Published",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7478720397790687232"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "milestone-102",
+   "date": "5 July 2026",
+   "period": "2026 · July–October",
+   "title": "Reflecting on years of local-model experimentation",
+   "body": "Connected earlier fastText and local-inference work with later model adaptation and defensive tool-design concerns.",
+   "skills": [
+    "fastText",
+    "Local inference",
+    "Fine-tuning",
+    "Defensive tool design"
+   ],
+   "kind": "Writing",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public discussion",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7479004887133937664"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-103",
+   "date": "24–28 July 2026",
+   "period": "2026 · July–October",
+   "title": "rclone filesystem adapters and media integration",
+   "body": "Proposed filesystem-backed integrations and worked on a related Emby media integration. The upstream rclone proposal was closed without merging, an important distinction from the work in the fork.",
+   "skills": [
+    "Go",
+    "rclone",
+    "Filesystem adapters",
+    "Emby",
+    "Media integration",
+    "Open-source collaboration"
+   ],
+   "kind": "Contribution",
+   "track": "Systems",
+   "evidence": "Public writing and engineering record",
+   "note": "Historical proposal status from the retained record; not a live repository check.",
+   "links": [
+    {
+     "label": "Upstream proposal",
+     "url": "https://github.com/rclone/rclone/pull/9657"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-104",
+   "date": "August 2026",
+   "period": "2026 · July–October",
+   "title": "Versioned work state, not just conversation history",
+   "body": "Designed a state-document approach for preserving decisions, versions and task state across agent work, including an interactive view of changes over time.",
+   "skills": [
+    "State modeling",
+    "Python",
+    "React",
+    "TypeScript",
+    "API architecture",
+    "Versioning"
+   ],
+   "kind": "Proposed",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "Design and prototype work, not a finished-platform claim.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-105",
+   "date": "Recorded by August 2026",
+   "period": "2026 · July–October",
+   "title": "Conversation and artifact preservation",
+   "body": "Built browser-extension tooling aimed at preserving a user’s own conversations and generated artifacts as durable, inspectable records.",
+   "skills": [
+    "Browser extensions",
+    "Data preservation",
+    "Conversation export"
+   ],
+   "kind": "Prototype",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "Private execution paths and service-internal details are not included.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-106",
+   "date": "Recorded by August 2026",
+   "period": "2026 · July–October",
+   "title": "Local Python execution inside a document editor",
+   "body": "Prototyped a browser extension that runs selected Python locally using Pyodide/WebAssembly, bringing executable examples closer to written material.",
+   "skills": [
+    "Python",
+    "Pyodide",
+    "WebAssembly",
+    "Browser extensions",
+    "Developer tools"
+   ],
+   "kind": "Prototype",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-107",
+   "date": "2026",
+   "period": "2026 · July–October",
+   "title": "MLX reinforcement-learning and guided-training tooling",
+   "body": "Developed training tooling for Apple Silicon, with configurable tasks, evaluators, rewards, supervised modes and guided reasoning experiments.",
+   "skills": [
+    "MLX",
+    "Python",
+    "GRPO",
+    "LoRA",
+    "SFT",
+    "Reward design",
+    "Training infrastructure"
+   ],
+   "kind": "Development",
+   "track": "Research",
+   "evidence": "Public writing and engineering record",
+   "note": "Specific experimental methods and unreproduced performance claims are kept out of this edition.",
+   "links": [
+    {
+     "label": "Training repository",
+     "url": "https://github.com/adeelahmad/mlx-grpo-trainer"
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "milestone-108",
+   "date": "19–24 August 2026 (UTC)",
+   "period": "2026 · July–October",
+   "title": "Merged OpenWrt traffic-control contribution",
+   "body": "Contributed bidirectional traffic-shaping and monitoring improvements to luci-app-trafficctl, including packet-path diagnosis, regression tests and clearer reporting of partial operation. The recorded pull request was merged upstream.",
+   "skills": [
+    "OpenWrt",
+    "Linux networking",
+    "nftables",
+    "tc/IFB",
+    "Traffic shaping",
+    "Regression testing"
+   ],
+   "kind": "Merged",
+   "track": "Systems",
+   "evidence": "Public writing and engineering record",
+   "note": "The date follows the historical UTC merge record; no new live-status check is implied.",
+   "links": [
+    {
+     "label": "Merged pull request",
+     "url": "https://github.com/YusDyr/luci-app-trafficctl/pull/27"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "milestone-109",
+   "date": "Recorded by August 2026",
+   "period": "2026 · July–October",
+   "title": "Out-of-band automation through PiKVM",
+   "body": "Prototyped a hardware-control interface for recovery and machine administration when ordinary network access is unavailable.",
+   "skills": [
+    "PiKVM",
+    "Hardware control",
+    "Recovery automation",
+    "Agent tools"
+   ],
+   "kind": "Prototype",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "An experimental hardware path, not a claim of complete unattended control.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-110",
+   "date": "September 2026",
+   "period": "2026 · July–October",
+   "title": "Local GRPO and LoRA experiments on Apple Silicon",
+   "body": "Continued hands-on model training, guided-reasoning experiments, quantization and experiment tracking on local hardware, alongside tooling to make runs repeatable.",
+   "skills": [
+    "MLX",
+    "GRPO",
+    "LoRA",
+    "Quantization",
+    "Dataset engineering",
+    "Experiment tracking"
+   ],
+   "kind": "Experiment",
+   "track": "Research",
+   "evidence": "Personal engineering record",
+   "note": "Private run logs and detailed unpublished research are not part of the public package.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-111",
+   "date": "2026",
+   "period": "2026 · July–October",
+   "title": "ReqWall: portable policies, replaceable enforcement",
+   "body": "Explored request-policy tooling in which the rules are durable and browser or router enforcement mechanisms can be replaced independently.",
+   "skills": [
+    "Policy modeling",
+    "HTTP analysis",
+    "Browser tools",
+    "Router integration",
+    "Security architecture"
+   ],
+   "kind": "Prototype",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-112",
+   "date": "Recorded by September 2026",
+   "period": "2026 · July–October",
+   "title": "Reusable media-ingestion pipelines",
+   "body": "Developed the foundation of a reusable pipeline for audio, video and image ingestion, indexing and search.",
+   "skills": [
+    "Media pipelines",
+    "Search indexing",
+    "Audio processing",
+    "Computer vision"
+   ],
+   "kind": "Development",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "A development-stage system, not a claim of complete format coverage.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-113",
+   "date": "September 2026",
+   "period": "2026 · July–October",
+   "title": "Android administration and feasibility testing",
+   "body": "Worked through device-management feasibility and repeatable ADB/Shizuku startup, distinguishing a practical administration path from unsupported assumptions about device access.",
+   "skills": [
+    "ADB",
+    "Shizuku",
+    "Android administration",
+    "Feasibility analysis"
+   ],
+   "kind": "Experiment",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-114",
+   "date": "16 September 2026",
+   "period": "2026 · July–October",
+   "title": "agent-handoff: durable decisions across sessions",
+   "body": "Published a tool for preserving settled decisions, open work and versioned handoff state between AI sessions rather than repeatedly reconstructing context.",
+   "skills": [
+    "Go",
+    "State versioning",
+    "Content-addressed storage",
+    "Agent handoff"
+   ],
+   "kind": "Published",
+   "track": "AI & agents",
+   "evidence": "Public writing and engineering record",
+   "note": "",
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7505913245740744704"
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "milestone-115",
+   "date": "19–22 September 2026",
+   "period": "2026 · July–October",
+   "title": "Snapback: browse backup history without replacing live data",
+   "body": "Defined a Linux/macOS tool for read-only, per-directory historical views and copy-back restoration, built around the constraint that the live filesystem must never be over-mounted.",
+   "skills": [
+    "Go",
+    "FUSE",
+    "macFUSE",
+    "restic",
+    "rclone",
+    "Filesystems",
+    "Backup and restore"
+   ],
+   "kind": "Proposed",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "Design-stage milestone; not a claim that every platform integration is complete.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-116",
+   "date": "23 September 2026",
+   "period": "2026 · July–October",
+   "title": "aloop: evolving the agentic-agile workflow",
+   "body": "Reframed the workflow around test-driven agents, review waves, a final gate and explicit handoff state between cleared contexts.",
+   "skills": [
+    "Agent engineering",
+    "TDD",
+    "Workflow design",
+    "Context handoff"
+   ],
+   "kind": "Development",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-117",
+   "date": "24–28 September 2026",
+   "period": "2026 · July–October",
+   "title": "Workstation recovery and GPU diagnostics",
+   "body": "Worked through memory compatibility, firmware settings, storage and network hardware, Linux drivers and GPU recovery on an older workstation platform.",
+   "skills": [
+    "Hardware diagnostics",
+    "Linux",
+    "Proxmox",
+    "NVIDIA",
+    "Storage",
+    "Networking"
+   ],
+   "kind": "Built",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-118",
+   "date": "25 September 2026",
+   "period": "2026 · July–October",
+   "title": "Browser storage and execution-context debugging",
+   "body": "Worked on IndexedDB export and the differences between browser, extension and worker contexts when expected DOM or URL facilities were unavailable.",
+   "skills": [
+    "JavaScript",
+    "IndexedDB",
+    "Browser extensions",
+    "Data export"
+   ],
+   "kind": "Development",
+   "track": "Developer tools",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-119",
+   "date": "27–30 September 2026",
+   "period": "2026 · July–October",
+   "title": "Wireless backhaul and OpenWrt diagnostics",
+   "body": "Investigated home wireless-backhaul constraints, routing and bridging behavior, TCP settings and radio state across a mixed-device network.",
+   "skills": [
+    "OpenWrt",
+    "Wi-Fi",
+    "Routing",
+    "Bridging",
+    "TCP tuning",
+    "Network diagnostics"
+   ],
+   "kind": "Experiment",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "Network addresses, device identifiers and private topology are excluded.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-120",
+   "date": "29 September 2026",
+   "period": "2026 · July–October",
+   "title": "A writing project on AI application principles",
+   "body": "Began shaping a writing project about repeatable architecture, governance and operating principles for AI applications.",
+   "skills": [
+    "Technical writing",
+    "AI architecture",
+    "Governance"
+   ],
+   "kind": "Proposed",
+   "track": "Leadership",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-121",
+   "date": "30 September 2026",
+   "period": "2026 · July–October",
+   "title": "USB-device emulation on Raspberry Pi",
+   "body": "Explored a Raspberry Pi Zero starting point for a USB-device-emulation prototype and the possibility of later portability.",
+   "skills": [
+    "USB OTG",
+    "Linux gadget interfaces",
+    "Raspberry Pi",
+    "Protocol analysis"
+   ],
+   "kind": "Experiment",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "Planning and setup, not a claim of completed emulation.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-122",
+   "date": "2 October 2026",
+   "period": "2026 · July–October",
+   "title": "Privacy questions in voice-AI pipelines",
+   "body": "Examined voice-AI security questions including how personally identifiable information could be handled in streaming and voice-token pipelines.",
+   "skills": [
+    "Voice AI",
+    "Privacy",
+    "PII handling",
+    "AI security"
+   ],
+   "kind": "Explored",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-123",
+   "date": "3 October 2026",
+   "period": "2026 · July–October",
+   "title": "anytopdf: an extensible path from media to searchable documents",
+   "body": "Designed an extensible document pipeline for files, images, audio and video, including transcripts, captions and keyframe metadata, with Python work and a longer-term Rust architecture.",
+   "skills": [
+    "Python",
+    "Rust",
+    "PDF processing",
+    "OCR",
+    "Video",
+    "Audio",
+    "Plugin architecture",
+    "RAG"
+   ],
+   "kind": "Proposed",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "Scope and architecture, not a claim that every advertised input format is implemented.",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-124",
+   "date": "4 October 2026",
+   "period": "2026 · July–October",
+   "title": "Lens product identity and interface design",
+   "body": "Worked on a magnifier-based identity and a cross-platform visual system for Lens, connecting the product concept with web, application and command-line surfaces.",
+   "skills": [
+    "Product design",
+    "Brand systems",
+    "React",
+    "Cross-platform interfaces"
+   ],
+   "kind": "Development",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-125",
+   "date": "4 October 2026",
+   "period": "2026 · July–October",
+   "title": "Lens: a private, user-owned AI hub",
+   "body": "Defined a product direction combining personal inputs, cited searchable memory, knowledge graphs and approval-gated assistance on user-controlled infrastructure.",
+   "skills": [
+    "Local AI",
+    "RAG",
+    "Knowledge graphs",
+    "Hybrid search",
+    "Privacy",
+    "MCP",
+    "OAuth2",
+    "Automation"
+   ],
+   "kind": "Proposed",
+   "track": "Products",
+   "evidence": "Personal engineering record",
+   "note": "A product direction with implementation work in progress; not a claim that the entire roadmap is available.",
+   "links": [],
+   "featured": true
+  },
+  {
+   "id": "milestone-126",
+   "date": "5 October 2026",
+   "period": "2026 · July–October",
+   "title": "A linked record of work and technology",
+   "body": "Assembled this engineering timeline to connect technical milestones with their relevant skills, keeping proposals, experiments, releases and employment distinct.",
+   "skills": [
+    "Evidence modeling",
+    "Knowledge management",
+    "Data provenance"
+   ],
+   "kind": "Writing",
+   "track": "Leadership",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-099",
+   "date": "Undated and 2026 investigations",
+   "period": "Cross-period",
+   "title": "Security research at execution boundaries",
+   "body": "Investigated AI execution environments and sandbox boundaries through protocol and systems analysis, while keeping target-specific and undisclosed research separate from the public record.",
+   "skills": [
+    "Sandbox forensics",
+    "Protocol analysis",
+    "AI security",
+    "Execution-boundary analysis"
+   ],
+   "kind": "Research",
+   "track": "Security",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-127",
+   "date": "Earlier work; exact dates unrecorded",
+   "period": "Cross-period",
+   "title": "Speech recognition, OCR and visual-media processing",
+   "body": "Worked with speech-recognition, OCR and media-processing tools before the later LLM-focused projects.",
+   "skills": [
+    "Kaldi",
+    "DeepSpeech",
+    "Speech recognition",
+    "Tesseract",
+    "OCR",
+    "Computer vision",
+    "Media pipelines"
+   ],
+   "kind": "Experience",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-128",
+   "date": "Across the systems years",
+   "period": "Cross-period",
+   "title": "Telephony and realtime communication",
+   "body": "Worked across Asterisk, FreePBX and later telephony systems, including audio codecs, recording, SMS integration and realtime browser communication.",
+   "skills": [
+    "Asterisk",
+    "FreePBX",
+    "3CX",
+    "Opus",
+    "WebRTC",
+    "STUN/ICE",
+    "GSM/SMS"
+   ],
+   "kind": "Experience",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-129",
+   "date": "Across multiple projects",
+   "period": "Cross-period",
+   "title": "Routing, VPNs and identity-aware access",
+   "body": "Built experience across switching, routing, firewalls, overlay networking, VPNs and identity-aware access. Tool adoption spans different periods rather than a single first-use date.",
+   "skills": [
+    "Cisco",
+    "MikroTik",
+    "OpenWrt",
+    "OSPF/BGP",
+    "VXLAN",
+    "Open vSwitch",
+    "WireGuard",
+    "IPsec",
+    "Zero Trust",
+    "Cloudflare"
+   ],
+   "kind": "Experience",
+   "track": "Systems",
+   "evidence": "Personal engineering record",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-130",
+   "date": "Local-AI period; exact date unrecorded",
+   "period": "Cross-period",
+   "title": "MacPilot: natural-language desktop automation",
+   "body": "Experimented with model-driven macOS control using accessibility interfaces, AppleScript, OCR and asynchronous orchestration.",
+   "skills": [
+    "Python",
+    "macOS Accessibility",
+    "AppleScript",
+    "OCR",
+    "Computer-use automation",
+    "Async orchestration"
+   ],
+   "kind": "Prototype",
+   "track": "AI & agents",
+   "evidence": "Personal engineering record",
+   "note": "An experimental project; no first-in-industry or fully autonomous operation claim.",
+   "links": [],
+   "featured": false
+  }
+ ],
+ "projects": [
+  {
+   "name": "AgentRC",
+   "description": "Declared agent capabilities and execution boundaries.",
+   "status": "Published working draft",
+   "eventIds": [
+    "milestone-101"
+   ],
+   "skills": [
+    "AgentRC",
+    "OCI",
+    "Cedar",
+    "Go",
+    "BuildKit",
+    "Policy-as-code"
+   ],
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7478720397790687232"
+    }
+   ]
+  },
+  {
+   "name": "agent-handoff",
+   "description": "Versioned decisions and work state across AI sessions.",
+   "status": "Published tool",
+   "eventIds": [
+    "milestone-114"
+   ],
+   "skills": [
+    "Go",
+    "State versioning",
+    "Content-addressed storage",
+    "Agent handoff"
+   ],
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7505913245740744704"
+    }
+   ]
+  },
+  {
+   "name": "agentic-agile / aloop",
+   "description": "Test-first workflows, review stages and explicit handoff.",
+   "status": "Published plugin / evolving workflow",
+   "eventIds": [
+    "milestone-097",
+    "milestone-116"
+   ],
+   "skills": [
+    "TDD",
+    "Agent workflows",
+    "Claude Code hooks",
+    "Review gates",
+    "Developer tools",
+    "Agent engineering",
+    "Workflow design",
+    "Context handoff"
+   ],
+   "links": [
+    {
+     "label": "Public post",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7471139939909271552"
+    }
+   ]
+  },
+  {
+   "name": "MLX training tooling",
+   "description": "Configurable local reinforcement-learning and guided-training experiments.",
+   "status": "Development & research",
+   "eventIds": [
+    "milestone-107"
+   ],
+   "skills": [
+    "MLX",
+    "Python",
+    "GRPO",
+    "LoRA",
+    "SFT",
+    "Reward design",
+    "Training infrastructure"
+   ],
+   "links": [
+    {
+     "label": "Training repository",
+     "url": "https://github.com/adeelahmad/mlx-grpo-trainer"
+    }
+   ]
+  },
+  {
+   "name": "Model inspection",
+   "description": "Layer-wise predictions and comparison of adapted models.",
+   "status": "Research tooling",
+   "eventIds": [
+    "milestone-094"
+   ],
+   "skills": [
+    "MLX",
+    "Activation analysis",
+    "Logit lens",
+    "Model comparison",
+    "CLI/TUI",
+    "Mechanistic interpretability"
+   ],
+   "links": []
+  },
+  {
+   "name": "JuiceFS fork",
+   "description": "Storage backends, caching, replication and interface engineering.",
+   "status": "Fork development",
+   "eventIds": [
+    "milestone-093"
+   ],
+   "skills": [
+    "Go",
+    "Filesystems",
+    "Distributed storage",
+    "Caching",
+    "Replication",
+    "Encryption",
+    "iSCSI"
+   ],
+   "links": [
+    {
+     "label": "Project fork",
+     "url": "https://github.com/adeelahmad/juicefs"
+    }
+   ]
+  },
+  {
+   "name": "OpenWrt trafficctl",
+   "description": "Bidirectional shaping, diagnostics and regression testing.",
+   "status": "Merged contribution",
+   "eventIds": [
+    "milestone-108"
+   ],
+   "skills": [
+    "OpenWrt",
+    "Linux networking",
+    "nftables",
+    "tc/IFB",
+    "Traffic shaping",
+    "Regression testing"
+   ],
+   "links": [
+    {
+     "label": "Merged pull request",
+     "url": "https://github.com/YusDyr/luci-app-trafficctl/pull/27"
+    }
+   ]
+  },
+  {
+   "name": "rclone / Emby integration",
+   "description": "Filesystem-backed media integrations.",
+   "status": "Prototype / unmerged upstream proposal",
+   "eventIds": [
+    "milestone-103"
+   ],
+   "skills": [
+    "Go",
+    "rclone",
+    "Filesystem adapters",
+    "Emby",
+    "Media integration",
+    "Open-source collaboration"
+   ],
+   "links": [
+    {
+     "label": "Upstream proposal",
+     "url": "https://github.com/rclone/rclone/pull/9657"
+    }
+   ]
+  },
+  {
+   "name": "CTXConfig",
+   "description": "Symbol-aware context selection for coding agents.",
+   "status": "Prototype",
+   "eventIds": [
+    "milestone-096"
+   ],
+   "skills": [
+    "Rust",
+    "Tree-sitter",
+    "AST-aware context",
+    "Token budgeting",
+    "Agent tools"
+   ],
+   "links": []
+  },
+  {
+   "name": "Snapback",
+   "description": "Read-only backup history and copy-back restoration.",
+   "status": "Design",
+   "eventIds": [
+    "milestone-115"
+   ],
+   "skills": [
+    "Go",
+    "FUSE",
+    "macFUSE",
+    "restic",
+    "rclone",
+    "Filesystems",
+    "Backup and restore"
+   ],
+   "links": []
+  },
+  {
+   "name": "Lens",
+   "description": "User-owned memory, retrieval and approval-gated assistance.",
+   "status": "Product direction / in development",
+   "eventIds": [
+    "milestone-125"
+   ],
+   "skills": [
+    "Local AI",
+    "RAG",
+    "Knowledge graphs",
+    "Hybrid search",
+    "Privacy",
+    "MCP",
+    "OAuth2",
+    "Automation"
+   ],
+   "links": []
+  },
+  {
+   "name": "anytopdf",
+   "description": "Extensible media-to-searchable-document processing.",
+   "status": "Architecture / in development",
+   "eventIds": [
+    "milestone-123"
+   ],
+   "skills": [
+    "Python",
+    "Rust",
+    "PDF processing",
+    "OCR",
+    "Video",
+    "Audio",
+    "Plugin architecture",
+    "RAG"
+   ],
+   "links": []
+  },
+  {
+   "name": "MacPilot",
+   "description": "Natural-language automation through macOS interfaces.",
+   "status": "Experiment",
+   "eventIds": [
+    "milestone-130"
+   ],
+   "skills": [
+    "Python",
+    "macOS Accessibility",
+    "AppleScript",
+    "OCR",
+    "Computer-use automation",
+    "Async orchestration"
+   ],
+   "links": []
+  },
+  {
+   "name": "ReqWall",
+   "description": "Portable request policies with replaceable enforcers.",
+   "status": "Prototype",
+   "eventIds": [
+    "milestone-111"
+   ],
+   "skills": [
+    "Policy modeling",
+    "HTTP analysis",
+    "Browser tools",
+    "Router integration",
+    "Security architecture"
+   ],
+   "links": []
+  },
+  {
+   "name": "Developer workspaces",
+   "description": "Browser IDEs, environment images, microVMs and lifecycle automation.",
+   "status": "Implemented experiments",
+   "eventIds": [
+    "milestone-022",
+    "milestone-024",
+    "milestone-023"
+   ],
+   "skills": [
+    "Linux containers",
+    "Proxmox",
+    "VS Code",
+    "PHP",
+    "MySQL",
+    "Node.js",
+    "VPNs",
+    "Environment templates",
+    "Bash",
+    "Reverse proxies",
+    "Lifecycle automation",
+    "Resource optimization",
+    "Firecracker",
+    "MicroVMs",
+    "Virtualization",
+    "Isolation design"
+   ],
+   "links": []
+  },
+  {
+   "name": "Versioned agent state",
+   "description": "Queryable work-state records rather than only transcripts.",
+   "status": "Design",
+   "eventIds": [
+    "milestone-104"
+   ],
+   "skills": [
+    "State modeling",
+    "Python",
+    "React",
+    "TypeScript",
+    "API architecture",
+    "Versioning"
+   ],
+   "links": []
+  },
+  {
+   "name": "PiKVM agent interface",
+   "description": "Out-of-band recovery and hardware-control experiments.",
+   "status": "Prototype",
+   "eventIds": [
+    "milestone-109"
+   ],
+   "skills": [
+    "PiKVM",
+    "Hardware control",
+    "Recovery automation",
+    "Agent tools"
+   ],
+   "links": []
+  },
+  {
+   "name": "Media ingestion",
+   "description": "Reusable audio, video and image-processing pipelines.",
+   "status": "Development",
+   "eventIds": [
+    "milestone-112"
+   ],
+   "skills": [
+    "Media pipelines",
+    "Search indexing",
+    "Audio processing",
+    "Computer vision"
+   ],
+   "links": []
+  },
+  {
+   "name": "Python in documents",
+   "description": "Local browser execution with Pyodide and WebAssembly.",
+   "status": "Prototype",
+   "eventIds": [
+    "milestone-106"
+   ],
+   "skills": [
+    "Python",
+    "Pyodide",
+    "WebAssembly",
+    "Browser extensions",
+    "Developer tools"
+   ],
+   "links": []
+  }
+ ],
+ "domains": {
+  "Programming & software": [
+   "C",
+   "C++",
+   "C#",
+   ".NET",
+   "Go",
+   "Rust",
+   "Python",
+   "PHP",
+   "Java",
+   "JavaScript",
+   "TypeScript",
+   "Ruby",
+   "Perl",
+   "Bash",
+   "Lua",
+   "Swift",
+   "AppleScript",
+   "React",
+   "Angular",
+   "Node.js",
+   "Deno",
+   "Spring",
+   "Symfony",
+   "Laravel",
+   "Rails",
+   "SQLAlchemy",
+   "Browser extensions",
+   "Design patterns",
+   "Testing",
+   "Metaprogramming"
+  ],
+  "AI, agents & model research": [
+   "Transformers",
+   "Attention",
+   "RAG",
+   "Knowledge graphs",
+   "FAISS",
+   "Qdrant",
+   "pgvector",
+   "LangChain",
+   "AutoGen",
+   "ReAct",
+   "MCP",
+   "Amazon Bedrock",
+   "Amazon Q Business",
+   "MLX",
+   "LoRA",
+   "GRPO",
+   "RLHF",
+   "SFT",
+   "LLM evaluation",
+   "LLM-as-Judge",
+   "Prompt versioning",
+   "Local inference",
+   "Embeddings",
+   "Mechanistic interpretability",
+   "Speech recognition",
+   "Speaker diarization",
+   "Kaldi",
+   "DeepSpeech",
+   "Tesseract",
+   "OCR",
+   "Computer vision"
+  ],
+  "Data, search & caching": [
+   "MySQL",
+   "PostgreSQL",
+   "MariaDB",
+   "MongoDB",
+   "IndexedDB",
+   "LevelDB",
+   "MQTT",
+   "Apache Solr",
+   "OpenRefine",
+   "InfluxDB",
+   "Airflow",
+   "Metabase",
+   "Redash",
+   "Redis",
+   "Memcached",
+   "FlashCache",
+   "Varnish",
+   "Squid"
+  ],
+  "Storage & filesystems": [
+   "Block storage",
+   "Object storage",
+   "FUSE",
+   "Overlay filesystems",
+   "NFS",
+   "iSCSI",
+   "Samba",
+   "ext filesystems",
+   "HFS",
+   "APFS",
+   "XFS",
+   "ZFS",
+   "GlusterFS",
+   "Ceph",
+   "Btrfs",
+   "JuiceFS",
+   "NBD",
+   "SCSI",
+   "Snapshots",
+   "Replication",
+   "Cloning",
+   "Storage caches"
+  ],
+  "Cloud & delivery": [
+   "AWS",
+   "Azure",
+   "Google Cloud",
+   "OpenStack",
+   "OpenNebula",
+   "CircleCI",
+   "GitHub Actions",
+   "GitLab CI/CD",
+   "CodeBuild",
+   "CodePipeline",
+   "Travis CI",
+   "KMS",
+   "SSM Parameter Store",
+   "Docker BuildKit",
+   "OCI",
+   "Engineering metrics",
+   "Technical leadership",
+   "Developer onboarding"
+  ],
+  "Virtualization & containers": [
+   "QEMU",
+   "KVM",
+   "Proxmox",
+   "VMware",
+   "XenServer",
+   "libvirt",
+   "Firecracker",
+   "Cloud Hypervisor",
+   "rust-vmm",
+   "LXC",
+   "LXD",
+   "Docker",
+   "Docker Swarm",
+   "Podman",
+   "Kata Containers",
+   "Kubernetes",
+   "GPU passthrough",
+   "PCI/USB passthrough",
+   "High availability",
+   "AppArmor",
+   "cgroups",
+   "Container plugins"
+  ],
+  "Networks, Linux & identity": [
+   "DNS",
+   "mDNS",
+   "DNS-over-TLS/HTTPS",
+   "Linux networking",
+   "Linux kernel modules",
+   "Ansible",
+   "HAProxy",
+   "Apache",
+   "NGINX",
+   "Caddy",
+   "Open vSwitch",
+   "VXLAN",
+   "FRRouting",
+   "OSPF/BGP",
+   "L2/L3 switching",
+   "Fibre networking",
+   "WireGuard",
+   "OpenVPN",
+   "IPsec",
+   "Tailscale",
+   "ZeroTier",
+   "Nebula",
+   "Cloudflare",
+   "Zero Trust",
+   "LDAP",
+   "Active Directory",
+   "OpenLDAP",
+   "SSO",
+   "Kerberos",
+   "RADIUS",
+   "SAML",
+   "Keycloak",
+   "SSH tunnels",
+   "iPXE",
+   "Netboot",
+   "DHCP",
+   "TCP tuning"
+  ],
+  "Routers & firewalls": [
+   "Cisco",
+   "MikroTik",
+   "OPNsense",
+   "pfSense",
+   "UniFi",
+   "OpenWrt",
+   "iptables",
+   "nftables",
+   "Vyatta",
+   "Traffic shaping",
+   "VPNs"
+  ],
+  "Observability & operations": [
+   "Prometheus",
+   "Grafana",
+   "ELK",
+   "Logstash",
+   "Nagios",
+   "OpenNMS",
+   "Cacti",
+   "SmokePing",
+   "mtr",
+   "iperf",
+   "mtail",
+   "Monit",
+   "NetFlow",
+   "SNMP",
+   "Fail2ban",
+   "Tripwire",
+   "Lynis",
+   "Log analysis"
+  ],
+  "Voice & device systems": [
+   "Asterisk",
+   "FreePBX",
+   "RasPBX",
+   "3CX",
+   "Opus",
+   "WebRTC",
+   "STUN/ICE",
+   "GSM/SMS",
+   "Kannel",
+   "Call recording",
+   "Amazon Connect",
+   "Apple MDM",
+   "PiKVM",
+   "ADB",
+   "Shizuku",
+   "USB OTG",
+   "Raspberry Pi"
+  ],
+  "Security & forensics": [
+   "Threat modeling",
+   "Vulnerability assessment",
+   "Security reporting",
+   "Secure coding",
+   "OSINT",
+   "Network packet analysis",
+   "Data recovery",
+   "Browser forensics",
+   "Protocol analysis",
+   "TLS inspection",
+   "Frida",
+   "Binary analysis",
+   "Firewall hardening",
+   "Mitmproxy",
+   "OpenSSL",
+   "Certificate authorities",
+   "AI security",
+   "Prompt injection",
+   "DLP",
+   "OAuth2",
+   "OIDC",
+   "RBAC",
+   "Audit logging",
+   "Sandbox forensics",
+   "Responsible disclosure"
+  ]
+ },
+ "highlights": [
+  "milestone-028",
+  "milestone-044",
+  "milestone-055",
+  "milestone-075",
+  "milestone-101"
+ ],
+ "method": {
+  "scope": "A selected public engineering record, through 5 October 2026. Technical work, proposals, experiments, public writing and employment are separate kinds of milestone.",
+  "evidence": "Public links point to posts, discussions and repositories already identified in the source record. Other milestones are based on first-hand engineering accounts or dated personal records. Linked pages have not been re-verified for this edition.",
+  "dates": "A date can identify a record, presentation or publication rather than the first implementation. Approximate and cross-period entries remain explicitly labelled.",
+  "skills": "Skill tags identify the technologies relevant to each milestone. The broader inventory is self-reported experience, not a certification, proficiency score or proof of current mastery.",
+  "research": "Prototypes and research are not production certifications, comparative benchmark victories or claims of being first in the industry.",
+  "personal": "This is a personal portfolio, not a statement on behalf of an employer or client."
+ }
+}

@@ -1,0 +1,11 @@
+dist/
+index.html
+PUBLIC-TIMELINE.md
+__pycache__/
+# Private source material must never be committed here.
+*.zip
+evidence/
+*.raw.txt
+authored-activity.json
+project-inventory.json
+transcript-inventory.json

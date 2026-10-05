@@ -1,0 +1,140 @@
+{
+ "feed": "https://blog.adeelahmad.net/feed",
+ "posts": [
+  {
+   "id": "39d73c315b0d",
+   "title": "Latent Contextual Reinforcement: Teaching Language Models to Think Better Without Changing Their…",
+   "url": "https://pub.towardsai.net/latent-contextual-reinforcement-teaching-language-models-to-think-better-without-changing-their-39d73c315b0d",
+   "date": "2026-04-12",
+   "topics": [
+    "artificial-intelligence",
+    "ai-safety",
+    "machine-learning",
+    "deep-learning",
+    "nlp"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "d43b47933162",
+   "title": "Teaching a Small Model to Think",
+   "url": "https://ai.plainenglish.io/teaching-a-small-model-to-think-d43b47933162",
+   "date": "2026-02-22",
+   "topics": [
+    "llm-large-language-model",
+    "machine-learning",
+    "reinforcement-learning",
+    "ai",
+    "artificial-intelligence"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "19b63787ca65",
+   "title": "I Built a 4B Model That Thinks for 14 Minutes Before Admitting It Doesn't Know",
+   "url": "https://pub.towardsai.net/i-built-a-4b-model-that-thinks-for-14-minutes-before-admitting-it-doesnt-know-19b63787ca65",
+   "date": "2025-11-20",
+   "topics": [
+    "technology",
+    "large-language-models",
+    "artificial-intelligence",
+    "software-development",
+    "machine-learning"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "836aa555b00e",
+   "title": "AI: The New Bicycle for the Mind",
+   "url": "https://adeelahmadch.medium.com/ai-the-new-bicycle-for-the-mind-836aa555b00e",
+   "date": "2024-05-04",
+   "topics": [
+    "productivity",
+    "technology",
+    "ai-technology",
+    "creativity",
+    "innovation"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "a7f032b637c7",
+   "title": "The Quantum Leap: Navigating the Future with AI and Quantum Computing",
+   "url": "https://adeelahmadch.medium.com/the-quantum-leap-navigating-the-future-with-ai-and-quantum-computing-a7f032b637c7",
+   "date": "2024-04-05",
+   "topics": [
+    "generative-ai-tools",
+    "quantum-computing",
+    "security",
+    "automation",
+    "artificial-intelligence"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "75c06f7d1371",
+   "title": "Corporate Australia's Eye-Opening Jolting Introduction with the Power of Open Source",
+   "url": "https://adeelahmadch.medium.com/corporate-australias-eye-opening-jolting-introduction-with-the-power-of-open-source-75c06f7d1371",
+   "date": "2024-03-16",
+   "topics": [
+    "innovation",
+    "open-source",
+    "corporate",
+    "open",
+    "tech"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "b5da9b3d368a",
+   "title": "How Generative AI is Outsmarting Traditional Machine Learning Methods",
+   "url": "https://adeelahmadch.medium.com/how-generative-ai-is-outsmarting-traditional-machine-learning-methods-b5da9b3d368a",
+   "date": "2024-01-31",
+   "topics": [
+    "deep-learning",
+    "chatgpt",
+    "artificial-intelligence",
+    "machine-learning"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "95ac17a8e5e1",
+   "title": "Iterative Approach to Discovering Gen AI Opportunities for Business Impact. The AI Agent way",
+   "url": "https://adeelahmadch.medium.com/iterative-approach-to-discovering-gen-ai-opportunities-for-business-impact-the-ai-agent-way-95ac17a8e5e1",
+   "date": "2024-01-29",
+   "topics": [
+    "open-source",
+    "aws",
+    "agi",
+    "ai",
+    "chatgpt"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "214b66a9fccb",
+   "title": "OpenAI and its Ceo following Jef bazez",
+   "url": "https://adeelahmadch.medium.com/openai-and-its-ceo-following-jef-bazez-214b66a9fccb",
+   "date": "2023-12-12",
+   "topics": [
+    "business",
+    "openai"
+   ],
+   "excerpt": ""
+  },
+  {
+   "id": "a2b07f68ba00",
+   "title": "Unleashing the Power of Collaborative Edge AI: A Paradigm Shift",
+   "url": "https://adeelahmadch.medium.com/unleashing-the-power-of-collaborative-edge-ai-a-paradigm-shift-a2b07f68ba00",
+   "date": "2023-10-14",
+   "topics": [
+    "chatgpt",
+    "privacy",
+    "artificial-intelligence",
+    "ai"
+   ],
+   "excerpt": ""
+  }
+ ]
+}
