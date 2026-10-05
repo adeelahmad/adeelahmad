@@ -23,10 +23,10 @@
  "events": [
   {
    "id": "milestone-001",
-   "date": "Teenage years",
+   "date": "Grade 8",
    "period": "Foundations",
    "title": "Getting into security",
-   "body": "I got into computers through networks and security in Lahore, before my first software job.",
+   "body": "I started poking at networks and security in grade 8 in Lahore, long before my first software job.",
    "skills": [
     "Network security",
     "Security testing"
@@ -34,16 +34,16 @@
    "kind": "Experience",
    "track": "Security",
    "evidence": "From my own notes",
-   "note": "I don't know the exact year.",
+   "note": "",
    "links": [],
    "featured": false
   },
   {
    "id": "milestone-002",
-   "date": "School years",
+   "date": "2006",
    "period": "Foundations",
-   "title": "A first vulnerability assessment",
-   "body": "While still at school I did a vulnerability assessment for a company and learned to explain the findings to the people who ran the system.",
+   "title": "First formal vulnerability assessment",
+   "body": "In 2006, while still at school, I did my first formal vulnerability assessment, on a company's website, and found issues that would have let attackers in. The company's CEO later wrote me a recommendation letter.",
    "skills": [
     "Vulnerability assessment",
     "Security reporting",
@@ -51,7 +51,7 @@
    ],
    "kind": "Experience",
    "track": "Security",
-   "evidence": "From my own notes",
+   "evidence": "Recommendation letter, October 2006",
    "note": "",
    "links": [],
    "featured": false
@@ -535,6 +535,32 @@
    "evidence": "From my own notes",
    "note": "",
    "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-131",
+   "date": "December 2017",
+   "period": "2013–2022",
+   "title": "Planning an open platform for audiovisual metadata",
+   "body": "I was on the core team planning an open platform that uses speech recognition, OCR and other machine learning to describe large audiovisual archives. In September 2017 we spent three days on requirements, comparing candidate tools for each part of the pipeline and sketching workflows. The plan was presented at the AMIA conference that December.",
+   "skills": [
+    "Audiovisual archives",
+    "Metadata",
+    "Speech recognition",
+    "OCR",
+    "Machine learning",
+    "Workflow design"
+   ],
+   "kind": "Proposed",
+   "track": "Research",
+   "evidence": "Public project documentation",
+   "note": "",
+   "links": [
+    {
+     "label": "Project documentation",
+     "url": "https://github.com/AudiovisualMetadataPlatform/amp_documentation/wiki"
+    }
+   ],
    "featured": false
   },
   {

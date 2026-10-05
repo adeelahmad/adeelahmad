@@ -154,9 +154,9 @@
       return h('section',{'aria-labelledby':'writing-title'},h('div',{className:'section-heading'},h('div',null,h('h2',{id:'writing-title'},'Writing')),X.links.blog?h('a',{href:X.links.blog,target:'_blank',rel:'noopener noreferrer',className:'subtle-button'},'All posts on Medium ',icon('arrow')):null),
         h('p',{className:'section-intro'},'Things I\u2019ve written on Medium, newest first.'),
         h('div',{className:'post-grid'},X.writing.map(p=>h('article',{className:'post-card',key:p.id},
-          h('span',{className:'post-date'},shortDate(p.date)),h('h3',null,h('a',{href:p.url,target:'_blank',rel:'noopener noreferrer'},p.title)),p.excerpt?h('p',null,p.excerpt):null,
+          h('span',{className:'post-date'},shortDate(p.date)),h('h3',null,p.local?h('a',{href:p.local},p.title):h('a',{href:p.url,target:'_blank',rel:'noopener noreferrer'},p.title)),p.excerpt?h('p',null,p.excerpt):null,
           h('div',{className:'skill-chips'},p.topics.slice(0,4).map(t=>h('span',{className:'inventory-chip',key:t},t.replace(/-/g,' ')))),
-          h('div',{className:'project-links'},h('a',{href:p.url,target:'_blank',rel:'noopener noreferrer',className:'source-link'},'Read on Medium ',icon('arrow')),p.eventIds.length?button('Related entry '+String.fromCharCode(8594),()=>this.showProject(p.eventIds),'text-button'):null)))));
+          h('div',{className:'project-links'},p.local?h('a',{href:p.local,className:'source-link'},'Read ',icon('right')):h('a',{href:p.url,target:'_blank',rel:'noopener noreferrer',className:'source-link'},'Read on Medium ',icon('arrow')),p.eventIds.length?button('Related entry '+String.fromCharCode(8594),()=>this.showProject(p.eventIds),'text-button'):null)))));
     }
     about() {
       return h('section',{className:'about-record','aria-labelledby':'about-title'},h('h2',{id:'about-title'},'About this page'),Object.entries(D.method).map(([key,text])=>h('div',{className:'method-item',key},h('h3',null,({scope:'What is here',evidence:'Sources',dates:'Dates',skills:'Skill tags',research:'Experiments',personal:'Views'})[key]),h('p',null,text))),h('div',{className:'downloads'},button('Export public timeline JSON',()=>saveFile('adeel-ahmad-public-timeline.json',JSON.stringify(D,null,2),'application/json'),'button'),h('p',{className:'small-muted'},'The export contains only the public data shown in this edition.')));
