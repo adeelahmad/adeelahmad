@@ -268,7 +268,7 @@ export function renderArticle(post, i, { timeline: D, medium: M, writingLinks = 
   </header>
   <div class="prose">${bodyHtml}</div>
   <footer class="article__foot">
-    <p>First appeared on Medium, ${longDate(post.date)}. <a href="${esc(post.url)}" rel="noopener">Read it there ↗</a>${post.topics.length ? ` · Topics: ${esc(post.topics.map(t => t.replace(/-/g, ' ')).join(', '))}.` : ''}</p>
+    <p><a href="${esc(post.url)}" rel="noopener">Read it on Medium ↗</a>${post.topics.length ? ` · Topics: ${esc(post.topics.map(t => t.replace(/-/g, ' ')).join(', '))}.` : ''}</p>
     <nav class="pager" aria-label="Other posts">
       ${newer ? `<a href="${postHref(newer, root)}"><span class="dir">← Newer</span><span class="t">${esc(newer.title)}</span></a>` : '<span></span>'}
       ${older ? `<a href="${postHref(older, root)}"><span class="dir">Older →</span><span class="t">${esc(older.title)}</span></a>` : ''}
@@ -288,7 +288,7 @@ export function renderSkill(name, ids, { timeline: D }) {
 <main id="main">
   <p class="label label--top">Skill</p>
   <h1 class="h2 page-title page-title--tight">${esc(name)}</h1>
-  <p class="lede">${es.length} ${es.length === 1 ? 'entry mentions' : 'entries mention'} it. Skill tags show what a piece of work involved; they are not ratings. <a href="${root}#skills">All skills →</a></p>
+  <p class="lede">${es.length} ${es.length === 1 ? 'entry mentions' : 'entries mention'} it. <a href="${root}#skills">All skills →</a></p>
   <div class="timeline__list">${es.map(e => renderEntry(e, root)).join('\n')}</div>
   <div class="hair"></div>
 </main>
