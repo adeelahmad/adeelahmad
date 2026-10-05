@@ -538,6 +538,27 @@
    "featured": false
   },
   {
+   "id": "milestone-131",
+   "date": "December 2017",
+   "period": "2013–2022",
+   "title": "Planning an open platform for audiovisual metadata",
+   "body": "I was on the core team planning an open platform that uses speech recognition, OCR and other machine learning to describe large audiovisual archives. The plan came out of a funded workshop and was presented at the AMIA conference in 2017.",
+   "skills": [
+    "Audiovisual archives",
+    "Metadata",
+    "Speech recognition",
+    "OCR",
+    "Machine learning",
+    "Workflow design"
+   ],
+   "kind": "Proposed",
+   "track": "Research",
+   "evidence": "Public conference presentation",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
    "id": "milestone-028",
    "date": "4 June 2021",
    "period": "2021–2022",
