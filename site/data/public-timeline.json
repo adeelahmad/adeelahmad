@@ -172,24 +172,6 @@
    "featured": false
   },
   {
-   "id": "milestone-009",
-   "date": "Consultancy years; exact date unrecorded",
-   "period": "2007–2012",
-   "title": "Enterprise workflow automation",
-   "body": "Built tools to automate quality-assurance workflows for a business.",
-   "skills": [
-    "Workflow automation",
-    "Enterprise integration",
-    "Software engineering"
-   ],
-   "kind": "Built",
-   "track": "Products",
-   "evidence": "From my own notes",
-   "note": "",
-   "links": [],
-   "featured": false
-  },
-  {
    "id": "milestone-010",
    "date": "2012–2013",
    "period": "2007–2012",
@@ -315,6 +297,24 @@
     "E-signature workflows",
     "Web applications",
     "Enterprise integration"
+   ],
+   "kind": "Built",
+   "track": "Products",
+   "evidence": "From my own notes",
+   "note": "",
+   "links": [],
+   "featured": false
+  },
+  {
+   "id": "milestone-009",
+   "date": "Xoho years",
+   "period": "2013–2022",
+   "title": "Enterprise workflow automation",
+   "body": "Built tools to automate quality-assurance workflows for a business.",
+   "skills": [
+    "Workflow automation",
+    "Enterprise integration",
+    "Software engineering"
    ],
    "kind": "Built",
    "track": "Products",
@@ -602,7 +602,7 @@
   },
   {
    "id": "milestone-030",
-   "date": "2022–July 2024",
+   "date": "February 2022–July 2024",
    "period": "2021–2022",
    "title": "Cevo: AWS cloud consulting",
    "body": "Moved into cloud consulting in Australia, working across solution architecture, application integration and technical delivery.",
@@ -621,7 +621,7 @@
   },
   {
    "id": "milestone-031",
-   "date": "2022–2024",
+   "date": "February 2022–July 2024",
    "period": "2021–2022",
    "title": "Cloud API delivery and domain-team leadership",
    "body": "Built cloud APIs and integrations, including Consumer Data Right services, and led the engineers working on them.",
@@ -642,7 +642,7 @@
   },
   {
    "id": "milestone-032",
-   "date": "Cevo period; exact date unrecorded",
+   "date": "Cevo years",
    "period": "2021–2022",
    "title": "Enterprise search that respects permissions",
    "body": "Worked on enterprise search with Amazon Q Business and SharePoint, where results had to respect who is allowed to see each document.",
@@ -662,7 +662,7 @@
   },
   {
    "id": "milestone-033",
-   "date": "Cevo period; exact date unrecorded",
+   "date": "Cevo years",
    "period": "2021–2022",
    "title": "Document and email processing pipelines",
    "body": "Worked on pipelines that process documents and email, using dbt, machine learning and Amazon Bedrock.",
@@ -1991,12 +1991,7 @@
    "track": "Systems",
    "evidence": "From a public post",
    "note": "This is work in my fork, not an upstream JuiceFS release.",
-   "links": [
-    {
-     "label": "Project fork",
-     "url": "https://github.com/adeelahmad/juicefs"
-    }
-   ],
+   "links": [],
    "featured": true
   },
   {
@@ -2914,12 +2909,7 @@
     "Encryption",
     "iSCSI"
    ],
-   "links": [
-    {
-     "label": "Project fork",
-     "url": "https://github.com/adeelahmad/juicefs"
-    }
-   ]
+   "links": []
   },
   {
    "name": "OpenWrt trafficctl",
