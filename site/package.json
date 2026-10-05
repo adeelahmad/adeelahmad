@@ -1,0 +1,11 @@
+{
+  "name": "adeel-ahmad-public-timeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-contained public engineering timeline and skill map for Adeel Ahmad",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "python tests/smoke_test.py"
+  }
+}
