@@ -91,5 +91,12 @@
   "education": [
     ["AWS Certified Solutions Architect – Professional", "Valid to Jul 2027; AWS-certified since 2016."],
     ["BS Computer Science", "Institute of Management Sciences, Lahore, 2007–2011."]
+  ],
+  "reading": [
+    {
+      "title": "An Audiovisual Metadata Platform to Support Mass Description",
+      "url": "https://raw.githubusercontent.com/wiki/AudiovisualMetadataPlatform/amp_documentation/attachments/683706278/683707162.pdf",
+      "note": "Slides (PDF) by Jon Dunn, Tanya Clement and Chris Lacinak, AMIA, December 2017."
+    }
   ]
 }
