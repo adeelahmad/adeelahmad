@@ -51,7 +51,7 @@ const hash = s => "'sha256-" + crypto.createHash('sha256').update(s).digest('bas
 export const MEDIUM_IMG_HOSTS = ['miro.medium.com', 'cdn-images-1.medium.com'];
 
 function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false }) {
-  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
+  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -71,7 +71,11 @@ ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ''}
 <meta property="og:image" content="${SITE.url}og-image.jpg">
 <meta property="og:image:alt" content="Photo of ${esc(SITE.name)}">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="${root}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="${root}favicon.ico" sizes="any">
+<link rel="icon" href="${root}favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="${root}favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="${root}apple-icon-180x180.png">
+<link rel="manifest" href="${root}manifest.json">
 <link rel="stylesheet" href="${root}styles.css">
 <script>${THEME}</script>
 <script src="${root}site.js" defer></script>
