@@ -23,10 +23,10 @@
  "events": [
   {
    "id": "milestone-001",
-   "date": "Grade 8",
+   "date": "Grade 9",
    "period": "Foundations",
    "title": "Getting into security",
-   "body": "I started poking at networks and security in grade 8 in Lahore, long before my first software job.",
+   "body": "I started poking at networks and security in grade 9 in Lahore, long before my first software job.",
    "skills": [
     "Network security",
     "Security testing"

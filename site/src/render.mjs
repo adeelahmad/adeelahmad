@@ -50,8 +50,9 @@ const THEME = "try{var t=localStorage.getItem('adeel-theme');if(t==='light'||t==
 const hash = s => "'sha256-" + crypto.createHash('sha256').update(s).digest('base64') + "'";
 export const MEDIUM_IMG_HOSTS = ['miro.medium.com', 'cdn-images-1.medium.com'];
 
-function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false }) {
-  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
+// frames: allow same-origin <iframe> (the CV page embeds its PDF). actions: extra controls in a sticky header.
+function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false, frames = false, actions = '' }) {
+  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + (frames ? "; frame-src 'self'" : '') + "; object-src 'none'; base-uri 'none'; form-action 'none';";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -83,11 +84,11 @@ ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ''}
 <body>
 <div class="wrap">
 <a class="skip" href="#main">Skip to content</a>
-<header class="top">
+<header class="top${actions ? ' top--sticky' : ''}">
   ${label
     ? `<nav class="crumbs" aria-label="Breadcrumb"><a class="top__name" href="${root}">${esc(SITE.name)}</a><span aria-hidden="true">/</span>${label}</nav>`
     : `<a class="top__name" href="#top">${esc(SITE.name)}</a>`}
-  <button type="button" class="btn-theme js-only" data-theme-toggle>Dark mode</button>
+  ${actions ? `<div class="top__actions">${actions}` : ''}<button type="button" class="btn-theme js-only" data-theme-toggle>Dark mode</button>${actions ? '</div>' : ''}
 </header>
 ${body}
 </div>
@@ -308,12 +309,19 @@ export function renderCV({ timeline: D, cv: C, cvPdf }) {
   </div>
 </article>`;
   const list = pts => pts.length ? `<ul class="cv__points">${pts.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
+  // data-track-download: site.js sends a pdf_download event to Google Analytics on click.
+  const dl = (href, text, where, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${esc(href)}" download="Adeel-Ahmad-CV.pdf" data-track-download="${where}">${text}</a>`;
   const pairs = rows => `<dl class="cv__pairs">${rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`;
   const body = `
 <main id="main">
   <h1 class="h2 page-title">Curriculum vitae</h1>
-  <p class="lede page-lede">${esc(C.headline)} ${esc(C.location)}.${cvPdf ? ` <a href="${cvPdf}">Download PDF</a>.` : ''} The <a href="${root}#journey">journey</a> explains how the pieces connect.</p>
+  <p class="lede page-lede">${esc(C.headline)} ${esc(C.location)}.${cvPdf ? ` ${dl(cvPdf, 'Download PDF', 'lede')}.` : ''} The <a href="${root}#journey">journey</a> explains how the pieces connect.</p>
   ${C.summary.map(t => `<p>${esc(t)}</p>`).join('\n')}
+  ${cvPdf ? `<section class="section cv-pdf" id="cv-pdf" aria-labelledby="cv-pdf-title">
+    <h2 class="h2" id="cv-pdf-title">CV as PDF</h2>
+    <iframe class="cv-pdf__frame" src="${cvPdf}#view=FitH" title="Adeel Ahmad CV (PDF)" loading="lazy"></iframe>
+    <p class="more more--small">PDF not showing? ${dl(cvPdf, 'Download it', 'embed')} or <a href="${cvPdf}" target="_blank" rel="noopener">open it in a new tab</a>.</p>
+  </section>` : ''}
   <section class="section" id="experience" aria-labelledby="experience-title">
     <h2 class="h2" id="experience-title">Experience</h2>
     <div class="timeline__list">${C.experience.map(x => item(x.when, x.org + ' · ' + x.place, x.role, list(x.points))).join('\n')}</div>
@@ -331,10 +339,14 @@ export function renderCV({ timeline: D, cv: C, cvPdf }) {
     <h2 class="h2" id="education-title">Certification and education</h2>
     ${pairs(C.education)}
   </section>
+  ${C.reading && C.reading.length ? `<section class="section" id="cv-reading" aria-labelledby="cv-reading-title">
+    <h2 class="h2" id="cv-reading-title">Further reading</h2>
+    <ul class="cv__points">${C.reading.map(r => `<li><a href="${esc(r.url)}" rel="noopener" data-track-download="reading">${esc(r.title)}</a>. ${esc(r.note)}</li>`).join('')}</ul>
+  </section>` : ''}
   <div class="hair"></div>
 </main>
 ${siteFooter(D, root)}`;
-  return layout({ title: 'CV · ' + SITE.name, description: 'Curriculum vitae of ' + SITE.name + ', ' + C.headline, body, root, label: '<span>CV</span>', canonical: SITE.url + 'cv/' });
+  return layout({ title: 'CV · ' + SITE.name, description: 'Curriculum vitae of ' + SITE.name + ', ' + C.headline, body, root, label: '<span>CV</span>', canonical: SITE.url + 'cv/', frames: !!cvPdf, actions: cvPdf ? dl(cvPdf, 'Download CV', 'header', 'btn-download') : '' });
 }
 
 /* ---------- everything ---------- */

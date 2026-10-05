@@ -27,6 +27,20 @@
   if (mq && mq.addEventListener) mq.addEventListener('change', paintToggle);
   paintToggle();
 
+  /* ---------- download tracking ---------- */
+  // Links marked data-track-download send a pdf_download event to Google Analytics.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[data-track-download]');
+    if (!a || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'pdf_download', {
+      file_name: a.pathname.split('/').pop(),
+      link_url: a.href,
+      link_text: (a.textContent || '').trim(),
+      link_location: a.getAttribute('data-track-download'),
+      transport_type: 'beacon'
+    });
+  });
+
   /* ---------- timeline ---------- */
   var list = document.querySelector('[data-timeline]');
   if (!list) return;

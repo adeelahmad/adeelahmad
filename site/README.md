@@ -31,6 +31,12 @@ To block a new term without writing it into the repo:
 echo "Term to block" | node scripts/hash-terms.mjs >> data/private-terms.sha256
 ```
 
+The CV page embeds `static/cv.pdf` and offers it from a sticky Download button. The PDF is printed from the CV page itself, so regenerate it whenever `data/cv.json` changes:
+
+```sh
+node build.mjs && python scripts/print-cv.py && node build.mjs
+```
+
 Browser checks: `python tests/smoke_test.py` (needs Playwright; set `CHROMIUM_PATH` if Chromium is not on PATH).
 
 ## Publishing
@@ -41,4 +47,4 @@ One-time setup in the repository settings: **Pages → Source: GitHub Actions**,
 
 ## Runtime
 
-Pages load Google Analytics (tag G-RKFB16BPXJ, in `scripts/analytics.mjs`) and nothing else from third parties; post pages may also show images from Medium's image hosts. Fonts are self-hosted (DM Sans and JetBrains Mono, OFL, see `static/fonts/LICENSE.txt`). A Content Security Policy with a hashed inline script allows only these, and every page is complete with JavaScript disabled.
+Pages load Google Analytics (tag G-RKFB16BPXJ, in `scripts/analytics.mjs`) and nothing else from third parties. Links marked `data-track-download` send a `pdf_download` event (with `file_name`, `link_url`, `link_text` and `link_location`) when clicked; post pages may also show images from Medium's image hosts. Fonts are self-hosted (DM Sans and JetBrains Mono, OFL, see `static/fonts/LICENSE.txt`). A Content Security Policy with a hashed inline script allows only these, and every page is complete with JavaScript disabled.
