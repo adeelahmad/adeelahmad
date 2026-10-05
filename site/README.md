@@ -10,6 +10,7 @@ Only publication copy. The private working record (transcripts, exports, CV draf
 - `data/public-timeline.json`: milestones, projects and the skills inventory
 - `data/medium.json`: saved Medium posts, refreshed daily
 - `data/writing-links.json`: which Medium post belongs to which milestone
+- `data/publications.json`: talks and reports for `/publications/`; an item with a `page` also gets its own page (the talk recording plays from YouTube only when the reader presses play)
 - `data/private-terms.sha256`: hashed terms the build refuses to publish
 
 ## Build
@@ -41,4 +42,4 @@ One-time setup in the repository settings: **Pages → Source: GitHub Actions**,
 
 ## Runtime
 
-Pages load Google Analytics (tag G-RKFB16BPXJ, in `scripts/analytics.mjs`) and nothing else from third parties; post pages may also show images from Medium's image hosts. Fonts are self-hosted (DM Sans and JetBrains Mono, OFL, see `static/fonts/LICENSE.txt`). A Content Security Policy with a hashed inline script allows only these, and every page is complete with JavaScript disabled.
+Pages load Google Analytics (tag G-RKFB16BPXJ, in `scripts/analytics.mjs`) and nothing else from third parties; post pages may also show images from Medium's image hosts, and the talk page loads YouTube's player only after the reader presses play. Fonts are self-hosted (DM Sans and JetBrains Mono, OFL, see `static/fonts/LICENSE.txt`). A Content Security Policy with a hashed inline script allows only these, and every page is complete with JavaScript disabled.

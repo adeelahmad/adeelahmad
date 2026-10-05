@@ -559,6 +559,10 @@
     {
      "label": "Project documentation",
      "url": "https://github.com/AudiovisualMetadataPlatform/amp_documentation/wiki"
+    },
+    {
+     "label": "2018 report",
+     "url": "https://hdl.handle.net/2022/21982"
     }
    ],
    "featured": false
@@ -1234,10 +1238,10 @@
   },
   {
    "id": "milestone-049",
-   "date": "2024",
+   "date": "March 2024",
    "period": "2024",
    "title": "Public talk: a generative AI second brain on AWS serverless",
-   "body": "Gave a talk on building a personal \"second brain\" on AWS serverless while keeping the cost low. Most of it does not need a large model or real-time answers, so documents are stored in S3, organised with small keyword and topic models, and searched with a vector database that sits on S3. Small quantized models handle the cheap steps, and retrieval with a larger model runs only for content I pick.",
+   "body": "Gave a talk at a Serverless Melbourne meetup on building a personal \"second brain\" on AWS serverless while keeping the cost low. Most of it does not need a large model or real-time answers, so documents are stored in S3, organised with small keyword and topic models, and searched with a vector database that sits on S3. Small quantized models handle the cheap steps, and retrieval with a larger model runs only for content I pick.",
    "skills": [
     "AWS Lambda",
     "Step Functions",

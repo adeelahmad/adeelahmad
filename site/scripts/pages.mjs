@@ -36,18 +36,19 @@ export function sanitize(html,title){
   return out.replace(/<p>\s*<\/p>/g,'').trim();
 }
 
-export function buildPages({dist,site,posts,intro,journey,timelineMd,links}){
+export function buildPages({dist,site,posts,intro,journey,timelineMd,publications=[],links}){
   const withPages=posts.filter(p=>p.local).map(p=>Object.assign({},p,{local:site+'blog/'+p.slug+'/'}));
   fs.writeFileSync(path.join(dist,'timeline.md'),timelineMd);
   const today=new Date().toISOString().slice(0,10);
   // Post pages point their canonical URL at Medium, where they were first published, so they stay out of the sitemap.
-  const urls=[[site,today],[site+'blog/',posts[0]?.date||today],[site+'timeline.md',today]];
+  const urls=[[site,today],[site+'blog/',posts[0]?.date||today],[site+'publications/',today],...publications.filter(p=>p.page).map(p=>[site+'publications/'+p.id+'/',today]),[site+'timeline.md',today]];
   fs.writeFileSync(path.join(dist,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(([u,d])=>'  <url><loc>'+esc(u)+'</loc><lastmod>'+d+'</lastmod></url>').join('\n')+'\n</urlset>\n');
   fs.writeFileSync(path.join(dist,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: '+site+'sitemap.xml\n');
   const llms=['# Adeel Ahmad','','> Software engineer in Melbourne, Australia. This site explains how his work across software, networks, storage, security, cloud and AI connects, mostly through one habit: learning the layer underneath whatever he depends on.','',
     intro,'',
     '## How it fits together','',...journey.chapters.map(c=>'- '+c.when+': '+c.title+'. '+c.story),'',
-    '## Pages','','- ['+'Full timeline]('+site+'timeline.md): every dated entry with the skills involved, as Markdown','- [Home]('+site+'): the same content as an interactive page','- [Writing]('+site+'blog/): blog posts, also published on Medium','',
+    '## Pages','','- ['+'Full timeline]('+site+'timeline.md): every dated entry with the skills involved, as Markdown','- [Home]('+site+'): the same content as an interactive page','- [Writing]('+site+'blog/): blog posts, also published on Medium','- [Publications]('+site+'publications/): talks and reports','',
+    '## Publications','',...publications.map(p=>'- ['+p.title+']('+(p.page?site+'publications/'+p.id+'/':p.links[0].url)+'): '+p.venue+', '+p.date),'',
     '## Writing','',...posts.map(p=>{const w=withPages.find(x=>x.id===p.id);return '- ['+p.title+']('+(w?w.local:p.url)+'): '+p.date;}),'',
     '## Elsewhere','','- [GitHub](https://github.com/adeelahmad)','- [LinkedIn]('+links.linkedin+')','- [Medium]('+links.blog+')','- [Hugging Face](https://huggingface.co/adeelahmad)',''];
   fs.writeFileSync(path.join(dist,'llms.txt'),llms.join('\n'));
