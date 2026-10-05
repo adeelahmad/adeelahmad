@@ -31,7 +31,7 @@ To block a new term without writing it into the repo:
 echo "Term to block" | node scripts/hash-terms.mjs >> data/private-terms.sha256
 ```
 
-The CV page embeds `static/cv.pdf` and offers it from a sticky Download button. The PDF is printed from the CV page itself, so regenerate it whenever `data/cv.json` changes:
+The CV page embeds `static/cv.pdf`, and the CV and home pages offer it from a Download CV button in a sticky header. The PDF is printed from the CV page itself, so regenerate it whenever `data/cv.json` changes:
 
 ```sh
 node build.mjs && python scripts/print-cv.py && node build.mjs

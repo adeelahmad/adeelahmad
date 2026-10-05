@@ -45,6 +45,7 @@ mark{background:var(--highlight);color:inherit}
 .btn-theme{font:400 12px/1 var(--font-mono);color:var(--text-secondary);background:transparent;border:1px solid var(--border);border-radius:999px;padding:7px 12px;cursor:pointer}
 .btn-theme:hover{color:var(--text-primary);background:var(--surface-neutral)}
 .top--sticky{position:sticky;top:0;z-index:5;background:var(--background)}
+html:has(.top--sticky){scroll-padding-top:72px}
 .top__actions{display:flex;align-items:center;gap:6px}
 .top--sticky{gap:10px}.top--sticky .crumbs,.top--sticky .btn-theme{white-space:nowrap}
 @media (max-width:400px){.top__actions{gap:4px}.top--sticky .btn-theme,.btn-download{padding:7px 7px}.top--sticky .crumbs>span{display:none}}

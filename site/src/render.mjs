@@ -44,6 +44,9 @@ const periodId = p => 'period-' + slug(p);
 const norm = s => String(s || '').normalize('NFKD').toLowerCase();
 const longDate = iso => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 
+// CV download link. data-track-download: site.js sends a pdf_download event to Google Analytics on click.
+const dl = (href, text, where, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${esc(href)}" download="Adeel-Ahmad-CV.pdf" data-track-download="${where}">${text}</a>`;
+
 /* ---------- layout ---------- */
 // Read the saved theme before first paint so dark mode does not flash. Hashed into the CSP below.
 const THEME = "try{var t=localStorage.getItem('adeel-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}";
@@ -146,7 +149,7 @@ function renderChapter(c, i, D) {
 }
 
 /* ---------- home ---------- */
-export function renderHome({ timeline: D, journey: J, medium: M }) {
+export function renderHome({ timeline: D, journey: J, medium: M, cvPdf }) {
   const skillMap = new Map();
   D.events.forEach(e => e.skills.forEach(s => { if (!skillMap.has(s)) skillMap.set(s, []); skillMap.get(s).push(e.id); }));
   const kinds = Array.from(new Set(D.events.map(e => e.kind))).sort();
@@ -232,7 +235,9 @@ export function renderHome({ timeline: D, journey: J, medium: M }) {
 </section>
 </main>
 ${siteFooter(D)}`;
-  return layout({ title: SITE.name, description: D.description, body, canonical: SITE.url });
+  // cvPdf is relative to cv/; the home page is one level up.
+  const homePdf = cvPdf && cvPdf.replace(/^\.\.\//, '');
+  return layout({ title: SITE.name, description: D.description, body, canonical: SITE.url, actions: homePdf ? dl(homePdf, 'Download CV', 'home-header', 'btn-download') : '' });
 }
 
 /* ---------- writing ---------- */
@@ -309,8 +314,6 @@ export function renderCV({ timeline: D, cv: C, cvPdf }) {
   </div>
 </article>`;
   const list = pts => pts.length ? `<ul class="cv__points">${pts.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
-  // data-track-download: site.js sends a pdf_download event to Google Analytics on click.
-  const dl = (href, text, where, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${esc(href)}" download="Adeel-Ahmad-CV.pdf" data-track-download="${where}">${text}</a>`;
   const pairs = rows => `<dl class="cv__pairs">${rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`;
   const body = `
 <main id="main">
