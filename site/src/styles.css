@@ -176,3 +176,9 @@ mark{background:var(--highlight);color:inherit}
 .page-title--tight{margin-top:0}
 .page-lede{font-size:17px;margin-bottom:40px}
 .label--top{margin-top:56px}
+
+/* CV page */
+.cv__role{margin:-4px 0 10px;color:var(--text-secondary)}
+.cv__points{margin:0;padding-left:1.1em}.cv__points li{margin:0 0 8px}
+.cv__pairs{margin:0}.cv__pairs>div{padding:14px 0;border-top:1px solid var(--border)}
+.cv__pairs dt{font-weight:700;margin-bottom:4px}.cv__pairs dd{margin:0;color:var(--text-strong)}

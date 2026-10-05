@@ -57,7 +57,9 @@ function validate(){
 }
 validate();
 const articles=Object.fromEntries(writing.filter(p=>p.local).map(p=>[p.id,sanitize(fs.readFileSync(path.join(ROOT,'data/medium-content',p.id+'.html'),'utf8'),p.title)]));
-const files=renderSite({timeline:D,journey:J,medium:{posts:writing},writingLinks:WL,articles});
+const CV=JSON.parse(read('data/cv.json'));
+const cvPdf=fs.existsSync(path.join(ROOT,'static/cv.pdf'))?'../cv.pdf':'';
+const files=renderSite({timeline:D,journey:J,medium:{posts:writing},writingLinks:WL,articles,cv:CV,cvPdf});
 // Everything that is published, not just the data, goes through the private-term check.
 const blocked=new Set(read('data/private-terms.sha256').split('\n').map(s=>s.trim()).filter(Boolean));
 for(const [rel,html] of Object.entries(files)){
