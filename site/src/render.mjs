@@ -97,7 +97,7 @@ function siteFooter(D, root = '') {
   return `<footer class="footer">
   <div class="footer__row">
     <span>${esc(SITE.name)} · ${esc(SITE.location)} · Last updated ${esc(SITE.updated)} · ${esc(SITE.views)}</span>
-    <span><a href="${SITE.links.github}" rel="noopener">GitHub</a><a href="${SITE.links.medium}" rel="noopener">Medium</a><a href="${root}#top">Top ↑</a></span>
+    <span><a href="${root}cv/">CV</a><a href="${SITE.links.github}" rel="noopener">GitHub</a><a href="${SITE.links.medium}" rel="noopener">Medium</a><a href="${root}#top">Top ↑</a></span>
   </div>
   ${method ? `<details><summary>About this page</summary><dl>${method}</dl></details>` : ''}
 </footer>`;
@@ -163,7 +163,7 @@ export function renderHome({ timeline: D, journey: J, medium: M }) {
   </div>
 </section>
 
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#journey">How it fits together</a><a href="#timeline">Timeline</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#writing">Writing</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#journey">How it fits together</a><a href="#timeline">Timeline</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="cv/">CV</a></nav>
 
 <section class="section section--first" id="journey" aria-labelledby="journey-title">
   <h2 class="h2" id="journey-title">How it fits together</h2>
@@ -292,11 +292,53 @@ ${siteFooter(D, root)}`;
   return layout({ title: name + ' · ' + SITE.name, description: `Entries on ${SITE.domain} that involved ${name}.`, body, root, label: `<a class="q" href="${root}#skills">Skills</a>`, canonical: SITE.url + 'skills/' + slug(name) + '/' });
 }
 
+/* ---------- CV ---------- */
+export function renderCV({ timeline: D, cv: C, cvPdf }) {
+  const root = '../';
+  const item = (when, title, sub, body) => `<article class="entry">
+  <div class="entry__when">${esc(when)}</div>
+  <div class="entry__main">
+    <h3 class="entry__title">${esc(title)}</h3>
+    ${sub ? `<p class="cv__role">${esc(sub)}</p>` : ''}
+    ${body}
+  </div>
+</article>`;
+  const list = pts => pts.length ? `<ul class="cv__points">${pts.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
+  const pairs = rows => `<dl class="cv__pairs">${rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`;
+  const body = `
+<main id="main">
+  <h1 class="h2 page-title">Curriculum vitae</h1>
+  <p class="lede page-lede">${esc(C.headline)} ${esc(C.location)}.${cvPdf ? ` <a href="${cvPdf}">Download PDF</a>.` : ''} The <a href="${root}#journey">journey</a> explains how the pieces connect.</p>
+  ${C.summary.map(t => `<p>${esc(t)}</p>`).join('\n')}
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <h2 class="h2" id="experience-title">Experience</h2>
+    <div class="timeline__list">${C.experience.map(x => item(x.when, x.org + ' · ' + x.place, x.role, list(x.points))).join('\n')}</div>
+  </section>
+  <section class="section" id="cv-projects" aria-labelledby="cv-projects-title">
+    <h2 class="h2" id="cv-projects-title">Projects and open source</h2>
+    ${pairs(C.projects)}
+    <p class="more more--small"><a href="${root}#projects">All projects →</a></p>
+  </section>
+  <section class="section" id="cv-skills" aria-labelledby="cv-skills-title">
+    <h2 class="h2" id="cv-skills-title">Skills</h2>
+    ${pairs(C.skills)}
+  </section>
+  <section class="section" id="education" aria-labelledby="education-title">
+    <h2 class="h2" id="education-title">Certification and education</h2>
+    ${pairs(C.education)}
+  </section>
+  <div class="hair"></div>
+</main>
+${siteFooter(D, root)}`;
+  return layout({ title: 'CV · ' + SITE.name, description: 'Curriculum vitae of ' + SITE.name + ', ' + C.headline, body, root, label: '<span>CV</span>', canonical: SITE.url + 'cv/' });
+}
+
 /* ---------- everything ---------- */
 export function renderSite(data) {
   const out = {};
   out['index.html'] = renderHome(data);
   out['blog/index.html'] = renderWritingIndex(data);
+  if (data.cv) out['cv/index.html'] = renderCV(data);
   data.medium.posts.forEach((p, i) => { if (p.local) out[`blog/${p.slug}/index.html`] = renderArticle(p, i, data); });
   const skillMap = new Map();
   data.timeline.events.forEach(e => e.skills.forEach(s => { if (!skillMap.has(s)) skillMap.set(s, []); skillMap.get(s).push(e.id); }));

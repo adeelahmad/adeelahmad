@@ -99,6 +99,10 @@ with sync_playwright() as p:
         page.goto(BASE + f'/blog/{local_posts[0].name}/', wait_until='load')
         check('Post page renders its text', len(page.locator('.prose').inner_text()) > 200)
         check('Post page points its canonical URL at Medium', 'medium' in (page.locator('link[rel=canonical]').get_attribute('href') or '') or 'blog.adeelahmad.net' in (page.locator('link[rel=canonical]').get_attribute('href') or ''))
+    CV = json.loads((ROOT / 'data/cv.json').read_text())
+    page.goto(BASE + '/cv/', wait_until='load')
+    check('CV page lists every role', page.locator('#experience .entry').count() == len(CV['experience']))
+    check('CV page has no phone number', not __import__('re').search(r'\+\d[\d ]{8,}', page.content()))
     page.goto(BASE + '/skills/aws/', wait_until='load')
     check('Skill page lists its entries', page.locator('.entry').count() == sum('AWS' in e['skills'] for e in D['events']))
 

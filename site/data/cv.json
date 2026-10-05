@@ -1,0 +1,95 @@
+{
+  "headline": "Staff Platform Engineer. Agentic AI and full-stack on AWS. AWS Certified Solutions Architect – Professional.",
+  "location": "Melbourne, Australia",
+  "summary": [
+    "I've been building software and distributed systems for 19 years, more than ten of them on AWS. I now design and build agentic and generative AI systems on Amazon Bedrock AgentCore in Commonwealth Bank's AI Centre of Excellence. Before that I was an AWS consultant at Cevo, working inside enterprise client teams, and before that I spent nine years as founder and CTO of a software consultancy that grew to 40 people, writing code and selling the work myself.",
+    "Most of my recent projects started as unclear briefs spread across several teams, so the first job was working out what was actually needed. I still write a lot of the code myself."
+  ],
+  "experience": [
+    {
+      "org": "Commonwealth Bank of Australia",
+      "place": "Melbourne",
+      "when": "Mar 2025 – now",
+      "role": "Staff Platform Engineer (MLOps), AI Centre of Excellence",
+      "points": [
+        "Led architecture and security for a data-lineage platform used in mainframe modernisation. Narrowed a very broad brief to the three tasks data stewards needed most, then built a security-approved prototype with AWS engineers in three weeks.",
+        "Took the platform's generative AI agents from prototype to production on Amazon Bedrock AgentCore. People ask lineage questions in plain English over an Amazon Neptune graph built by parsing job schedules and JCL in Python, and other agents flag broken pipelines and suggest fixes that need sign-off before they run.",
+        "Prototyped hybrid retrieval (vector search, cross-encoder reranking and an LLM explaining each match) instead of a proposed fine-tune for mapping API fields to a large ontology. It worked from about 30 labelled examples, and people can check the reason behind every mapping.",
+        "Wrote the OAuth2 proxy sidecar pattern the department uses for service-to-service and agent-to-tool authentication with workload identity instead of shared secrets, and set up machine-to-machine access to MCP servers with client-credentials tokens checked at a JWT proxy.",
+        "Ran authorised prompt-injection testing of an internal multi-agent assistant, which led to guardrail work in the team.",
+        "Set up delivery controls for the team's AI services: versioned prompts scored by an LLM judge alongside SAST, DAST and SCA scans, and staged deploys with rollback. Mentored engineers and ran internal talks on authentication patterns."
+      ]
+    },
+    {
+      "org": "Lyrebird Health",
+      "place": "Melbourne",
+      "when": "Aug 2024 – Oct 2024",
+      "role": "Tech Lead, AWS and generative AI (AI medical scribe)",
+      "points": [
+        "Built the AWS foundation for patient health data: multi-account setup with Control Tower, SCPs and least-privilege IAM, KMS key rotation, encryption in transit and at rest, and CI/CD on GitHub Actions with OIDC.",
+        "Standard guardrails were distorting sensitive clinical content, so I replaced free-form note generation with two-pass structured extraction where each statement cites the transcript lines it came from. LLM-as-judge evaluation and prompt versioning let us measure prompt changes across models."
+      ]
+    },
+    {
+      "org": "Cevo (AWS consulting partner)",
+      "place": "Melbourne",
+      "when": "Feb 2022 – Jul 2024",
+      "role": "AWS Cloud Consultant, embedded with enterprise clients",
+      "points": [
+        "Development lead for regulated Consumer Data Right REST APIs at a large energy provider. Led the domain-API and data-integration teams (8 engineers) and built the AWS data platform behind them.",
+        "Fixed a production outage the same day on Amazon Neptune and Gremlin, a stack I learned on the spot. The fix became a bounded-query pattern used across all endpoints.",
+        "Found accounts with far more transactions than a 10,000-result limit allowed and moved the design to paged queries. Drafted the team's definition of done.",
+        "In June 2023, proposed disposable cloud dev environments where an AI agent picks up a ticket and hands back its plan and a pull request for review, plus a self-hosted coding assistant so source code stays in-house.",
+        "For a client that wanted a custom SageMaker build, ran discovery across three departments, then built a serverless prototype overnight with SES, S3, Step Functions, Textract, Comprehend and Bedrock. The design that went ahead needed no model training and cost very little to run.",
+        "Delivered production retrieval over a very large legacy SharePoint estate with Amazon Q Business."
+      ]
+    },
+    {
+      "org": "Xoho Tech",
+      "place": "Chicago and Lahore",
+      "when": "Jan 2013 – Feb 2022",
+      "role": "Founder and CTO, Principal Solutions Architect",
+      "points": [
+        "Started the company and grew it to 40 people across two countries. Ran sales myself, from technical discovery to proposals and pricing, and delivered 80+ engagements, mostly web and cloud applications for universities, archives, international organisations and companies.",
+        "Designed an access-controlled archive platform on AWS for thousands of recorded testimonies. Built an e-signature product from scratch on Java/Spring, S3 and SQS that was later acquired.",
+        "Co-built an open-source archival management system (millions of records, a million hours of media) and a misinformation-monitoring platform. Wrote the engineering playbook.",
+        "Power cuts kept costing developers their work, so I moved development into the browser: each developer got a VS Code environment from a project template, shut down when idle. It started on one rented server shared by 12 developers and later moved to Firecracker and Cloud Hypervisor microVMs."
+      ]
+    },
+    {
+      "org": "PureLogics",
+      "place": "Lahore",
+      "when": "2009 – 2012",
+      "role": "Senior Software Engineer, then Co-Partner and CTO",
+      "points": []
+    },
+    {
+      "org": "APTLOGIX",
+      "place": "Lahore",
+      "when": "2007 – 2009",
+      "role": "Software Developer, e-commerce and C#/.NET",
+      "points": []
+    }
+  ],
+  "projects": [
+    ["AutoGen notebook (Oct 2023)", "An AWS Professional Services-style team modelled as GPT-4 agents. They scope an architecture brief and check the plan against the Well-Architected Framework, and once a person approves it, an engineer agent drafts the code."],
+    ["agentic-agile", "Open-source Claude Code plugin where a supervisor coordinates sub-agents from planning through test-first development and review, each task in its own git worktree. Nothing runs until I approve the plan. Also agent-handoff, a Go tool for passing decisions between agent sessions."],
+    ["AgentRC", "Working-draft open spec for packaging AI agents. An Agentfile declares what an agent needs and builds into OCI image labels a platform can enforce with Cedar. Reference CLI in Go."],
+    ["Agentic Application Studio (Feb 2026)", "React prototype for designing an agent system, from MCP tools and guardrails to synthetic training data and fine-tuning cost estimates."],
+    ["Full-stack TypeScript", "Extended a Next.js, Prisma and PostgreSQL CRM with Google Workspace integrations and an MCP-based assistant. Built an exam-prep app on Tauri v2 and SQLite."],
+    ["Security and upstream", "Reported AI security issues through responsible disclosure (2024). A fix to OpenWrt's luci-app-trafficctl was merged upstream (Aug 2026)."]
+  ],
+  "skills": [
+    ["Languages", "Python, Java, Go, TypeScript, JavaScript, Ruby, PHP; C#/.NET earlier on."],
+    ["Frontend", "React, Next.js, Tauri, Chrome extensions."],
+    ["Backend and data", "REST APIs, microservices, event-driven workflows (SQS, Step Functions), Spring, Rails, Node.js; PostgreSQL, MongoDB, Redis, Amazon Neptune (Gremlin), OpenSearch."],
+    ["Generative AI and agents", "Amazon Bedrock, Bedrock AgentCore, Amazon Q Business, MCP, multi-agent orchestration (AutoGen, LangChain); RAG with hybrid retrieval and reranking, embeddings, pgvector, FAISS, Qdrant; prompt versioning, LLM-as-judge evaluation, guardrails; OpenAI API since June 2021."],
+    ["AI-assisted development", "Claude Code, OpenCode; sub-agents, hooks and test-first gates; author of Claude Code plugins."],
+    ["AWS and platforms", "Lambda, ECS, EKS, Kubernetes, Docker, S3, RDS, IAM, KMS, Secrets Manager, CloudWatch, Control Tower; CloudFormation, Terraform, Pulumi; GitHub Actions, GitLab CI; Firecracker, Proxmox."],
+    ["Identity and security", "OAuth 2.0, OpenID Connect, JWT, SAML, workload identity, Cedar; SAST, DAST, SCA; prompt-injection testing; APRA, HIPAA, CDR."]
+  ],
+  "education": [
+    ["AWS Certified Solutions Architect – Professional", "Valid to Jul 2027; AWS-certified since 2016."],
+    ["BS Computer Science", "Institute of Management Sciences, Lahore, 2007–2011."]
+  ]
+}
