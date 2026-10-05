@@ -542,7 +542,7 @@
    "date": "December 2017",
    "period": "2013–2022",
    "title": "Planning an open platform for audiovisual metadata",
-   "body": "I was on the core team planning an open platform that uses speech recognition, OCR and other machine learning to describe large audiovisual archives. The plan came out of a funded workshop and was presented at the AMIA conference in 2017.",
+   "body": "I was on the core team planning an open platform that uses speech recognition, OCR and other machine learning to describe large audiovisual archives. In September 2017 we spent three days on requirements, comparing candidate tools for each part of the pipeline and sketching workflows. The plan was presented at the AMIA conference that December.",
    "skills": [
     "Audiovisual archives",
     "Metadata",
@@ -553,9 +553,14 @@
    ],
    "kind": "Proposed",
    "track": "Research",
-   "evidence": "Public conference presentation",
+   "evidence": "Public project documentation",
    "note": "",
-   "links": [],
+   "links": [
+    {
+     "label": "Project documentation",
+     "url": "https://github.com/AudiovisualMetadataPlatform/amp_documentation/wiki"
+    }
+   ],
    "featured": false
   },
   {
