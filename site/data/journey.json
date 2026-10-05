@@ -1,68 +1,183 @@
 {
-  "intro": "The short version of the record below: what I was working on, when, and what each stage taught me. Each chapter opens the milestones behind it.",
+  "intro": "If you have my CV and are wondering how the pieces fit together, this is the short version. Each part links to the dated entries behind it.",
   "chapters": [
     {
       "id": "chapter-1",
-      "when": "Teenage years · Lahore",
-      "title": "Security before software",
-      "story": "I started by taking networks apart to see how they behaved, long before I had a job title. While still at school I carried out a formal vulnerability assessment and had to explain the findings to the people who owned the system.",
-      "learned": "Watching how systems fail is the fastest way to learn how they work, and a finding only matters if you can explain it.",
-      "skills": ["Network security", "Security testing", "Vulnerability assessment"],
-      "eventIds": ["milestone-001", "milestone-002"]
+      "when": "Teenage years, Lahore",
+      "title": "Starting with security",
+      "story": "I got into computers by poking at networks. While still at school I did a vulnerability assessment for a company and had to explain what I found to the people who ran the system.",
+      "learned": "Seeing where systems break was how I learned how they were put together.",
+      "skills": [
+        "Network security",
+        "Security testing",
+        "Vulnerability assessment"
+      ],
+      "eventIds": [
+        "milestone-001",
+        "milestone-002"
+      ]
     },
     {
       "id": "chapter-2",
-      "when": "2007–2012",
-      "title": "Learning by running everything",
-      "story": "I studied computer science while already shipping .NET and PHP e-commerce work. At PureLogics I moved from senior engineer to co-partner and CTO, and the job grew to include VMware, Asterisk telephony, Cisco networks and a Facebook-integrated application.",
-      "learned": "The application is one layer. Networks, telephony and virtualisation are part of shipping, not someone else's problem.",
-      "skills": ["C#", ".NET", "PHP", "VMware", "Asterisk", "Cisco"],
-      "eventIds": ["milestone-003", "milestone-004", "milestone-005", "milestone-006", "milestone-007", "milestone-008", "milestone-009", "milestone-010"]
+      "when": "2007 to 2012",
+      "title": "Small companies, every job",
+      "story": "I studied computer science while working on .NET and PHP projects. The companies were small, so the developer also looked after servers, the network and the phone system. That is where VMware, Asterisk and Cisco came in.",
+      "learned": "I stopped seeing the application as separate from what it runs on.",
+      "skills": [
+        "C#",
+        ".NET",
+        "PHP",
+        "VMware",
+        "Asterisk",
+        "Cisco"
+      ],
+      "eventIds": [
+        "milestone-003",
+        "milestone-004",
+        "milestone-005",
+        "milestone-006",
+        "milestone-007",
+        "milestone-008",
+        "milestone-009",
+        "milestone-010"
+      ]
     },
     {
       "id": "chapter-3",
-      "when": "2013–2022",
-      "title": "A founder who kept writing code",
-      "story": "I founded Xoho Tech and grew it to around 40 people across Pakistan and the United States over nine years, while still writing code, designing systems and running delivery. We adopted AWS in 2013 and built archive, media, e-signature and monitoring platforms. When power cuts kept costing developers their work, I moved development into the browser: templated workspaces that slept when idle and woke on request, later on Firecracker microVMs, with a hyperconverged lab at home to learn the layers underneath.",
-      "learned": "When something keeps failing, change the system rather than asking people to work around it. Developer environments are infrastructure too.",
-      "skills": ["AWS", "Firecracker", "Proxmox", "Ceph", "Remote development", "Technical leadership"],
-      "eventIds": ["milestone-011", "milestone-012", "milestone-013", "milestone-014", "milestone-015", "milestone-016", "milestone-017", "milestone-018", "milestone-019", "milestone-020", "milestone-021", "milestone-022", "milestone-023", "milestone-024", "milestone-025", "milestone-026", "milestone-027"]
+      "when": "2013 to 2022",
+      "title": "Running a consultancy",
+      "story": "I ran Xoho Tech for nine years and it grew to about 40 people. It stayed small enough that I kept writing code. Power cuts kept wiping out developers' work, so I moved our development into the browser. That led to containers, a home lab to understand virtualisation and storage, and later Firecracker microVMs. Our archive and media projects needed search, OCR and speech recognition, which was my first contact with machine learning.",
+      "learned": "Fixing the environment people work in often helps more than asking them to work around it.",
+      "skills": [
+        "AWS",
+        "Firecracker",
+        "Proxmox",
+        "Ceph",
+        "Remote development",
+        "Technical leadership"
+      ],
+      "eventIds": [
+        "milestone-011",
+        "milestone-012",
+        "milestone-013",
+        "milestone-014",
+        "milestone-015",
+        "milestone-016",
+        "milestone-017",
+        "milestone-018",
+        "milestone-019",
+        "milestone-020",
+        "milestone-021",
+        "milestone-022",
+        "milestone-023",
+        "milestone-024",
+        "milestone-025",
+        "milestone-026",
+        "milestone-027"
+      ]
     },
     {
       "id": "chapter-4",
-      "when": "2021–2023",
-      "title": "AI before it was the job",
-      "story": "I received access to OpenAI's private API beta on 4 June 2021, before ChatGPT. After moving to Melbourne into AWS consulting, I proposed in June 2023 a workflow where a task spins up a fresh environment and an AI prepares a plan and first changes before an engineer takes over. That October I built a multi-role AutoGen prototype and started running small, domain-specific models on my own hardware.",
-      "learned": "Models are most useful inside a workflow that keeps a visible plan, a record of actions and a person verifying the result.",
-      "skills": ["OpenAI API", "AutoGen", "Local models", "AWS", "Developer workflow"],
-      "eventIds": ["milestone-028", "milestone-030", "milestone-031", "milestone-044", "milestone-045", "milestone-050", "milestone-054", "milestone-055", "milestone-056"]
+      "when": "2021 to 2023",
+      "title": "Moving to cloud, starting with AI",
+      "story": "I started experimenting with OpenAI's API in 2021. In 2022 I moved to Melbourne to work as an AWS consultant. In 2023 I sketched how an AI could prepare a plan and first changes before a developer picks up a task, built a small AutoGen prototype, and tried running small models on my own hardware.",
+      "learned": "Models were most useful to me inside a workflow where a person can see the plan and check the result.",
+      "skills": [
+        "OpenAI API",
+        "AutoGen",
+        "Local models",
+        "AWS",
+        "Developer workflow"
+      ],
+      "eventIds": [
+        "milestone-028",
+        "milestone-030",
+        "milestone-031",
+        "milestone-044",
+        "milestone-045",
+        "milestone-050",
+        "milestone-054",
+        "milestone-055",
+        "milestone-056"
+      ]
     },
     {
       "id": "chapter-5",
       "when": "2024",
-      "title": "From prototypes to sensitive production",
-      "story": "I ran local fine-tuning, synthetic-data and quantisation loops, and explored policy-as-code with Cedar. I earned AWS Solutions Architect Professional in July 2024, then led engineering for a clinical GenAI product, where outputs had to cite their source and every prompt change had to be measured.",
-      "learned": "In sensitive domains, provenance and evaluation matter more than fluent output.",
-      "skills": ["Fine-tuning", "Synthetic data", "Cedar", "LLM evaluation", "Clinical AI"],
-      "eventIds": ["milestone-061", "milestone-062", "milestone-068", "milestone-071", "milestone-073", "milestone-074", "milestone-075", "milestone-076"]
+      "title": "Sensitive data",
+      "story": "I kept experimenting with fine-tuning and small models at home. At work I became tech lead on a clinical AI product, where every statement in a generated note had to point back to the conversation it came from.",
+      "learned": "With sensitive data, being able to check where an answer came from matters more than how well it reads.",
+      "skills": [
+        "Fine-tuning",
+        "Synthetic data",
+        "Cedar",
+        "LLM evaluation",
+        "Clinical AI"
+      ],
+      "eventIds": [
+        "milestone-061",
+        "milestone-062",
+        "milestone-068",
+        "milestone-071",
+        "milestone-073",
+        "milestone-074",
+        "milestone-075",
+        "milestone-076"
+      ]
     },
     {
       "id": "chapter-6",
-      "when": "2025–2026",
-      "title": "Applied AI at scale, and owning the compute",
-      "story": "At Commonwealth Bank I work in AI Acceleration on taking AI applications from early design to production, with a focus on identity, authorisation and security evaluation, and I'm the squad's Security Champion. On my own hardware I research how small models learn to reason, using reinforcement learning, LoRA and model-inspection tools on Apple Silicon.",
-      "learned": "If you adapt a model, measure what the adaptation changed, not just whether the score went up.",
-      "skills": ["Identity", "AI security", "MLX", "GRPO", "LoRA", "Model inspection"],
-      "eventIds": ["milestone-078", "milestone-079", "milestone-080", "milestone-081", "milestone-085", "milestone-087", "milestone-089", "milestone-090", "milestone-091", "milestone-094", "milestone-107", "milestone-110"]
+      "when": "2025 to 2026",
+      "title": "AI at a bank, models at home",
+      "story": "At Commonwealth Bank I work on AI applications from early design to production, mostly on identity, access and security. At home I train small models on a Mac to understand how they learn to reason, and build tools to see what fine-tuning changes inside them.",
+      "learned": "When you change a model, it helps to look at what changed, not just the score.",
+      "skills": [
+        "Identity",
+        "AI security",
+        "MLX",
+        "GRPO",
+        "LoRA",
+        "Model inspection"
+      ],
+      "eventIds": [
+        "milestone-078",
+        "milestone-079",
+        "milestone-080",
+        "milestone-081",
+        "milestone-085",
+        "milestone-087",
+        "milestone-089",
+        "milestone-090",
+        "milestone-091",
+        "milestone-094",
+        "milestone-107",
+        "milestone-110"
+      ]
     },
     {
       "id": "chapter-7",
-      "when": "2026 · now",
-      "title": "Building the piece underneath",
-      "story": "My recent work goes a layer below the tools I use: AgentRC for declaring what an agent may do, agentic-agile for test-gated agent workflows, agent-handoff for carrying decisions between sessions, a JuiceFS fork for storage behaviour, and a Linux traffic-control fix merged upstream in OpenWrt.",
-      "learned": "Separate what should survive from what should be replaceable. Declaring a permission is not the same as granting it.",
-      "skills": ["Go", "OCI", "Policy-as-code", "Agents", "Storage", "OpenWrt"],
-      "eventIds": ["milestone-093", "milestone-097", "milestone-101", "milestone-103", "milestone-104", "milestone-108", "milestone-111", "milestone-114"]
+      "when": "2026",
+      "title": "Tools for my own work",
+      "story": "Using AI agents every day raised questions I wanted to answer by building: how to write down what an agent is allowed to do, how to stop it calling work done before tests pass, and how to carry decisions from one session to the next. Alongside that I still do storage and networking work, including a fix that was merged into an OpenWrt package.",
+      "learned": "Writing down what should last, separately from the tool that uses it, makes the tool easier to replace.",
+      "skills": [
+        "Go",
+        "OCI",
+        "Policy-as-code",
+        "Agents",
+        "Storage",
+        "OpenWrt"
+      ],
+      "eventIds": [
+        "milestone-093",
+        "milestone-097",
+        "milestone-101",
+        "milestone-103",
+        "milestone-104",
+        "milestone-108",
+        "milestone-111",
+        "milestone-114"
+      ]
     }
   ]
 }

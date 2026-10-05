@@ -1,12 +1,12 @@
 {
  "schemaVersion": 1,
- "edition": "Public edition",
+ "edition": "",
  "asOf": "2026-10-05",
  "author": "Adeel Ahmad",
  "title": "Systems, AI & Security",
  "location": "Melbourne, Australia",
- "intro": "I build across software, infrastructure and applied AI. This timeline connects the work: early security exploration, a hands-on consultancy, remote developer environments, local models, agents and the systems that make them useful.",
- "description": "An engineering timeline of projects, experiments, proposals and career milestones, with the technologies and skills connected to each.",
+ "intro": "I'm a software engineer in Melbourne. This page is for people who have my CV and want to understand how the different parts of it connect.",
+ "description": "A dated record of what Adeel Ahmad worked on and learned, across software, infrastructure, security and AI.",
  "github": "https://github.com/adeelahmad",
  "periods": [
   "Foundations",
@@ -25,16 +25,16 @@
    "id": "milestone-001",
    "date": "Teenage years",
    "period": "Foundations",
-   "title": "Security before software was a job",
-   "body": "My interest in computing began with hands-on network and security exploration in Lahore, before my first professional software role.",
+   "title": "Getting into security",
+   "body": "I got into computers through networks and security in Lahore, before my first software job.",
    "skills": [
     "Network security",
     "Security testing"
    ],
    "kind": "Experience",
    "track": "Security",
-   "evidence": "Personal engineering record",
-   "note": "Calendar year is not established; this is an early personal-history account.",
+   "evidence": "From my own notes",
+   "note": "I don't know the exact year.",
    "links": [],
    "featured": false
   },
@@ -42,8 +42,8 @@
    "id": "milestone-002",
    "date": "School years",
    "period": "Foundations",
-   "title": "An early vulnerability-assessment engagement",
-   "body": "While still at school, I carried out a vulnerability-assessment engagement and learned to communicate technical findings to a client.",
+   "title": "A first vulnerability assessment",
+   "body": "While still at school I did a vulnerability assessment for a company and learned to explain the findings to the people who ran the system.",
    "skills": [
     "Vulnerability assessment",
     "Security reporting",
@@ -51,8 +51,8 @@
    ],
    "kind": "Experience",
    "track": "Security",
-   "evidence": "Personal engineering record",
-   "note": "Client identity and private correspondence are not included.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -61,14 +61,14 @@
    "date": "2007–2011",
    "period": "2007–2012",
    "title": "Computer-science education",
-   "body": "Studied computer science at the Institute of Management Sciences in Lahore while developing practical engineering experience.",
+   "body": "Studied computer science at the Institute of Management Sciences in Lahore while working.",
    "skills": [
     "Computer science",
     "Software engineering"
    ],
    "kind": "Education",
    "track": "Career",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -99,7 +99,7 @@
    "date": "March–August 2009",
    "period": "2007–2012",
    "title": "Senior Software Engineer at PureLogics",
-   "body": "Moved into a senior software-engineering role, extending the application-development foundation before taking on broader technical leadership.",
+   "body": "Worked as a senior software engineer before taking on a wider technical role.",
    "skills": [
     "Software engineering"
    ],
@@ -114,8 +114,8 @@
    "id": "milestone-006",
    "date": "2009–December 2012",
    "period": "2007–2012",
-   "title": "PureLogics: Co-Partner and CTO",
-   "body": "Combined software leadership with hands-on development, network security and organization-wide systems administration.",
+   "title": "PureLogics: co-partner and CTO",
+   "body": "Kept developing while also looking after network security and the company's systems.",
    "skills": [
     "Technical leadership",
     "C",
@@ -148,8 +148,8 @@
    ],
    "kind": "Experience",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "The sequence is recorded; exact first-use dates are not.",
+   "evidence": "From my own notes",
+   "note": "These came one after another; I don't have exact start dates.",
    "links": [],
    "featured": false
   },
@@ -157,8 +157,8 @@
    "id": "milestone-008",
    "date": "PureLogics period",
    "period": "2007–2012",
-   "title": "Facebook-integrated community application work",
-   "body": "Worked on a Facebook-integrated community application, connecting product engineering with social-platform APIs and technical leadership.",
+   "title": "A Facebook-integrated application",
+   "body": "Worked on a community application that integrated with Facebook's APIs.",
    "skills": [
     "Application engineering",
     "API integration",
@@ -166,8 +166,8 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Personal engineering record",
-   "note": "No award, nomination ranking or exact release date is claimed here.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -184,7 +184,7 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -202,7 +202,7 @@
    ],
    "kind": "Role",
    "track": "Career",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -211,8 +211,8 @@
    "id": "milestone-011",
    "date": "January 2013–February 2022",
    "period": "2013–2022",
-   "title": "Xoho Tech: founder, CTO and principal architect",
-   "body": "Built and ran a consultancy that grew to approximately 40 people across Pakistan and the United States. My responsibilities combined coding, architecture, security, delivery, sales and company operations.",
+   "title": "Xoho Tech: founder and CTO",
+   "body": "Ran a consultancy that grew to about 40 people across Pakistan and the United States. I wrote code, designed systems, handled security and delivery, and did the sales.",
    "skills": [
     "Entrepreneurship",
     "Software engineering",
@@ -223,8 +223,8 @@
    ],
    "kind": "Role",
    "track": "Career",
-   "evidence": "Employment record and first-hand account",
-   "note": "The role dates follow the employment record; the team size is my reported approximate scale.",
+   "evidence": "Employment record",
+   "note": "",
    "links": [],
    "featured": true
   },
@@ -232,16 +232,16 @@
    "id": "milestone-012",
    "date": "2013; personal recollection",
    "period": "2013–2022",
-   "title": "Early AWS adoption",
-   "body": "Cloud architecture became part of my consultancy work during the early AWS-adoption period. The dated credential records are listed separately.",
+   "title": "Starting with AWS",
+   "body": "AWS became part of our client work early on, around 2013.",
    "skills": [
     "AWS",
     "Cloud architecture"
    ],
    "kind": "Experience",
    "track": "Cloud",
-   "evidence": "Personal engineering record",
-   "note": "The recalled adoption year is not used to assert an unverified certification date.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -260,8 +260,8 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Personal engineering record",
-   "note": "Client-specific implementation details and performance figures are omitted.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -280,7 +280,7 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -299,7 +299,7 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -318,7 +318,7 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -327,8 +327,8 @@
    "id": "milestone-017",
    "date": "Xoho portfolio period",
    "period": "2013–2022",
-   "title": "Engineering standards as a shared system",
-   "body": "Authored engineering guidance covering cloud practices, identity controls, secure coding, style conventions and onboarding.",
+   "title": "Writing down our engineering practices",
+   "body": "Wrote the company's engineering guide: cloud practices, identity, secure coding, style and onboarding.",
    "skills": [
     "Engineering standards",
     "IAM",
@@ -339,7 +339,7 @@
    ],
    "kind": "Built",
    "track": "Leadership",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -348,16 +348,16 @@
    "id": "milestone-018",
    "date": "April 2016",
    "period": "2013–2022",
-   "title": "AWS Solutions Architect — Associate",
-   "body": "A dated credential record marks this stage in my cloud-architecture development.",
+   "title": "AWS Solutions Architect Associate",
+   "body": "My first AWS certification.",
    "skills": [
     "AWS",
     "Solution architecture"
    ],
    "kind": "Credential",
    "track": "Career",
-   "evidence": "Historical credential record",
-   "note": "An earned-history entry, not a statement of current certification validity.",
+   "evidence": "Certification record",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -365,8 +365,8 @@
    "id": "milestone-019",
    "date": "Approximately 2016–2017",
    "period": "2013–2022",
-   "title": "Power outages became a developer-experience problem",
-   "body": "Repeated power interruptions disrupted concentration and sometimes local work. I began investigating remotely hosted development as a way to preserve working state and improve continuity for the team.",
+   "title": "Power cuts became a developer problem",
+   "body": "Power cuts kept interrupting work and sometimes losing it. I started looking at hosting development environments remotely so work would survive an outage.",
    "skills": [
     "Developer experience",
     "Operational resilience",
@@ -374,7 +374,7 @@
    ],
    "kind": "Explored",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": true
@@ -383,7 +383,7 @@
    "id": "milestone-020",
    "date": "Late 2010s",
    "period": "2013–2022",
-   "title": "Dissecting the browser IDE",
+   "title": "Taking the browser IDE apart",
    "body": "Investigated the separation between the editor interface, extension host and background services, then used browser-hosted VS Code tooling in later remote-development iterations.",
    "skills": [
     "VS Code",
@@ -393,8 +393,8 @@
    ],
    "kind": "Explored",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
-   "note": "Problem discovery and adoption of a particular tool are not assigned the same first-use date.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -402,8 +402,8 @@
    "id": "milestone-021",
    "date": "Late 2010s–2020",
    "period": "2013–2022",
-   "title": "Built a three-node hyperconverged lab",
-   "body": "Built a hands-on lab around Proxmox, Ceph, ZFS, virtual machines and fibre networking to understand storage, availability and distributed infrastructure.",
+   "title": "A home lab to learn the layers underneath",
+   "body": "Built a small Proxmox, Ceph and ZFS cluster at home to understand storage and virtualisation properly.",
    "skills": [
     "Proxmox",
     "Ceph",
@@ -414,8 +414,8 @@
    ],
    "kind": "Built",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "Different historical configurations had different capacities; no single reconciled storage or link-speed figure is asserted.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": true
   },
@@ -437,7 +437,7 @@
    ],
    "kind": "Built",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -456,8 +456,8 @@
    ],
    "kind": "Built",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
-   "note": "No independently measured startup time or energy-saving percentage is claimed.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -475,8 +475,8 @@
    ],
    "kind": "Experiment",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "Approximate historical date; not a benchmark comparison.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": true
   },
@@ -493,7 +493,7 @@
    ],
    "kind": "Teaching",
    "track": "Leadership",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -513,7 +513,7 @@
    ],
    "kind": "Built",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -532,7 +532,7 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -541,16 +541,16 @@
    "id": "milestone-028",
    "date": "4 June 2021",
    "period": "2021–2022",
-   "title": "OpenAI private API beta access — before ChatGPT",
-   "body": "Received access to OpenAI’s private API beta while running my consultancy in Pakistan. This is a dated early-access milestone in my AI work, rather than a claim of a shipped 2021 agent or product.",
+   "title": "Access to OpenAI's API beta",
+   "body": "Got access to OpenAI's private API beta while running the consultancy, and started experimenting with it.",
    "skills": [
     "Generative AI",
     "LLM APIs"
    ],
    "kind": "Access",
    "track": "AI & agents",
-   "evidence": "Dated personal access record",
-   "note": "The record establishes access on this date; it does not establish the first API call.",
+   "evidence": "From my own records",
+   "note": "This is the date access was granted.",
    "links": [],
    "featured": true
   },
@@ -569,7 +569,7 @@
    ],
    "kind": "Explored",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -589,7 +589,7 @@
    "kind": "Role",
    "track": "Career",
    "evidence": "Employment record",
-   "note": "The exact start month differs between records, so the public timeline uses the year.",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -609,8 +609,8 @@
    ],
    "kind": "Built",
    "track": "Cloud",
-   "evidence": "Personal engineering record",
-   "note": "Internal program names, commercial exposure, staffing figures and access arrangements are not included.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -629,8 +629,8 @@
    ],
    "kind": "Built",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "Private corpus-size and customer-operating details are not published.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -649,7 +649,7 @@
    ],
    "kind": "Built",
    "track": "Cloud",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -668,8 +668,8 @@
    ],
    "kind": "Experiment",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
-   "note": "This is an experimentation account, not a universal RDP/VNC performance claim.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -689,7 +689,7 @@
    ],
    "kind": "Teaching",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -706,7 +706,7 @@
    ],
    "kind": "Writing",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -731,8 +731,8 @@
    ],
    "kind": "Proposed",
    "track": "Developer tools",
-   "evidence": "Dated personal design record",
-   "note": "Month follows a dated recording label; it is not a public release date.",
+   "evidence": "From my design notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -750,7 +750,7 @@
    ],
    "kind": "Proposed",
    "track": "Developer tools",
-   "evidence": "Dated personal design record",
+   "evidence": "From my design notes",
    "note": "",
    "links": [],
    "featured": false
@@ -769,8 +769,8 @@
    ],
    "kind": "Built",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
-   "note": "A prototype implementation, not a claim of an organization-wide rollout.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -788,7 +788,7 @@
    ],
    "kind": "Proposed",
    "track": "Developer tools",
-   "evidence": "Dated personal design record",
+   "evidence": "From my design notes",
    "note": "",
    "links": [],
    "featured": false
@@ -806,8 +806,8 @@
    ],
    "kind": "Explored",
    "track": "Developer tools",
-   "evidence": "Dated personal design record",
-   "note": "Historical design consideration, not current licensing advice.",
+   "evidence": "From my design notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -826,7 +826,7 @@
    ],
    "kind": "Proposed",
    "track": "Developer tools",
-   "evidence": "Dated personal design record",
+   "evidence": "From my design notes",
    "note": "",
    "links": [],
    "featured": false
@@ -846,7 +846,7 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Dated personal design record",
+   "evidence": "From my design notes",
    "note": "",
    "links": [],
    "featured": true
@@ -865,8 +865,8 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Dated personal design record",
-   "note": "A proposal recorded in June 2023, not evidence that the entire workflow had been deployed.",
+   "evidence": "From my design notes",
+   "note": "This was a proposal. It wasn't built as a whole.",
    "links": [],
    "featured": true
   },
@@ -884,7 +884,7 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Dated personal design record",
+   "evidence": "From my design notes",
    "note": "",
    "links": [],
    "featured": false
@@ -903,7 +903,7 @@
    ],
    "kind": "Proposed",
    "track": "Developer tools",
-   "evidence": "Dated personal design record",
+   "evidence": "From my design notes",
    "note": "",
    "links": [],
    "featured": false
@@ -922,7 +922,7 @@
    ],
    "kind": "Explored",
    "track": "Leadership",
-   "evidence": "Dated personal design record",
+   "evidence": "From my design notes",
    "note": "",
    "links": [],
    "featured": false
@@ -943,7 +943,7 @@
    ],
    "kind": "Teaching",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -964,8 +964,8 @@
    ],
    "kind": "Teaching",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "The public talk’s exact date is unresolved; related implementation work is dated separately.",
+   "evidence": "From my own notes",
+   "note": "I don't have the exact date of the talk.",
    "links": [],
    "featured": true
   },
@@ -983,7 +983,7 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1007,7 +1007,7 @@
    ],
    "kind": "Built",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1030,7 +1030,7 @@
    ],
    "kind": "Built",
    "track": "Products",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1053,7 +1053,7 @@
    ],
    "kind": "Proposed",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1077,7 +1077,7 @@
    ],
    "kind": "Writing",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1095,8 +1095,8 @@
    "id": "milestone-055",
    "date": "24 October 2023",
    "period": "2023",
-   "title": "A concrete multi-role AutoGen prototype",
-   "body": "Built and shared a GPT-4/AutoGen notebook with account-manager, architect, critic, engineer and executor roles. Its design included specialist-agent generation, Python execution and human oversight.",
+   "title": "A multi-agent AutoGen prototype",
+   "body": "Built a GPT-4 and AutoGen notebook with roles such as account manager, architect, critic and engineer, with a person approving the plan before code ran.",
    "skills": [
     "AutoGen",
     "Multi-agent architecture",
@@ -1106,8 +1106,8 @@
    ],
    "kind": "Prototype",
    "track": "AI & agents",
-   "evidence": "Dated notebook-sharing record",
-   "note": "The notebook documents the design; it does not establish a completed recursive execution chain or an industry-first claim.",
+   "evidence": "From a shared notebook",
+   "note": "",
    "links": [],
    "featured": true
   },
@@ -1124,7 +1124,7 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1147,7 +1147,7 @@
    ],
    "kind": "Writing",
    "track": "Security",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1171,7 +1171,7 @@
    ],
    "kind": "Writing",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1194,8 +1194,8 @@
    ],
    "kind": "Proposed",
    "track": "Security",
-   "evidence": "Public writing and engineering record",
-   "note": "An idea, not a claimed deployed defense.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public discussion",
@@ -1217,7 +1217,7 @@
    ],
    "kind": "Writing",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1242,8 +1242,8 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Personal engineering record",
-   "note": "Unreproduced model-superiority and benchmark claims are not included.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1261,7 +1261,7 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1275,7 +1275,7 @@
    "id": "milestone-063",
    "date": "21 March 2024",
    "period": "2024",
-   "title": "Publicly describing AI-prepared developer workspaces",
+   "title": "Writing up AI-prepared developer workspaces",
    "body": "Published a design for a model to plan and prepare isolated development work after requirements and Jira tasks are defined, leaving final code ownership and review with the engineer.",
    "skills": [
     "Agent workflows",
@@ -1285,7 +1285,7 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1309,7 +1309,7 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1333,7 +1333,7 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1358,8 +1358,8 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
-   "note": "A research workflow, not a guarantee that a model is protected from attacks.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public discussion",
@@ -1384,7 +1384,7 @@
    ],
    "kind": "Writing",
    "track": "Security",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1407,7 +1407,7 @@
    ],
    "kind": "Explored",
    "track": "Security",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1430,7 +1430,7 @@
    ],
    "kind": "Proposed",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1453,7 +1453,7 @@
    ],
    "kind": "Writing",
    "track": "Security",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1467,16 +1467,16 @@
    "id": "milestone-071",
    "date": "July 2024",
    "period": "2024",
-   "title": "AWS Solutions Architect — Professional",
-   "body": "Recorded the Professional credential as part of the continuing cloud-architecture learning path.",
+   "title": "AWS Solutions Architect Professional",
+   "body": "Passed the AWS Solutions Architect Professional exam.",
    "skills": [
     "AWS",
     "Solution architecture"
    ],
    "kind": "Credential",
    "track": "Career",
-   "evidence": "Historical credential record",
-   "note": "No current-validity or expiry-date claim is made.",
+   "evidence": "Certification record",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1485,15 +1485,15 @@
    "date": "July 2024",
    "period": "2024",
    "title": "Snowflake SnowPro Core",
-   "body": "Recorded SnowPro Core alongside broader data-platform and cloud-architecture work.",
+   "body": "Passed the SnowPro Core exam while working on data platforms.",
    "skills": [
     "Snowflake",
     "Data platforms"
    ],
    "kind": "Credential",
    "track": "Career",
-   "evidence": "Historical credential record",
-   "note": "An earned-history entry, not a claim of current validity.",
+   "evidence": "Certification record",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1501,8 +1501,8 @@
    "id": "milestone-073",
    "date": "August–October 2024",
    "period": "2024",
-   "title": "Lyrebird Health: technical leadership in clinical AI",
-   "body": "Worked as a Tech Lead on a clinical GenAI product, combining applied AI, AWS engineering and technical leadership.",
+   "title": "Lyrebird Health: tech lead on a clinical AI product",
+   "body": "Tech lead on a clinical AI product, covering the AWS setup, AI engineering and security.",
    "skills": [
     "Applied AI",
     "AWS",
@@ -1511,7 +1511,7 @@
    ],
    "kind": "Role",
    "track": "Career",
-   "evidence": "Employment record and public announcement",
+   "evidence": "Employment record",
    "note": "",
    "links": [
     {
@@ -1537,8 +1537,8 @@
    ],
    "kind": "Built",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "Internal designs, customer information and compliance-certification claims are excluded.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1555,8 +1555,8 @@
    ],
    "kind": "Evaluation",
    "track": "AI & agents",
-   "evidence": "First-hand testing account",
-   "note": "Program-specific details are not part of this public edition.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": true
   },
@@ -1573,8 +1573,8 @@
    ],
    "kind": "Research",
    "track": "Security",
-   "evidence": "Personal engineering record",
-   "note": "No target-specific issue, report identifier, severity or vendor-confirmation claim is published.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1590,8 +1590,8 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
-   "note": "An observation, not a general guarantee of model behavior.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public post",
@@ -1604,8 +1604,8 @@
    "id": "milestone-078",
    "date": "March 2025 onward; record through October 2026",
    "period": "2025",
-   "title": "Commonwealth Bank: Staff Platform Engineer, AI Acceleration",
-   "body": "Joined Commonwealth Bank in a Staff Platform Engineer role within AI Acceleration. The work spans applied AI, technical direction and production engineering.",
+   "title": "Commonwealth Bank: Staff Platform Engineer",
+   "body": "Joined Commonwealth Bank's AI Acceleration squad, working on applied AI from design to production.",
    "skills": [
     "Applied AI",
     "Staff engineering",
@@ -1615,7 +1615,7 @@
    ],
    "kind": "Role",
    "track": "Career",
-   "evidence": "Employment record and public announcement",
+   "evidence": "Employment record",
    "note": "",
    "links": [
     {
@@ -1640,8 +1640,8 @@
    ],
    "kind": "Built",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "The public account excludes internal project names, topology and operating metrics.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1660,7 +1660,7 @@
    ],
    "kind": "Built",
    "track": "Security",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -1679,7 +1679,7 @@
    ],
    "kind": "Research",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1702,8 +1702,8 @@
    ],
    "kind": "Evaluation",
    "track": "Security",
-   "evidence": "Personal engineering record",
-   "note": "Internal demonstrations, methods and system details are not published.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1722,8 +1722,8 @@
    ],
    "kind": "Prototype",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "Source recordings, employer-specific scenarios and performance claims are excluded.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1740,7 +1740,7 @@
    ],
    "kind": "Writing",
    "track": "Security",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1758,8 +1758,8 @@
    "id": "milestone-085",
    "date": "19 June 2025",
    "period": "2025",
-   "title": "Leading an AI hackathon team",
-   "body": "Shared a public account of leading a team through a concentrated AI prototyping effort, from an initial challenge toward a demonstrable solution.",
+   "title": "An AI hackathon team",
+   "body": "Led a team at an internal AI hackathon, from the problem to a working demo.",
    "skills": [
     "Rapid prototyping",
     "Applied AI",
@@ -1768,8 +1768,8 @@
    ],
    "kind": "Recognition",
    "track": "Leadership",
-   "evidence": "Public writing and engineering record",
-   "note": "The public account does not assert that the prototype was a production deployment.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public post",
@@ -1792,8 +1792,8 @@
    ],
    "kind": "Experience",
    "track": "Leadership",
-   "evidence": "Personal engineering record",
-   "note": "Private performance-review text, ratings and internal measurements are not included.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1801,8 +1801,8 @@
    "id": "milestone-087",
    "date": "2026",
    "period": "2026 · January–June",
-   "title": "Security Champion and cybersecurity advocacy",
-   "body": "Participated in Security Champion work and internal cybersecurity learning and advocacy alongside the engineering role.",
+   "title": "Security Champion",
+   "body": "Took on the Security Champion role for my squad alongside engineering work.",
    "skills": [
     "Cybersecurity",
     "Security advocacy",
@@ -1810,8 +1810,8 @@
    ],
    "kind": "Experience",
    "track": "Leadership",
-   "evidence": "Personal engineering record",
-   "note": "Internal leaderboard details are not published.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1830,7 +1830,7 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -1863,8 +1863,8 @@
    ],
    "kind": "Research",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
-   "note": "Independent, exploratory research; detailed unpublished methods and universal claims are not included.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public post",
@@ -1887,8 +1887,8 @@
    ],
    "kind": "Research",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
-   "note": "The observations are experiment-specific, not an established law of Transformer behavior.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public discussion",
@@ -1901,8 +1901,8 @@
    "id": "milestone-091",
    "date": "12 April 2026",
    "period": "2026 · January–June",
-   "title": "Latent Contextual Reinforcement research",
-   "body": "Introduced a research direction around contextual guidance and small-model reasoning, considering retention, adaptation and the limitations of conventional fine-tuning.",
+   "title": "Latent Contextual Reinforcement",
+   "body": "Wrote up a research idea about guiding small models to reason better without retraining all of their weights.",
    "skills": [
     "Reasoning-model training",
     "Expert scaffolding",
@@ -1910,8 +1910,8 @@
    ],
    "kind": "Research",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
-   "note": "A publicly described research approach, not an independently validated superiority claim.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public post",
@@ -1934,8 +1934,8 @@
    ],
    "kind": "Prototype",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "Artifact date, not a verified project-start or general-availability date.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -1944,7 +1944,7 @@
    "date": "May–June 2026",
    "period": "2026 · January–June",
    "title": "JuiceFS fork: storage, caching and backend engineering",
-   "body": "Worked in a JuiceFS fork on cloud-storage integration, caching, replication, integrity, encryption and block/storage interfaces. This connected systems engineering with the practical demands of data-heavy workflows.",
+   "body": "Working in a JuiceFS fork on storage backends, caching, replication, integrity and block access.",
    "skills": [
     "Go",
     "Filesystems",
@@ -1956,8 +1956,8 @@
    ],
    "kind": "Development",
    "track": "Systems",
-   "evidence": "Public writing and engineering record",
-   "note": "Fork development is distinguished from upstream authorship and independently verified releases.",
+   "evidence": "From a public post",
+   "note": "This is work in my fork, not an upstream JuiceFS release.",
    "links": [
     {
      "label": "Project fork",
@@ -1982,8 +1982,8 @@
    ],
    "kind": "Development",
    "track": "Research",
-   "evidence": "Personal engineering record",
-   "note": "Research tooling, not a universal model-integrity detector.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2001,7 +2001,7 @@
    ],
    "kind": "Experience",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2021,8 +2021,8 @@
    ],
    "kind": "Prototype",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
-   "note": "Implementation/prototype record, not a claim that every planned feature is complete.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2041,8 +2041,8 @@
    ],
    "kind": "Published",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
-   "note": "Workflow checks are not a guarantee of correctness or a security boundary.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public post",
@@ -2065,8 +2065,8 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
-   "note": "A single-run account, not a standardized productivity benchmark.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Public post",
@@ -2091,8 +2091,8 @@
    ],
    "kind": "Prototype",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "Research and runtime prototyping, not a universal security guarantee.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2100,7 +2100,7 @@
    "id": "milestone-101",
    "date": "3 July 2026",
    "period": "2026 · July–October",
-   "title": "AgentRC: declared capabilities and reviewable boundaries",
+   "title": "AgentRC: writing down what an agent may do",
    "body": "Published a working draft for packaging agents with explicit model, tool and network requests that a platform can grant, narrow or reject before execution.",
    "skills": [
     "AgentRC",
@@ -2112,7 +2112,7 @@
    ],
    "kind": "Published",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -2136,7 +2136,7 @@
    ],
    "kind": "Writing",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -2151,7 +2151,7 @@
    "date": "24–28 July 2026",
    "period": "2026 · July–October",
    "title": "rclone filesystem adapters and media integration",
-   "body": "Proposed filesystem-backed integrations and worked on a related Emby media integration. The upstream rclone proposal was closed without merging, an important distinction from the work in the fork.",
+   "body": "Built filesystem adapters in an rclone fork, including one for a media server. The upstream proposal was closed without merging.",
    "skills": [
     "Go",
     "rclone",
@@ -2162,8 +2162,8 @@
    ],
    "kind": "Contribution",
    "track": "Systems",
-   "evidence": "Public writing and engineering record",
-   "note": "Historical proposal status from the retained record; not a live repository check.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Upstream proposal",
@@ -2188,8 +2188,8 @@
    ],
    "kind": "Proposed",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "Design and prototype work, not a finished-platform claim.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2206,8 +2206,8 @@
    ],
    "kind": "Prototype",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
-   "note": "Private execution paths and service-internal details are not included.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2226,7 +2226,7 @@
    ],
    "kind": "Prototype",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2248,8 +2248,8 @@
    ],
    "kind": "Development",
    "track": "Research",
-   "evidence": "Public writing and engineering record",
-   "note": "Specific experimental methods and unreproduced performance claims are kept out of this edition.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Training repository",
@@ -2262,8 +2262,8 @@
    "id": "milestone-108",
    "date": "19–24 August 2026 (UTC)",
    "period": "2026 · July–October",
-   "title": "Merged OpenWrt traffic-control contribution",
-   "body": "Contributed bidirectional traffic-shaping and monitoring improvements to luci-app-trafficctl, including packet-path diagnosis, regression tests and clearer reporting of partial operation. The recorded pull request was merged upstream.",
+   "title": "OpenWrt traffic-control fix merged upstream",
+   "body": "Fixed bidirectional traffic shaping in luci-app-trafficctl, with tests. The pull request was merged upstream.",
    "skills": [
     "OpenWrt",
     "Linux networking",
@@ -2274,8 +2274,8 @@
    ],
    "kind": "Merged",
    "track": "Systems",
-   "evidence": "Public writing and engineering record",
-   "note": "The date follows the historical UTC merge record; no new live-status check is implied.",
+   "evidence": "From a public post",
+   "note": "",
    "links": [
     {
      "label": "Merged pull request",
@@ -2298,8 +2298,8 @@
    ],
    "kind": "Prototype",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "An experimental hardware path, not a claim of complete unattended control.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2319,8 +2319,8 @@
    ],
    "kind": "Experiment",
    "track": "Research",
-   "evidence": "Personal engineering record",
-   "note": "Private run logs and detailed unpublished research are not part of the public package.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2339,7 +2339,7 @@
    ],
    "kind": "Prototype",
    "track": "Security",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2358,8 +2358,8 @@
    ],
    "kind": "Development",
    "track": "Products",
-   "evidence": "Personal engineering record",
-   "note": "A development-stage system, not a claim of complete format coverage.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2377,7 +2377,7 @@
    ],
    "kind": "Experiment",
    "track": "Systems",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2396,7 +2396,7 @@
    ],
    "kind": "Published",
    "track": "AI & agents",
-   "evidence": "Public writing and engineering record",
+   "evidence": "From a public post",
    "note": "",
    "links": [
     {
@@ -2423,8 +2423,8 @@
    ],
    "kind": "Proposed",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "Design-stage milestone; not a claim that every platform integration is complete.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2442,7 +2442,7 @@
    ],
    "kind": "Development",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2463,7 +2463,7 @@
    ],
    "kind": "Built",
    "track": "Systems",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2482,7 +2482,7 @@
    ],
    "kind": "Development",
    "track": "Developer tools",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2503,8 +2503,8 @@
    ],
    "kind": "Experiment",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "Network addresses, device identifiers and private topology are excluded.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2521,7 +2521,7 @@
    ],
    "kind": "Proposed",
    "track": "Leadership",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2540,8 +2540,8 @@
    ],
    "kind": "Experiment",
    "track": "Systems",
-   "evidence": "Personal engineering record",
-   "note": "Planning and setup, not a claim of completed emulation.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2559,7 +2559,7 @@
    ],
    "kind": "Explored",
    "track": "Security",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2582,8 +2582,8 @@
    ],
    "kind": "Proposed",
    "track": "Products",
-   "evidence": "Personal engineering record",
-   "note": "Scope and architecture, not a claim that every advertised input format is implemented.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   },
@@ -2601,7 +2601,7 @@
    ],
    "kind": "Development",
    "track": "Products",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2624,8 +2624,8 @@
    ],
    "kind": "Proposed",
    "track": "Products",
-   "evidence": "Personal engineering record",
-   "note": "A product direction with implementation work in progress; not a claim that the entire roadmap is available.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": true
   },
@@ -2633,8 +2633,8 @@
    "id": "milestone-126",
    "date": "5 October 2026",
    "period": "2026 · July–October",
-   "title": "A linked record of work and technology",
-   "body": "Assembled this engineering timeline to connect technical milestones with their relevant skills, keeping proposals, experiments, releases and employment distinct.",
+   "title": "Putting this record together",
+   "body": "Put this timeline together to show how the work connects.",
    "skills": [
     "Evidence modeling",
     "Knowledge management",
@@ -2642,7 +2642,7 @@
    ],
    "kind": "Writing",
    "track": "Leadership",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2661,7 +2661,7 @@
    ],
    "kind": "Research",
    "track": "Security",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2683,7 +2683,7 @@
    ],
    "kind": "Experience",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2705,7 +2705,7 @@
    ],
    "kind": "Experience",
    "track": "Systems",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2730,7 +2730,7 @@
    ],
    "kind": "Experience",
    "track": "Systems",
-   "evidence": "Personal engineering record",
+   "evidence": "From my own notes",
    "note": "",
    "links": [],
    "featured": false
@@ -2751,8 +2751,8 @@
    ],
    "kind": "Prototype",
    "track": "AI & agents",
-   "evidence": "Personal engineering record",
-   "note": "An experimental project; no first-in-industry or fully autonomous operation claim.",
+   "evidence": "From my own notes",
+   "note": "",
    "links": [],
    "featured": false
   }
@@ -3411,11 +3411,11 @@
   "milestone-101"
  ],
  "method": {
-  "scope": "A selected public engineering record, through 5 October 2026. Technical work, proposals, experiments, public writing and employment are separate kinds of milestone.",
-  "evidence": "Public links point to posts, discussions and repositories already identified in the source record. Other milestones are based on first-hand engineering accounts or dated personal records. Linked pages have not been re-verified for this edition.",
-  "dates": "A date can identify a record, presentation or publication rather than the first implementation. Approximate and cross-period entries remain explicitly labelled.",
-  "skills": "Skill tags identify the technologies relevant to each milestone. The broader inventory is self-reported experience, not a certification, proficiency score or proof of current mastery.",
-  "research": "Prototypes and research are not production certifications, comparative benchmark victories or claims of being first in the industry.",
-  "personal": "This is a personal portfolio, not a statement on behalf of an employer or client."
+  "scope": "This is a selection, not everything. Work for employers and clients is described in general terms, without client names or internal details.",
+  "evidence": "Some entries link to public posts or code. The rest come from my own notes and records.",
+  "dates": "Some dates are exact and some are approximate. Approximate ones say so.",
+  "skills": "Skill tags show what a piece of work involved. They are not ratings.",
+  "research": "Experiments and proposals are labelled as such. Not everything here was finished or went into production.",
+  "personal": "These are my own views, not my employer's."
  }
 }
