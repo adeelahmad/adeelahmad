@@ -602,7 +602,7 @@
   },
   {
    "id": "milestone-030",
-   "date": "2022–July 2024",
+   "date": "February 2022–July 2024",
    "period": "2021–2022",
    "title": "Cevo: AWS cloud consulting",
    "body": "Moved into cloud consulting in Australia, working across solution architecture, application integration and technical delivery.",
@@ -621,7 +621,7 @@
   },
   {
    "id": "milestone-031",
-   "date": "2022–2024",
+   "date": "February 2022–July 2024",
    "period": "2021–2022",
    "title": "Cloud API delivery and domain-team leadership",
    "body": "Built cloud APIs and integrations, including Consumer Data Right services, and led the engineers working on them.",
@@ -642,7 +642,7 @@
   },
   {
    "id": "milestone-032",
-   "date": "Cevo period; exact date unrecorded",
+   "date": "Cevo years",
    "period": "2021–2022",
    "title": "Enterprise search that respects permissions",
    "body": "Worked on enterprise search with Amazon Q Business and SharePoint, where results had to respect who is allowed to see each document.",
@@ -662,7 +662,7 @@
   },
   {
    "id": "milestone-033",
-   "date": "Cevo period; exact date unrecorded",
+   "date": "Cevo years",
    "period": "2021–2022",
    "title": "Document and email processing pipelines",
    "body": "Worked on pipelines that process documents and email, using dbt, machine learning and Amazon Bedrock.",
