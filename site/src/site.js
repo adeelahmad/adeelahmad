@@ -1,5 +1,5 @@
 /* adeelahmad.net — progressive enhancement only. The page is complete without this file;
-   it adds: theme toggle, timeline search/filter/sort, in-place skill filtering, skills search, #event= compatibility. */
+   it adds: theme toggle, click-to-play talk video, timeline search/filter/sort, in-place skill filtering, skills search, #event= compatibility. */
 (function () {
   'use strict';
   var doc = document.documentElement;
@@ -26,6 +26,22 @@
   });
   if (mq && mq.addEventListener) mq.addEventListener('change', paintToggle);
   paintToggle();
+
+  /* ---------- talk video: load YouTube only when asked ---------- */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-video-play]');
+    if (!a) return;
+    var box = a.closest('[data-video]');
+    if (!/^[\w-]{11}$/.test(box.dataset.video)) return;
+    e.preventDefault();
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.video + '?autoplay=1';
+    f.title = box.dataset.title || 'Video';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    f.referrerPolicy = 'strict-origin-when-cross-origin';
+    box.replaceChildren(f);
+  });
 
   /* ---------- timeline ---------- */
   var list = document.querySelector('[data-timeline]');

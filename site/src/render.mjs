@@ -50,8 +50,8 @@ const THEME = "try{var t=localStorage.getItem('adeel-theme');if(t==='light'||t==
 const hash = s => "'sha256-" + crypto.createHash('sha256').update(s).digest('base64') + "'";
 export const MEDIUM_IMG_HOSTS = ['miro.medium.com', 'cdn-images-1.medium.com'];
 
-function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false, frames = false, wide = false }) {
-  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; " + (frames ? "frame-src 'self'; " : '') + "img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
+function layout({ title, description, body, root = '', label, canonical, ogType = 'website', remoteImages = false, frames = false, frameSrc = '', wide = false }) {
+  const csp = "default-src 'none'; script-src 'self' " + hash(THEME) + ' ' + gaCsp.script + "; style-src 'self'; font-src 'self'; manifest-src 'self'; " + (frames || frameSrc ? "frame-src " + (frames ? "'self'" : '') + (frames && frameSrc ? ' ' : '') + frameSrc + '; ' : '') + "img-src 'self' data: " + gaCsp.img + (remoteImages ? ' ' + MEDIUM_IMG_HOSTS.map(h => 'https://' + h).join(' ') : '') + '; connect-src ' + gaCsp.connect + "; object-src 'none'; base-uri 'none'; form-action 'none';";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -87,7 +87,10 @@ ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ''}
   ${label
     ? `<nav class="crumbs" aria-label="Breadcrumb"><a class="top__name" href="${root}">${esc(SITE.name)}</a><span aria-hidden="true">/</span>${label}</nav>`
     : `<a class="top__name" href="#top">${esc(SITE.name)}</a>`}
-  <button type="button" class="btn-theme js-only" data-theme-toggle>Dark mode</button>
+  <div class="top__end">
+    <nav class="top__nav" aria-label="Site"><a href="${root}blog/">Writing</a><a href="${root}publications/">Publications</a><a href="${root}cv/">CV</a></nav>
+    <button type="button" class="btn-theme js-only" data-theme-toggle>Dark mode</button>
+  </div>
 </header>
 ${body}
 </div>
@@ -295,6 +298,57 @@ ${siteFooter(D, root)}`;
   return layout({ title: name + ' · ' + SITE.name, description: `Entries on ${SITE.domain} that involved ${name}.`, body, root, label: `<a class="q" href="${root}#skills">Skills</a>`, canonical: SITE.url + 'skills/' + slug(name) + '/' });
 }
 
+/* ---------- publications ---------- */
+const YOUTUBE_EMBED = 'https://www.youtube-nocookie.com';
+const pubHref = (p, toRoot) => p.page ? `${toRoot}publications/${p.id}/` : (p.links[0] && p.links[0].url);
+const pubLinks = p => p.links.map(l => `<a class="q" href="${esc(l.url)}" rel="noopener">${esc(l.label)} ↗</a>`).join(' · ');
+
+export function renderPublications({ timeline: D, publications: P }) {
+  const root = '../';
+  const groups = [['Talks', 'Talk'], ['Reports', 'Report']].map(([h, t]) => [h, P.items.filter(p => p.type === t)]).filter(([, xs]) => xs.length);
+  const body = `
+<main id="main">
+  <h1 class="h2 page-title">Publications</h1>
+  <p class="lede page-lede">${esc(P.intro)} <a href="${root}blog/">Writing →</a></p>
+  ${groups.map(([h, xs]) => `<section class="pubs" aria-labelledby="pubs-${slug(h)}"><h2 class="label" id="pubs-${slug(h)}">${esc(h)}</h2>
+  ${xs.map(p => `<article class="post post--full" id="${esc(p.id)}"><time datetime="${p.date}">${longDate(p.date)}</time><div class="post__main">
+    <h3><a class="q" href="${esc(pubHref(p, root))}"${p.page ? '' : ' rel="noopener"'}>${esc(p.title)}</a></h3>
+    <p class="post__excerpt">${esc(p.summary)}</p>
+    <p class="post__meta">${esc(p.venue)} · ${p.page ? `<a class="q" href="${root}publications/${p.id}/">About the talk</a> · ` : ''}${pubLinks(p)} · <a class="q" href="${root}#${p.eventId}">Timeline entry</a></p>
+  </div></article>`).join('\n')}
+  </section>`).join('\n')}
+  <div class="hair"></div>
+</main>
+${siteFooter(D, root)}`;
+  return layout({ title: 'Publications · ' + SITE.name, description: 'Talks and reports by ' + SITE.name + '.', body, root, label: '<span>Publications</span>', canonical: SITE.url + 'publications/' });
+}
+
+export function renderPublication(p, { timeline: D }) {
+  const root = '../../';
+  const watch = p.links[0];
+  const body = `
+<main id="main">
+<article class="article">
+  <header class="article__head">
+    <p class="when"><time datetime="${p.date}">${longDate(p.date)}</time> · ${esc(p.venue)}</p>
+    <h1>${esc(p.title)}</h1>
+    <p class="origin">${esc(p.summary)}</p>
+  </header>
+  ${p.video ? `<div class="video" data-video="${esc(p.video)}" data-title="${esc(p.title)}"><a class="video__link" href="${esc(watch.url)}" rel="noopener" data-video-play><span class="video__play" aria-hidden="true">▶</span><span class="video__text">Play the recording<span class="video__note">The video loads from YouTube when you press play.</span></span></a></div>` : ''}
+  <div class="prose">
+    ${p.page.about.map(t => `<p>${esc(t)}</p>`).join('\n    ')}
+    <h2>What it covers</h2>
+    <ul>${p.page.covers.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+  </div>
+  <footer class="article__foot">
+    <p>${pubLinks(p)} · <a href="${root}#${p.eventId}">Timeline entry</a> · <a href="../">All publications</a></p>
+  </footer>
+</article>
+</main>
+${siteFooter(D, root)}`;
+  return layout({ title: p.title + ' · ' + SITE.name, description: p.summary, body, root, label: `<a class="q" href="../">Publications</a>`, canonical: SITE.url + 'publications/' + p.id + '/', ogType: 'article', frameSrc: p.video ? YOUTUBE_EMBED : '' });
+}
+
 /* ---------- CV ---------- */
 export function renderCV({ cvPdf }) {
   const root = '../';
@@ -313,6 +367,10 @@ export function renderSite(data) {
   out['index.html'] = renderHome(data);
   out['blog/index.html'] = renderWritingIndex(data);
   if (data.cvPdf) out['cv/index.html'] = renderCV(data);
+  if (data.publications) {
+    out['publications/index.html'] = renderPublications(data);
+    data.publications.items.forEach(p => { if (p.page) out[`publications/${p.id}/index.html`] = renderPublication(p, data); });
+  }
   data.medium.posts.forEach((p, i) => { if (p.local) out[`blog/${p.slug}/index.html`] = renderArticle(p, i, data); });
   const skillMap = new Map();
   data.timeline.events.forEach(e => e.skills.forEach(s => { if (!skillMap.has(s)) skillMap.set(s, []); skillMap.get(s).push(e.id); }));

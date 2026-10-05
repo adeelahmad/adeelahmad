@@ -23,6 +23,7 @@ args.output.mkdir(parents=True, exist_ok=True)
 D = json.loads((ROOT / 'data/public-timeline.json').read_text())
 J = json.loads((ROOT / 'data/journey.json').read_text())
 M = json.loads((ROOT / 'data/medium.json').read_text())
+P = json.loads((ROOT / 'data/publications.json').read_text())
 HTML = (DIST / 'index.html').read_text()
 checks = []
 def check(name, condition):
@@ -105,6 +106,12 @@ with sync_playwright() as p:
     check('CV page has no phone number', not __import__('re').search(r'\+\d[\d ]{8,}', page.content()))
     page.goto(BASE + '/skills/aws/', wait_until='load')
     check('Skill page lists its entries', page.locator('.entry').count() == sum('AWS' in e['skills'] for e in D['events']))
+    page.goto(BASE + '/publications/', wait_until='load')
+    check('Publications page lists every item', page.locator('.post').count() == len(P['items']))
+    check('Header links to Publications', page.locator('.top__nav a[href="../publications/"]').count() == 1)
+    page.goto(BASE + '/publications/second-brain-talk/', wait_until='load')
+    check('Talk page has the recording link and summary', page.locator('[data-video-play]').get_attribute('href').startswith('https://www.youtube.com/') and len(page.locator('.prose').inner_text()) > 200)
+    page.screenshot(path=str(args.output / 'talk.png'), full_page=True)
 
     check('External links use safe opener settings', page.locator('a[target="_blank"]:not([rel*="noopener"])').count() == 0)
     check('No JavaScript errors', not errors)
@@ -112,6 +119,11 @@ with sync_playwright() as p:
     check('No console or CSP errors', not [m for m in console_errors if 'googletagmanager' not in m and 'ERR_' not in m])
     check('No automatic external requests except analytics and post images', not [u for u in requests if u.startswith(('http:', 'https:')) and not u.startswith((BASE,) + ANALYTICS) and 'medium.com' not in u])
     check('Analytics tag is on every page', all('G-RKFB16BPXJ' in f.read_text() for f in DIST.rglob('*.html')))
+    check('Every page has the header links', all('class="top__nav"' in f.read_text() for f in DIST.rglob('*.html')))
+    # Pressing play swaps in the YouTube player; the request itself is blocked to stay offline.
+    page.route('https://www.youtube-nocookie.com/**', lambda route: route.abort())
+    page.locator('[data-video-play]').click()
+    check('Play loads the YouTube player in place', 'youtube-nocookie.com/embed/' in (page.locator('.video iframe').get_attribute('src') or ''))
 
     static = browser.new_page(java_script_enabled=False, viewport={'width': 1440, 'height': 1000})
     static.goto(BASE + '/', wait_until='load')
@@ -119,6 +131,8 @@ with sync_playwright() as p:
     check('Journey readable with JavaScript disabled', visible(static, '.chapter') == len(J['chapters']))
     check('Search toolbar hidden without JavaScript', visible(static, '[data-toolbar]') == 0)
     check('Inventory readable with JavaScript disabled', static.locator('.inventory__area').count() == len(D['domains']))
+    static.goto(BASE + '/publications/second-brain-talk/', wait_until='load')
+    check('Talk recording links to YouTube without JavaScript', static.locator('.video iframe').count() == 0 and visible(static, '[data-video-play]') == 1)
     browser.close()
 server.shutdown()
 check('Unique event IDs', len({e['id'] for e in D['events']}) == len(D['events']))

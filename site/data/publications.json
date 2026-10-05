@@ -1,0 +1,44 @@
+{
+  "intro": "Talks I've given and reports I worked on. Blog posts are under Writing.",
+  "items": [
+    {
+      "id": "second-brain-talk",
+      "type": "Talk",
+      "date": "2024-03-07",
+      "title": "A generative AI second brain on AWS serverless",
+      "venue": "Serverless Melbourne meetup",
+      "summary": "How to keep a personal knowledge base on AWS without paying for a large model on every document.",
+      "eventId": "milestone-049",
+      "video": "pR-Z0Q0i4AI",
+      "page": {
+        "about": [
+          "A \"second brain\" is a place outside your head where notes, documents and ideas are kept so you can find and use them later. The talk is mostly about keeping one cheap to run.",
+          "Most of the work a second brain does doesn't need a large model or an instant answer, and a few mistakes are fine. So documents are stored in S3, with Glacier for old ones, and Step Functions runs the steps. Small BERT-based models pull out keywords and topics to organise them, and LanceDB keeps a full-text and vector index on S3. Small quantized models run in Lambda or on spot instances for the cheap steps. Retrieval with a larger model runs only on content I pick."
+        ],
+        "covers": [
+          "What a second brain is, and the capture, organise, distil and express method",
+          "Why serverless suits it, and what the managed AI services would cost",
+          "Which open-source tools do the cheap parts",
+          "The architecture that ties it together"
+        ]
+      },
+      "links": [
+        { "label": "Recording on YouTube", "url": "https://www.youtube.com/watch?v=pR-Z0Q0i4AI" }
+      ]
+    },
+    {
+      "id": "amp-planning-report",
+      "type": "Report",
+      "date": "2018-03-27",
+      "title": "Audiovisual Metadata Platform (AMP) Planning Project: Progress Report and Next Steps",
+      "venue": "Whitepaper",
+      "summary": "The plan for an open platform that uses speech recognition, OCR and other machine learning to describe large audiovisual archives. I was on the project team; the report came out of the September 2017 planning workshop, and the plan was first presented at the AMIA conference in December 2017.",
+      "eventId": "milestone-131",
+      "links": [
+        { "label": "Report", "url": "https://hdl.handle.net/2022/21982" },
+        { "label": "Conference slides, December 2017", "url": "https://raw.githubusercontent.com/wiki/AudiovisualMetadataPlatform/amp_documentation/attachments/683706278/683707162.pdf" },
+        { "label": "Project documentation", "url": "https://github.com/AudiovisualMetadataPlatform/amp_documentation/wiki" }
+      ]
+    }
+  ]
+}
