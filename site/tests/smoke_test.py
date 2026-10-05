@@ -102,6 +102,7 @@ with sync_playwright() as p:
     CV = json.loads((ROOT / 'data/cv.json').read_text())
     page.goto(BASE + '/cv/', wait_until='load')
     check('CV page lists every role', page.locator('#experience .entry').count() == len(CV['experience']))
+    check('CV page embeds the PDF', page.locator('iframe.cv__frame').count() == 1 and page.request.get(BASE + '/cv.pdf').headers.get('content-type') == 'application/pdf')
     check('CV page has no phone number', not __import__('re').search(r'\+\d[\d ]{8,}', page.content()))
     page.goto(BASE + '/skills/aws/', wait_until='load')
     check('Skill page lists its entries', page.locator('.entry').count() == sum('AWS' in e['skills'] for e in D['events']))
