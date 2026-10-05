@@ -15,6 +15,8 @@ function safeUrl(u,{img}={}){
     const url=new URL(u);
     if(url.protocol!=='https:'&&!(url.protocol==='http:'&&!img))return null;
     if(img&&!IMG_HOSTS.includes(url.hostname))return null;
+    // Medium's retina images end in @2x; encode the @ so the URL isn't mistaken for an email address.
+    if(img)url.pathname=url.pathname.replaceAll('@','%40');
     return url.toString();
   }catch{return null;}
 }
