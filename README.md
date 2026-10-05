@@ -22,7 +22,7 @@ These are mine, separate from my employer. Most started because I wanted to unde
 
 **Agents**
 - [AgentRC](https://github.com/adeelahmad/agentrc): a draft spec for writing down what an AI agent needs (tools, network, permissions) so the platform running it can decide what to allow. isolated-agent runs those packaged agents locally in isolation.
-- [agent-handoff](https://github.com/adeelahmad/package): a small Go tool for carrying decisions and open tasks from one AI session to the next. I wrote it when a conversation on my phone needed to carry on in a different AI tool the next morning.
+- [agent-handoff](https://github.com/adeelahmad/package): a small Go tool for carrying decisions and open tasks from one AI session to the next.
 - [agentic-agile](https://github.com/adeelahmad/agentic-agile) and aloop: coding agents only start after I approve a plan, and a task only counts as done when its tests pass.
 - agentic-completion-cli: a Go proxy with an OpenAI-style API that routes to different model backends and can run tools.
 - agentic-py: a small coding agent written in plain bash with curl and jq.
@@ -37,8 +37,8 @@ These are mine, separate from my employer. Most started because I wanted to unde
 - esc-grpo-analytics: a dashboard for reading training rollouts.
 
 **Knowledge, media and everyday tools**
-- Lens: a private, self-hosted place for my own notes, files and recordings, with search and answers that cite their sources.
-- anytopdf and a media-ingestion pipeline: turning audio, video and images into searchable documents.
+- [Lens](https://github.com/adeelahmad/lense): a private, self-hosted place for my own notes, files and recordings, with search and answers that cite their sources.
+- [anytopdf](https://github.com/adeelahmad/anytopdf-rs) and a media-ingestion pipeline: turning audio, video and images into searchable documents.
 - [nametag](https://github.com/adeelahmad/nametag): extended an open-source personal CRM with Google Workspace sync and an assistant.
 - Browser extensions to keep my own AI conversations as files, and to run Python inside a document.
 - An exam-prep desktop app built with React, Tauri and SQLite.

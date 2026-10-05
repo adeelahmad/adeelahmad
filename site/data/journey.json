@@ -6,7 +6,6 @@
       "when": "Grade 8 to 2006, Lahore",
       "title": "Starting with security",
       "story": "I started poking at networks in grade 8. In 2006, still at school, I did my first formal vulnerability assessment, on a company's website, and had to explain what I found to the people who ran it.",
-      "learned": "Seeing where systems break was how I learned how they were put together.",
       "skills": [
         "Network security",
         "Security testing",
@@ -22,7 +21,6 @@
       "when": "2007 to 2012",
       "title": "Small companies, every job",
       "story": "I studied computer science while working on .NET and PHP projects. The companies were small, so the developer also looked after servers, the network and the phone system. That is where VMware, Asterisk and Cisco came in.",
-      "learned": "I stopped seeing the application as separate from what it runs on.",
       "skills": [
         "C#",
         ".NET",
@@ -46,7 +44,6 @@
       "when": "2013 to 2022",
       "title": "Running a consultancy",
       "story": "I ran Xoho Tech for nine years and it grew to about 40 people. It stayed small enough that I kept writing code. Power cuts kept wiping out developers' work, so I moved our development into the browser. That led to containers, a home lab to understand virtualisation and storage, and later Firecracker microVMs. Our archive and media projects needed search, OCR and speech recognition, which was my first contact with machine learning.",
-      "learned": "Fixing the environment people work in often helps more than asking them to work around it.",
       "skills": [
         "AWS",
         "Firecracker",
@@ -82,7 +79,6 @@
       "when": "2021 to 2023",
       "title": "Moving to cloud, starting with AI",
       "story": "I started experimenting with OpenAI's API in 2021. In 2022 I moved to Melbourne to work as an AWS consultant. In 2023 I sketched how an AI could prepare a plan and first changes before a developer picks up a task, built a small AutoGen prototype, and tried running small models on my own hardware.",
-      "learned": "Models were most useful to me inside a workflow where a person can see the plan and check the result.",
       "skills": [
         "OpenAI API",
         "AutoGen",
@@ -107,7 +103,6 @@
       "when": "2024",
       "title": "Sensitive data",
       "story": "I kept experimenting with fine-tuning and small models at home, and gave a public talk on building a personal \"second brain\" on AWS serverless, using small models for the cheap steps and a large one only when needed. At work I became tech lead on a clinical AI product, where every statement in a generated note had to point back to the conversation it came from.",
-      "learned": "With sensitive data, being able to check where an answer came from matters more than how well it reads.",
       "skills": [
         "RAG",
         "Fine-tuning",
@@ -133,7 +128,6 @@
       "when": "2025 to 2026",
       "title": "AI at a bank, models at home",
       "story": "At Commonwealth Bank I work on AI applications from early design to production, mostly on identity, access and security. At home I train small models on a Mac to understand how they learn to reason, and build tools to see what fine-tuning changes inside them.",
-      "learned": "When you change a model, it helps to look at what changed, not just the score.",
       "skills": [
         "Identity",
         "AI security",
@@ -162,7 +156,6 @@
       "when": "2026",
       "title": "Tools for my own work",
       "story": "Using AI agents every day raised questions I wanted to answer by building: how to write down what an agent is allowed to do, how to stop it calling work done before tests pass, and how to carry decisions from one session to the next. Alongside that I still do storage and networking work, including a fix that was merged into an OpenWrt package.",
-      "learned": "Writing down what should last, separately from the tool that uses it, makes the tool easier to replace.",
       "skills": [
         "Go",
         "OCI",

@@ -138,7 +138,6 @@ function renderChapter(c, i, D) {
     <h3>${esc(c.title)}</h3>
     <p>${esc(c.story)}</p>
     ${fig ? `<figure class="figure"><img src="${fig.src}" alt="${esc(fig.alt)}" loading="lazy"><figcaption>${fig.caption}</figcaption></figure>` : ''}
-    <p class="carried"><span class="arrow" aria-hidden="true">→</span><span><span class="sr-only">What carried forward:</span><em>${esc(c.learned)}</em></span></p>
     <p class="chapter__meta">${c.skills.map(esc).join(' · ')} &nbsp;·&nbsp; <a href="${anchor}" data-ids="${c.eventIds.join(' ')}">${c.eventIds.length} dated entries →</a></p>
   </div>
 </article>`;

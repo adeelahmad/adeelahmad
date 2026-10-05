@@ -75,8 +75,6 @@ mark{background:var(--highlight);color:inherit}
 .chapter__dot{position:absolute;left:-4px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--text-secondary)}
 .chapter h3{font:700 22px/1.25 var(--font-sans);letter-spacing:-.01em;margin:0 0 10px}
 .chapter p{font-size:17px;line-height:1.6;margin:0}
-.carried{display:flex;gap:10px;margin-top:14px!important;color:var(--text-strong)}
-.carried .arrow{color:var(--blue);flex:0 0 auto}
 .chapter__meta{margin-top:14px!important;font-size:13px!important;line-height:1.7!important;color:var(--text-secondary)}
 .figure{margin:20px 0 0}.figure img{display:block;width:100%;border-radius:8px;border:1px solid var(--border)}
 .figure figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--text-secondary)}

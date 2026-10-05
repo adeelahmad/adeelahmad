@@ -36,7 +36,7 @@ function validate(){
   for(const p of D.projects)if(!p.eventIds.length||p.eventIds.some(id=>!ids.has(id)))throw Error('Broken project reference.');
   for(const id of D.highlights)if(!ids.has(id))throw Error('Broken highlight.');
   for(const c of J.chapters){
-    for(const k of ['id','when','title','story','learned'])if(typeof c[k]!=='string'||!c[k])throw Error('Missing chapter '+k);
+    for(const k of ['id','when','title','story'])if(typeof c[k]!=='string'||!c[k])throw Error('Missing chapter '+k);
     if(!c.eventIds.length||c.eventIds.some(id=>!ids.has(id)))throw Error('Broken chapter reference.');
   }
   for(const p of writing){
@@ -72,7 +72,7 @@ for(const [rel,html] of Object.entries(files)){const f=path.join(dist,rel);fs.mk
 fs.cpSync(path.join(ROOT,'static'),dist,{recursive:true});
 for(const f of ['styles.css','site.js'])fs.copyFileSync(path.join(ROOT,'src',f),path.join(dist,f));
 const md=['# Adeel Ahmad','','Last updated October 2026','',D.intro,'','## How it fits together',''];
-for(const c of J.chapters)md.push('### '+c.when+' — '+c.title,'',c.story,'','*What carried forward:* '+c.learned,'');
+for(const c of J.chapters)md.push('### '+c.when+' — '+c.title,'',c.story,'');
 md.push('# Timeline','');
 for(const period of D.periods){md.push('## '+period,'');for(const e of D.events.filter(e=>e.period===period)){md.push('### '+e.date+' — '+e.title,'',e.body,'','**Type:** '+e.kind+' · **Workstream:** '+e.track,'','**Technologies / skills:** '+e.skills.join(', ')+'.','');if(e.note)md.push('*Context: '+e.note+'*','');md.push('Evidence: '+e.evidence+'.','');for(const l of e.links)md.push('['+l.label+']('+l.url+')');if(e.links.length)md.push('');}}
 md.push('## Projects','');for(const p of D.projects)md.push('### '+p.name,'',p.description,'','Status: '+p.status+'.','');
