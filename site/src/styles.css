@@ -21,7 +21,7 @@ body{margin:0;background:var(--background);color:var(--text-primary);font:400 16
 a{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em;text-decoration-color:var(--underline)}
 a:hover{color:var(--blue-dark);text-decoration-color:currentColor}
 :focus-visible{outline:2px solid var(--blue);outline-offset:2px}
-:target{scroll-margin-top:16px}
+:target{scroll-margin-top:16px}html{scroll-padding-top:96px}
 p{text-wrap:pretty}h1,h2,h3,h4{text-wrap:balance;margin:0}
 img{max-width:100%;height:auto}
 summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:none}
@@ -39,12 +39,16 @@ mark{background:var(--highlight);color:inherit}
 .skip{position:absolute;left:-9999px;top:8px;padding:8px 12px;background:var(--background);z-index:10}.skip:focus{left:20px}
 
 /* Top bar */
-.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 16px;padding:18px 0;border-bottom:1px solid var(--border)}
+.top{position:sticky;top:0;z-index:5;background:var(--background);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 16px;padding:18px 0;border-bottom:1px solid var(--border)}
 .top__name{font:700 15px/1 var(--font-sans);color:var(--text-primary);text-decoration:none}
 .crumbs{display:flex;gap:10px;align-items:baseline;font:400 13px/1 var(--font-mono);color:var(--text-secondary)}
 .top__end{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
 .top__nav{display:flex;gap:16px;font:400 13px/1 var(--font-mono)}
 .top__nav a{color:var(--text-secondary);text-decoration:none}.top__nav a:hover{color:var(--blue)}
+.top__social{display:flex;align-items:center;gap:12px}
+.top__social a{display:flex;color:var(--text-secondary)}.top__social a:hover{color:var(--blue)}
+.top__social svg{fill:currentColor}
+@media (max-width:600px){.top{padding:12px 0;gap:12px}.top__nav{gap:12px}.top__social{gap:10px}.top__end{display:contents}.btn-theme{order:1;margin-left:auto}.top__nav{order:2}.top__social{order:3;margin-left:auto}}
 .btn-theme{font:400 12px/1 var(--font-mono);color:var(--text-secondary);background:transparent;border:1px solid var(--border);border-radius:999px;padding:7px 12px;cursor:pointer}
 .btn-theme:hover{color:var(--text-primary);background:var(--surface-neutral)}
 
