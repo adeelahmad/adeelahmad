@@ -1,8 +1,8 @@
 {
-  "headline": "Staff Platform Engineer. Agentic AI and full-stack on AWS. AWS Certified Solutions Architect – Professional.",
+  "headline": "Staff Platform Engineer. Agentic AI, full-stack and AI security on AWS. AWS Certified Solutions Architect – Professional.",
   "location": "Melbourne, Australia",
   "summary": [
-    "I've been building software and distributed systems for 19 years, more than ten of them on AWS. I now design and build agentic and generative AI systems on Amazon Bedrock AgentCore in Commonwealth Bank's AI Centre of Excellence. Before that I was an AWS consultant at Cevo, working inside enterprise client teams, and before that I spent nine years as founder and CTO of a software consultancy that grew to 40 people, writing code and selling the work myself.",
+    "I've been building software, cloud platforms and distributed systems for 19 years, more than ten of them on AWS. In Commonwealth Bank's AI Centre of Excellence I turn unclear generative AI and data problems into secure production systems. Before that I was an AWS consultant at Cevo, working inside enterprise client teams, and before that I spent nine years as founder and CTO of a software consultancy that grew to 40 people, writing code and selling the work myself.",
     "Most of my recent projects started as unclear briefs spread across several teams, so the first job was working out what was actually needed. I still write a lot of the code myself."
   ],
   "experience": [
@@ -12,12 +12,12 @@
       "when": "Mar 2025 – now",
       "role": "Staff Platform Engineer (MLOps), AI Centre of Excellence",
       "points": [
-        "Led architecture and security for a data-lineage platform used in mainframe modernisation. Narrowed a very broad brief to the three tasks data stewards needed most, then built a security-approved prototype with AWS engineers in three weeks.",
-        "Took the platform's generative AI agents from prototype to production on Amazon Bedrock AgentCore. People ask lineage questions in plain English over an Amazon Neptune graph built by parsing job schedules and JCL in Python, and other agents flag broken pipelines and suggest fixes that need sign-off before they run.",
-        "Prototyped hybrid retrieval (vector search, cross-encoder reranking and an LLM explaining each match) instead of a proposed fine-tune for mapping API fields to a large ontology. It worked from about 30 labelled examples, and people can check the reason behind every mapping.",
-        "Wrote the OAuth2 proxy sidecar pattern the department uses for service-to-service and agent-to-tool authentication with workload identity instead of shared secrets, and set up machine-to-machine access to MCP servers with client-credentials tokens checked at a JWT proxy.",
-        "Ran authorised prompt-injection testing of an internal multi-agent assistant, which led to guardrail work in the team.",
-        "Set up delivery controls for the team's AI services: versioned prompts scored by an LLM judge alongside SAST, DAST and SCA scans, and staged deploys with rollback. Mentored engineers and ran internal talks on authentication patterns."
+        "Technical anchor for a data-lineage platform from early design to production: backend architecture, authentication, deployment readiness and production debugging across software, data and infrastructure teams.",
+        "Narrowed a very broad lineage brief to the three journeys data stewards needed most, then built a security-reviewed prototype with AWS engineers in three weeks. Later showed an enriched Amazon Neptune lineage graph with 113,000 nodes and 146,000 edges.",
+        "Designed hybrid lineage extraction: deterministic Python parsers for known job-schedule, JCL and SQL patterns, with a schema-constrained LLM fallback for edge cases. People ask lineage questions in plain English and can trace answers back to the source code and metadata.",
+        "Set up workload-identity and OAuth 2.0 patterns for service-to-service and agent-to-tool access, and scoped the security assessments and pen tests behind APRA and internal risk reviews.",
+        "Raised the squad's DevSecOps maturity score from 1.81 to 2.75 in one cycle by tying 14 controls to delivery goals: versioned prompts, LLM-judge evaluation, SAST, DAST and SCA, and staged deploys with rollback.",
+        "Ran authorised prompt-injection testing of an internal multi-agent assistant, which led to guardrail work in the team. Mentored engineers and ran internal talks on authentication patterns."
       ]
     },
     {
