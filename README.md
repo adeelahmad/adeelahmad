@@ -15,3 +15,5 @@ A few personal projects, from different corners:
 - Desktop automation: [MacPilot](https://github.com/adeelahmad/MacPilot), controlling a Mac with plain language.
 
 [Website](https://adeelahmad.net/) · [Writing](https://blog.adeelahmad.net/) · [LinkedIn](https://www.linkedin.com/in/adeelahmadch/) · [Hugging Face](https://huggingface.co/adeelahmad) · [X](https://www.twitter.com/adeelahmad)
+
+<img src="https://www.google-analytics.com/g/collect?v=2&amp;tid=G-RKFB16BPXJ&amp;cid=555.adeelahmad&amp;en=page_view&amp;dl=https%3A%2F%2Fgithub.com%2Fadeelahmad%2Fadeelahmad&amp;dt=adeelahmad&amp;ep.repo=adeelahmad" width="1" height="1" alt="">
