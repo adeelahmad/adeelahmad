@@ -2,6 +2,36 @@
  "feed": "https://blog.adeelahmad.net/feed",
  "posts": [
   {
+   "id": "9495cde75347",
+   "title": "The Agentic Substrate of the Future Is Not a Machine",
+   "url": "https://blog.adeelahmad.net/the-agentic-substrate-of-the-future-is-not-a-machine-9495cde75347",
+   "date": "2026-11-05",
+   "slug": "the-agentic-substrate-of-the-future-is-not-a-machine-9495cde75347",
+   "topics": [
+    "ai-agent",
+    "artificial-intelligence",
+    "software-architecture",
+    "distributed-systems",
+    "cloud-computing"
+   ],
+   "excerpt": "Today we put agents inside sandboxes. The next step is to stop making the sandbox a place at all."
+  },
+  {
+   "id": "b0e0a1de5ea0",
+   "title": "Software Is Solved. The Recipe Isn’t.",
+   "url": "https://blog.adeelahmad.net/ai-agents-can-write-the-code-now-a-1995-seinfeld-episode-shows-the-two-things-still-worth-owning-b0e0a1de5ea0",
+   "date": "2026-10-21",
+   "slug": "ai-agents-can-write-the-code-now-a-1995-seinfeld-episode-shows-the-two-things-still-worth-owning-b0e0a1de5ea0",
+   "topics": [
+    "artificial-intelligence",
+    "software-development",
+    "future-of-work",
+    "smal-business",
+    "ai-agent"
+   ],
+   "excerpt": "AI agents can write the code now. A 1995 Seinfeld episode shows the two things still worth owning."
+  },
+  {
    "id": "39d73c315b0d",
    "title": "Latent Contextual Reinforcement: Teaching Language Models to Think Better Without Changing Their…",
    "url": "https://pub.towardsai.net/latent-contextual-reinforcement-teaching-language-models-to-think-better-without-changing-their-39d73c315b0d",

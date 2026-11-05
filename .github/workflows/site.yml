@@ -30,6 +30,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Test safe Medium refresh
+        run: node --test tests/fetch-medium.test.mjs
       - name: Refresh Medium posts
         if: github.event_name != 'pull_request'
         run: node scripts/fetch-medium.mjs || echo "::warning::Medium feed unavailable; building with saved posts"

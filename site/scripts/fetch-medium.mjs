@@ -3,6 +3,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {sanitize} from './pages.mjs';
+import {privateContentReason} from './public-content.mjs';
 const ROOT=path.join(path.dirname(fileURLToPath(import.meta.url)),'..');
 const FEED=process.env.MEDIUM_FEED||'https://blog.adeelahmad.net/feed';
 const FILE=path.join(ROOT,'data/medium.json');
@@ -33,10 +35,26 @@ const fresh=parse(await res.text());
 if(!fresh.length)throw Error('Medium feed had no posts.');
 const saved=JSON.parse(fs.readFileSync(FILE,'utf8'));
 const byId=new Map(saved.posts.map(p=>[p.id,p]));
+const blocked=new Set(fs.readFileSync(path.join(ROOT,'data/private-terms.sha256'),'utf8').split('\n').map(s=>s.trim()).filter(Boolean));
 fs.mkdirSync(CONTENT_DIR,{recursive:true});
-// Full post HTML is saved as fetched; the build sanitizes it before publishing.
+// An unsafe body must not prevent safe index entries from being refreshed.
+// Save only checked, sanitized HTML. Otherwise link to the original publication.
 for(const {html,...p} of fresh){
-  if(html)fs.writeFileSync(path.join(CONTENT_DIR,p.id+'.html'),html+'\n');
+  const metadataReason=privateContentReason(p,blocked);
+  if(metadataReason){
+    console.warn('Skipping post '+p.id+': '+metadataReason+' in index metadata.');
+    continue;
+  }
+  const body=sanitize(html,p.title);
+  const bodyReason=privateContentReason(body,blocked);
+  const contentFile=path.join(CONTENT_DIR,p.id+'.html');
+  if(bodyReason){
+    // Remove a previous mirror too, so later refreshes cannot leave a stale page.
+    fs.rmSync(contentFile,{force:true});
+    console.warn('Keeping post '+p.id+' as an external link: '+bodyReason+' in body.');
+  }else if(body){
+    fs.writeFileSync(contentFile,body+'\n');
+  }
   byId.set(p.id,p);
 }
 const posts=[...byId.values()].sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));

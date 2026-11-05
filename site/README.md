@@ -8,7 +8,7 @@ Only publication copy. The private working record (transcripts, exports, CV draf
 
 - `data/journey.json`: the story chapters on the opening view
 - `data/public-timeline.json`: milestones, projects and the skills inventory
-- `data/medium.json`: saved Medium posts, refreshed daily
+- `data/medium.json`: saved Medium posts, refreshed daily; safe index entries link to Medium when their full text cannot pass the privacy checks
 - `data/writing-links.json`: which Medium post belongs to which milestone
 - `data/publications.json`: talks and reports for `/publications/`; an item with a `page` also gets its own page (the talk recording plays from YouTube only when the reader presses play)
 - `data/private-terms.sha256`: hashed terms the build refuses to publish
@@ -34,9 +34,13 @@ echo "Term to block" | node scripts/hash-terms.mjs >> data/private-terms.sha256
 
 Browser checks: `python tests/smoke_test.py` (needs Playwright; set `CHROMIUM_PATH` if Chromium is not on PATH).
 
+Feed regression checks: `node --test tests/fetch-medium.test.mjs` (offline fixtures, no install step).
+
 ## Publishing
 
 `.github/workflows/site.yml` builds on every push to `master` that touches `site/`, and daily to pick up new Medium posts. Medium's feed only lists the latest 10 posts, so `scripts/fetch-medium.mjs` merges new ones into `data/medium.json` and the workflow commits it. The workflow then deploys `dist/` to GitHub Pages.
+
+The refresh checks index metadata and sanitized post HTML before saving either. If a body fails a privacy check, its safe title, date, excerpt and original link still appear in the writing list, without a local copy of the body. Unsafe metadata is skipped, retaining any previously saved safe entry. The full build privacy checks are unchanged and still run before saving or deploying an update.
 
 One-time setup in the repository settings: **Pages → Source: GitHub Actions**, then **Custom domain: adeelahmad.net** with HTTPS enforced. DNS: apex `A` records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, and `www` as `CNAME adeelahmad.github.io`. `blog.adeelahmad.net` stays on Medium.
 
