@@ -4,32 +4,32 @@
   {
    "id": "9495cde75347",
    "title": "The Agentic Substrate of the Future Is Not a Machine",
-   "url": "https://blog.adeelahmad.net/the-agentic-substrate-of-the-future-is-not-a-machine-9495cde75347",
+   "url": "https://pub.towardsai.net/the-agentic-substrate-of-the-future-is-not-a-machine-9495cde75347",
    "date": "2026-11-05",
    "slug": "the-agentic-substrate-of-the-future-is-not-a-machine-9495cde75347",
    "topics": [
     "ai-agent",
+    "cloud-computing",
     "artificial-intelligence",
     "software-architecture",
-    "distributed-systems",
-    "cloud-computing"
+    "distributed-systems"
    ],
-   "excerpt": "Today we put agents inside sandboxes. The next step is to stop making the sandbox a place at all."
+   "excerpt": "Most agent runtimes today look a lot like the computers we already know how to run. Give the model a Linux container. Put Bash inside it. Add a filesystem, a few binaries, maybe a browser, some credentials and controlled network access. Then let the agent…"
   },
   {
    "id": "b0e0a1de5ea0",
-   "title": "Software Is Solved. The Recipe Isn’t.",
-   "url": "https://blog.adeelahmad.net/ai-agents-can-write-the-code-now-a-1995-seinfeld-episode-shows-the-two-things-still-worth-owning-b0e0a1de5ea0",
+   "title": "AI agents can write the code now. A 1995 Seinfeld episode shows the two things still worth owning.",
+   "url": "https://adeelahmadch.medium.com/ai-agents-can-write-the-code-now-a-1995-seinfeld-episode-shows-the-two-things-still-worth-owning-b0e0a1de5ea0",
    "date": "2026-10-21",
    "slug": "ai-agents-can-write-the-code-now-a-1995-seinfeld-episode-shows-the-two-things-still-worth-owning-b0e0a1de5ea0",
    "topics": [
     "artificial-intelligence",
     "software-development",
+    "ai-agent",
     "future-of-work",
-    "smal-business",
-    "ai-agent"
+    "smal-business"
    ],
-   "excerpt": "AI agents can write the code now. A 1995 Seinfeld episode shows the two things still worth owning."
+   "excerpt": "AI agents can write the code now. A 1995 Seinfeld episode shows the two things still worth owning. The Soup Nazi never wrote a spec in his life. He is exactly who AI agents are for. In the 1995 Seinfeld episode named after him, every…"
   },
   {
    "id": "39d73c315b0d",
